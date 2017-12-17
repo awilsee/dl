@@ -1,0 +1,59 @@
+MyNote: You have to install CUDA Toolkit 8.0 and cuDNN 6.0. The version 9.1 currently doesn't work with Tensorflow. Additionally you should install all with Pyhton 3.5 because of a warning if working with 3.6.
+Nevertheless on my PC is version 3.6 installed and used.
+
+
+Installing anaconda:
+https://conda.io/docs/user-guide/install/linux.html#installing-on-linux
+- Download Anaconda Installer:
+  https://www.anaconda.com/download/#linux
+- run downloaded script and follow the prompts
+
+
+For installing Tensorflow with GPU support see NVIDIA requirements first:
+https://www.tensorflow.org/install/install_linux
+
+CUDA 8.0 installation guide:
+http://developer2.download.nvidia.com/compute/cuda/8.0/secure/Prod2/docs/sidebar/CUDA_Installation_Guide_Linux.pdf?QEc--1G1y2pCfSeumFg7l4Cnd338wasL0RjGiDa1anZtK6z9rkFzem71BzTBENHZCBShCUzy6DOEi6A_qvxf4OafVitdUEMhEgLxfuorl-qMya5GnvETdMYZ3fPWkvKTNFKlmEhiUXhuK5kZbnfus_1lNrTdV1E_g88HqQjWVB_UFDM31G6C3j8Wvg
+
+-prepare all, see chapter 2 and download .deb Install-package, too.
+-install it, see 3.6 *
+-verify installation
+
+*if a newer Version was installed befor uninstall it completly with
+*  sudo apt-get remove cuda
+*  sudo apt-get autoremove
+*  sudo apt-key remove /var/cu.../....pub
+* and for install us
+*  sudo apt-get install cuda-8-0
+
+
+cuDNN installation guide:
+http://developer2.download.nvidia.com/compute/machine-learning/cudnn/secure/v7.0.4/prod/Doc/cuDNN-Installation-Guide.pdf?wUQaSPoKfFK-KBWMvXiHTIR5KqVWjSWFI7Df8xX55MtIQBlUHnk7UVj1PYs6XomS0trs9OGlQ_1moQhnymqZy49mS7ROX63f7qSJ7_eLCLkMpPVnjnVERQ74yLlz-7qA5HlBG3q6mRrXtUt7a4U6c6HqnVrsANnG2011NkSAyXiTM9r3KFteybQuOrCOS_R8og
+-> watch out we use Version 6, but it's nearly the same. Don't copy and paste!
+
+- do steps 2.3.2 and 2.4
+
+
+Install libcupti-dev-library:
+ sudo apt-get install libcupti-dev
+
+
+Finally installing Tensorflow:
+https://www.tensorflow.org/install/install_linux#InstallingAnaconda
+with tfBinaryURL with GPU support from 
+https://www.tensorflow.org/install/install_linux#the_url_of_the_tensorflow_python_package
+
+Verify Installation with test program
+- activate your container:
+    source activate tensorflow
+- invoke python shell:
+    python
+- enter lines:
+    import tensorflow as tf
+	hello = tf.constant('Hello, TensorFlow!')
+	sess = tf.Session()
+	print(sess.run(hello))
+- system should print:
+	Hello, TensorFlow!
+
+
