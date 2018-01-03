@@ -1,3 +1,13 @@
+Dog datasets:
+Standord Dogs Dataset of ImageNet (most pre-trained CNN use ImageNet)
+http://vision.stanford.edu/aditya86/ImageNetDogs/
+
+dogImages (-> images are different to ImageNet):
+https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip
+
+___________________
+
+
 General Informations and Tutorials:
 Videos CNN:
 Building and Deploying Deep Learning Applications with TensorFlow (Overview, Creating, Training, Exporting, Visualize)
@@ -5,12 +15,17 @@ https://www.lynda.com/Google-TensorFlow-tutorials/Building-Deploying-Application
 
 How Convolutional Neural Networks work - Brandon Rohrer
 https://www.youtube.com/watch?v=FmpDIaiMIeA
+Deep Learning Demystified - Brandon Rohrer
+https://www.youtube.com/watch?v=Q9Z20HCPnww
 
 But what *is* a Neural Network? | Chapter 1, deep learning - 3Blue1Brown
 https://www.youtube.com/watch?v=aircAruvnKk&t=990s
 
 
 Written stuff:
+Creating an image classifier on Android using TensorFlow (part 1 & 2 & 3)
+https://medium.com/@daj/creating-an-image-classifier-on-android-using-tensorflow-part-1-513d9c10fa6a
+
 ResNet, AlexNet, VGG, Inception: Understanding various architectures of Convolutional Networks
 http://cv-tricks.com/cnn/understand-resnet-alexnet-vgg-inception/
 Quick complete Tensorflow tutorial to understand and run Alexnet, VGG, Inceptionv3, Resnet and squeezeNet networks
