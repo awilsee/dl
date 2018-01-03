@@ -1,0 +1,126 @@
+General Informations and Tutorials:
+Videos CNN:
+Building and Deploying Deep Learning Applications with TensorFlow (Overview, Creating, Training, Exporting, Visualize)
+https://www.lynda.com/Google-TensorFlow-tutorials/Building-Deploying-Applications-TensorFlow/601800-2.html
+
+How Convolutional Neural Networks work - Brandon Rohrer
+https://www.youtube.com/watch?v=FmpDIaiMIeA
+
+But what *is* a Neural Network? | Chapter 1, deep learning - 3Blue1Brown
+https://www.youtube.com/watch?v=aircAruvnKk&t=990s
+
+
+Written stuff:
+ResNet, AlexNet, VGG, Inception: Understanding various architectures of Convolutional Networks
+http://cv-tricks.com/cnn/understand-resnet-alexnet-vgg-inception/
+Quick complete Tensorflow tutorial to understand and run Alexnet, VGG, Inceptionv3, Resnet and squeezeNet networks
+http://cv-tricks.com/tensorflow-tutorial/understanding-alexnet-resnet-squeezenetand-running-on-tensorflow/
+Tensorflow Tutorial 2: image classifier using convolutional neural network
+http://cv-tricks.com/tensorflow-tutorial/training-convolutional-neural-network-for-image-classification/
+A quick complete tutorial to save and restore Tensorflow models
+http://cv-tricks.com/tensorflow-tutorial/save-restore-tensorflow-models-quick-complete-tutorial/
+Freeze Tensorflow models and serve on web
+http://cv-tricks.com/how-to/freeze-tensorflow-models/
+-> this above are good Tutorials with Code, I think (not read all of it really exactly)
+
+A Beginner's Guide To Understanding Convolutional Neural Networks
+https://adeshpande3.github.io/adeshpande3.github.io/A-Beginner%27s-Guide-To-Understanding-Convolutional-Neural-Networks/
+
+A Guide to TF Layers: Building a Convolutional Neural Network
+https://www.tensorflow.org/tutorials/layers
+
+How to Retrain Inception's Final Layer for New Categories
+https://www.tensorflow.org/tutorials/image_retraining
+
+Building Convolutional Neural Networks with Tensorflow
+http://ataspinar.com/2017/08/15/building-convolutional-neural-networks-with-tensorflow
+
+Deep learning - (part of a book)
+http://neuralnetworksanddeeplearning.com/chap6.html
+
+___________________
+
+Caffee CNN Models
+https://github.com/BVLC/caffe/tree/master/models
+
+Caffe to TensorFlow
+-> Convert Caffe models (ResNet, VGG16, GoogLeNet (Inception), AlexNet) to TensorFlow.
+  -> Example doesn't work correctly
+https://github.com/ethereon/caffe-tensorflow
+
+Converted Models -> pre-trained Models (GoogLeNet, ResNet, VGG16)
+http://www.deeplearningmodel.net/
+
+___________________
+
+TensorFlow-Slim image classification model library
+https://github.com/tensorflow/models/tree/master/research/slim
+-> TF-slim is a new lightweight high-level API of TensorFlow
+
+-> preTrained Models download and Fine-tuning (retraining)
+https://github.com/tensorflow/models/tree/master/research/slim
+
+___________________
+
+TensorFlow Android Camera Demo App (also precompiled version available):
+https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android
+https://ci.tensorflow.org/view/Nightly/job/nightly-android/lastStableBuild/
+-> with TensorFlow Android Inference Interface
+-> with ipy-Notebook
+
+___________________
+
+
+TensorFlow Model Benchmark Tool
+bazel build -c opt --crosstool_top=//external:android/crosstool  --cpu=armeabi-v7a --host_crosstool_top=@bazel_tools//tools/cpp:toolchain tensorflow/tools/benchmark:benchmark_model
+
+adb shell "/sdcard/Download/benchmark_model --graph=/sdcard/Download/tensorflow_inception_graph.pb --input_layer="input:0" --input_layer_shape="1,224,224,3" --input_layer_type="float" --output_layer="output:0"
+
+==> fails
+Download precompiled File -> need root-priviledge to run
+
+___________________
+
+TensorFlow Lite Vs TensorFlow Mobile
+Lite is newer, smaller, fewer dependencies and better performance. Not all operators and use cases are included.
+In Lite at the moment only Inception-V3 or MobileNet fully supported
+https://www.tensorflow.org/mobile/
+
+Inception-V3 vs MobileNet
+-Inception more accurate
+-MobileNet smaller files, faster 
+
+TensorFlow Lite Quick Start (included preTrained Models, retraining, ...)
+https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/lite
+
+TensorFlow Lite Retraining CodeLab
+https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#0
+
+-> demo app with CameraClassifier
+https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/lite/java/demo
+
+___________________
+
+Android Studio Install:
+https://developer.android.com/studio/install.html
+
+Bazel install on Ubuntu:
+https://docs.bazel.build/versions/master/install-ubuntu.html
+
+___________________
+
+Several Specs of hardware:
+-Raspberry Pi 3:
+ -Quad Core 1.2GHz Broadcom BCM2837 64bit CPU
+ -1GB RAM
+-Moto X (2014)
+ -Qualcomm MSM8974AC Snapdragon 801  Quad-core 2.5 GHz 32-bit (ARMv7-ISA kompatibel)
+ -2GB RAM
+ -Android 6.0 (API 23)
+
+___________________
+
+Für die FaceID Idee vom Lorenzo:
+-> findet man nicht soo viel
+https://github.com/Joisar/LockScreenApp#lockscreenapp
+http://playingwithandroid.blogspot.de/2012/07/making-customize-lock-screen.html
