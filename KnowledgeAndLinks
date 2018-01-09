@@ -139,3 +139,16 @@ Für die FaceID Idee vom Lorenzo:
 -> findet man nicht soo viel
 https://github.com/Joisar/LockScreenApp#lockscreenapp
 http://playingwithandroid.blogspot.de/2012/07/making-customize-lock-screen.html
+
+___________________
+
+Retraining:
+https://www.tensorflow.org/tutorials/image_retraining
+!WATCH OUT: https://stackoverflow.com/questions/41293077/how-to-compile-tensorflow-with-sse4-2-and-avx-instructions
+--> Take bazel build --config opt --copt=-msse4.2 tensorflow/examples/image_retraining:retrain
+--> enables Simd, you'll get an error if not use
+--> Bottlenecks, Training with output: cross entropy, validation accuracy, training accuracy
+--> Use retrained model with:
+bazel-bin/tensorflow/examples/label_image/label_image --graph=/tmp/output_graph.pb --labels=/tmp/output_labels.txt --output_layer=final_result --image=$HOME/flower_photos/daisy/21652746_cc379e0eea_m.jpg --input_layer=Mul
+!WATCH OUT: specify input_layer with Mul
+
