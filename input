@@ -1,0 +1,5 @@
+bazel-bin/tensorflow/python/tools/freeze_graph\
+    --input_graph=/tmp/output_graph.pb \
+    --input_binary=true --output_graph=/tmp/frozen_output_graph.pb \
+    --output_node_names=InceptionV3/Predictions/Reshape_1
+

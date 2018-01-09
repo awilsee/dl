@@ -152,3 +152,15 @@ https://www.tensorflow.org/tutorials/image_retraining
 bazel-bin/tensorflow/examples/label_image/label_image --graph=/tmp/output_graph.pb --labels=/tmp/output_labels.txt --output_layer=final_result --image=$HOME/flower_photos/daisy/21652746_cc379e0eea_m.jpg --input_layer=Mul
 !WATCH OUT: specify input_layer with Mul
 
+--> on our use case: visit -->
+https://github.com/tensorflow/models/tree/master/research/inception
+
+TensorFlow Lite:
+1. extern variables
+2. script -> retrain
+3. freeze
+4. convert:
+-> tensorboard (get by retraining)
+-> dimension Mul: Sub_1 als input_shapes bei toco
+--> input_arrays=input
+
