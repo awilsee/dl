@@ -26,7 +26,13 @@ Inception in tensorflow:
 https://github.com/tensorflow/models/tree/master/research/inception
 
 Notes:
-https://medium.com/@hamedmp/exporting-trained-tensorflow-models-to-c-the-right-way-cf24b609d183https://github.com/thtrieu/darkflow/issues/286
+https://medium.com/@hamedmp/exporting-trained-tensorflow-models-to-c-the-right-way-cf24b609d183
+https://github.com/thtrieu/darkflow/issues/286
 
 Models (i think with checkpoints):
 https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/lite/g3doc/models.md
+
+Save and restore variables
+http://cv-tricks.com/tensorflow-tutorial/save-restore-tensorflow-models-quick-complete-tutorial/
+https://www.tensorflow.org/programmers_guide/saved_model
+https://stackoverflow.com/questions/33759623/tensorflow-how-to-save-restore-a-model
