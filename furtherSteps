@@ -1,0 +1,32 @@
+retrain again with using a mobilenet Model
+maybe the whole thing works with tensorflow for poets
+
+1. https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#4 - already done
+2. https://codelabs.developers.google.com/codelabs/tensorflow-for-poets-2/#4
+
+Prepare model for mobile use
+https://www.tensorflow.org/mobile/prepare_models
+
+Focus on Freeze Graph: Tensorflow Slim
+https://github.com/tensorflow/models/tree/master/research/slim#pre-trained-models
+
+Freeze or transform?
+https://github.com/tensorflow/tensorflow/tree/master/tensorflow/tools/graph_transforms/#optimizing-for-deployment
+
+Last time:
+- retrained image recognition in /tmp/
+- tried first tutorial tensorflow for poets - step is missing from up to freeze graph
+--> see this step in prepare model (explanation short for python, complete for bazel)
+
+
+Exporting the inference graph
+https://github.com/tensorflow/models/tree/master/research/slim
+
+Inception in tensorflow:
+https://github.com/tensorflow/models/tree/master/research/inception
+
+Notes:
+https://medium.com/@hamedmp/exporting-trained-tensorflow-models-to-c-the-right-way-cf24b609d183https://github.com/thtrieu/darkflow/issues/286
+
+Models (i think with checkpoints):
+https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/lite/g3doc/models.md
