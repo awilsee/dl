@@ -5,6 +5,7 @@ bazel-bin/tensorflow/examples/image_retraining/label_image \
 
 bazel-bin/tensorflow/examples/label_image/label_image --graph=/home/aw/retrained/output_graph.pb --labels=/home/aw/retrained/output_labels.txt --output_layer=final_result:0 --input_layer=Mul --image=$HOME/flower_photos/daisy/21652746_cc379e0eea_m.jpg
 
+//Quantization
 bazel-bin/tensorflow/tools/graph_transforms/transform_graph \
   --in_graph=/home/aw/retrained/output_graph.pb \
   --out_graph=/home/aw/retrained/output_quantized_graph.pb \
@@ -17,28 +18,66 @@ bazel-bin/tensorflow/tools/graph_transforms/transform_graph \
 
 bazel-bin/tensorflow/examples/label_image/label_image --graph=/home/aw/retrained/output_quantized_graph.pb --labels=/home/aw/retrained/output_labels.txt --output_layer=final_result:0 --input_layer=Mul --image=$HOME/flower_photos/daisy/21652746_cc379e0eea_m.jpg
 
+______________
+//Test with downloaded frozenModel doesn't work too.
+bazel-bin/tensorflow/tools/graph_transforms/transform_graph \
+  --in_graph=/home/aw/retrained/inception_v3_2016_08_28_frozen.pb \
+  --out_graph=/home/aw/retrained/output_quantized_graph.pb \
+  --inputs=input \
+  --outputs=InceptionV3/Predictions/Reshape_1 \
+  --transforms='add_default_attributes strip_unused_nodes(type=float, shape="1,299,299,3")
+    remove_nodes(op=Identity, op=CheckNumerics) fold_constants(ignore_errors=true)
+    fold_batch_norms fold_old_batch_norms quantize_weights quantize_nodes
+    strip_unused_nodes sort_by_execution_order'
+
+bazel-bin/tensorflow/contrib/lite/toco/toco -- \
+  --input_file=/home/aw/retrained/output_quantized_graph.pb \
+  --input_format=TENSORFLOW_GRAPHDEF  --output_format=TFLITE \
+  --output_file=/home/aw/retrained/inceptionQuantfrozen.tflite \
+  --input_array=input \
+  --output_array=InceptionV3/Predictions/Reshape_1 --input_shapes=1,299,299,3
+==>Check failed: parsed_toco_flags.input_format.specified() Missing required flag: input_format 
+
+_________________________
 
 
-
-//Testing
+//Testing Converting to TFLITE
 bazel-bin/tensorflow/contrib/lite/toco/toco -- \
   --input_file=/home/aw/retrained/output_quantized_graph.pb \
   --input_format=TENSORFLOW_GRAPHDEF  --output_format=TFLITE \
   --output_file=/home/aw/retrained/inceptionQuant.tflite --inference_type=QUANTIZED_UINT8 \
   --input_arrays=Mul \
   --output_arrays=final_result:0 --input_shapes=1,299,299,3
-
-bazel-bin/tensorflow/contrib/lite/toco/toco --   --input_file=/home/aw/retrained/output_quantized_graph.pb   --input_format=TENSORFLOW_GRAPHDEF  --output_format=TFLITE   --output_file=/home/aw/retrained/inceptionQuant.tflite --inference_type=QUANTIZED_UINT8  --input_type=QUANTIZED_UINT8 --input_arrays=Mul   --output_arrays=final_result:0 --input_shapes=1,299,299,3
-
+Check failed: parsed_toco_flags.input_format.specified() Missing required flag: input_format
 
 
-bazel-bin/tensorflow/contrib/lite/toco/toco -- \
-  --input_file=/home/aw/retrained/output_quantized_graph.pb \
-  --input_format=TENSORFLOW_GRAPHDEF  --output_format=TFLITE \
-  --output_file=/home/aw/retrained/inceptionQuant.tflite --inference_type=FLOAT \
-  --input_type=FLOAT --input_arrays=Mul \
-  --output_arrays=final_result:0 --input_shapes=1,299,299,3
+bazel-bin/tensorflow/contrib/lite/toco/toco  --input_file=/home/aw/retrained/output_graph.pb   --input_format=TENSORFLOW_GRAPHDEF  --output_format=TFLITE   --output_file=/home/aw/retrained/inceptionQuant.tflite --inference_type=QUANTIZED_UINT8  --input_arrays=Mul   --output_arrays=final_result:0 --input_shapes=1,299,299,3
+==>2018-01-13 17:23:36.955316: F tensorflow/contrib/lite/toco/tooling_util.cc:1217] Array conv, which is an input to the Conv operator producing the output array conv_1, is lacking min/max data, which is necessary for quantization. Either target a non-quantized output format, or change the input graph to contain min/max information, or pass --default_ranges_min= and --default_ranges_max= if you do not care about the accuracy of results.
+Abgebrochen (Speicherabzug geschrieben)
 
 
+bazel-bin/tensorflow/contrib/lite/toco/toco \
+  --input_file=/home/aw/retrained/output_graph.pb \
+  --output_file=/home/aw/retrained/inceptionQuant.tflite \
+  --input_format=TENSORFLOW_GRAPHDEF \
+  --output_format=TFLITE \
+  --inference_type=QUANTIZED_UINT8 \
+  --input_shape=1,299,299,3 \
+  --input_array=Mul \
+  --output_array=final_result \
+  --mean_value=128 \
+  --std_value=128 \
+  --default_ranges_min=0 \
+  --default_ranges_max=6
+--> works at the moment with inception float
 
 bazel-bin/tensorflow/contrib/lite/toco/toco   --input_file=/home/aw/retrained/output_quantized_graph.pb   --output_file=/home/aw/retrained/inceptionQuant.tflite   --input_format=TENSORFLOW_GRAPHDEF   --output_format=TFLITE   --input_shape=1,299,299,3   --input_array=Mul   --output_array=final_result:0
+--> Fails
+
+_______________
+
+
+
+
+
+
