@@ -1,0 +1,44 @@
+bazel-bin/tensorflow/examples/image_retraining/label_image \
+--graph=/home/aw/retrained/output_graph.pb --labels=/home/aw/retrained/output_labels.txt \
+--output_layer=final_result:0 --input_layer=Mul \
+--image=$HOME/flower_photos/daisy/21652746_cc379e0eea_m.jpg
+
+bazel-bin/tensorflow/examples/label_image/label_image --graph=/home/aw/retrained/output_graph.pb --labels=/home/aw/retrained/output_labels.txt --output_layer=final_result:0 --input_layer=Mul --image=$HOME/flower_photos/daisy/21652746_cc379e0eea_m.jpg
+
+bazel-bin/tensorflow/tools/graph_transforms/transform_graph \
+  --in_graph=/home/aw/retrained/output_graph.pb \
+  --out_graph=/home/aw/retrained/output_quantized_graph.pb \
+  --inputs=Mul \
+  --outputs=final_result:0 \
+  --transforms='add_default_attributes strip_unused_nodes(type=float, shape="1,299,299,3")
+    remove_nodes(op=Identity, op=CheckNumerics) fold_constants(ignore_errors=true)
+    fold_batch_norms fold_old_batch_norms quantize_weights quantize_nodes
+    strip_unused_nodes sort_by_execution_order'
+
+bazel-bin/tensorflow/examples/label_image/label_image --graph=/home/aw/retrained/output_quantized_graph.pb --labels=/home/aw/retrained/output_labels.txt --output_layer=final_result:0 --input_layer=Mul --image=$HOME/flower_photos/daisy/21652746_cc379e0eea_m.jpg
+
+
+
+
+//Testing
+bazel-bin/tensorflow/contrib/lite/toco/toco -- \
+  --input_file=/home/aw/retrained/output_quantized_graph.pb \
+  --input_format=TENSORFLOW_GRAPHDEF  --output_format=TFLITE \
+  --output_file=/home/aw/retrained/inceptionQuant.tflite --inference_type=QUANTIZED_UINT8 \
+  --input_arrays=Mul \
+  --output_arrays=final_result:0 --input_shapes=1,299,299,3
+
+bazel-bin/tensorflow/contrib/lite/toco/toco --   --input_file=/home/aw/retrained/output_quantized_graph.pb   --input_format=TENSORFLOW_GRAPHDEF  --output_format=TFLITE   --output_file=/home/aw/retrained/inceptionQuant.tflite --inference_type=QUANTIZED_UINT8  --input_type=QUANTIZED_UINT8 --input_arrays=Mul   --output_arrays=final_result:0 --input_shapes=1,299,299,3
+
+
+
+bazel-bin/tensorflow/contrib/lite/toco/toco -- \
+  --input_file=/home/aw/retrained/output_quantized_graph.pb \
+  --input_format=TENSORFLOW_GRAPHDEF  --output_format=TFLITE \
+  --output_file=/home/aw/retrained/inceptionQuant.tflite --inference_type=FLOAT \
+  --input_type=FLOAT --input_arrays=Mul \
+  --output_arrays=final_result:0 --input_shapes=1,299,299,3
+
+
+
+bazel-bin/tensorflow/contrib/lite/toco/toco   --input_file=/home/aw/retrained/output_quantized_graph.pb   --output_file=/home/aw/retrained/inceptionQuant.tflite   --input_format=TENSORFLOW_GRAPHDEF   --output_format=TFLITE   --input_shape=1,299,299,3   --input_array=Mul   --output_array=final_result:0
