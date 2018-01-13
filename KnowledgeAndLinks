@@ -209,3 +209,10 @@ python -m tensorflow.python.tools.optimize_for_inference   --input=tf_files/retr
 6. Still working after removing unnecessary nodes?
 python -m scripts.label_image   --graph=tf_files/retrained_graph.pb  --image=tf_files/flower_photos/daisy/3475870145_685a19116d.jpg --input_layer=Mul
 7. now freeze graph - python file missing in tensorflow for poets
+
+
+
+__________________-----
+
+Allgemein wohl sehr gute Tensnorflow Tutorials with Save/restore, inception, transferLearning, fineTuning,..
+https://github.com/Hvass-Labs/TensorFlow-Tutorials
