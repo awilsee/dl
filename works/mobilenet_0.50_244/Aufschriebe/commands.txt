@@ -18,6 +18,6 @@ bazel-bin/tensorflow/examples/label_image/label_image \
 --image=/home/alice/dog_photos/101.Maltese/Maltese_06730.jpg --input_width=224 --input_height=224
 
 bazel-bin/tensorflow/examples/label_image/label_image \
---graph=/home/aw/MobileMobileNetRetrained/retrained_dog_graph.pb --labels=/home/aw/MobileMobileNetRetrained/retrained_dog_labels.txt \
+--graph=/home/alice/tensorflow_graphs_dog/retrained_dog_graph.pb --labels=/home/alice/tensorflow_graphs_dog/retrained_dog_labels.txt \
 --output_layer=final_result --input_layer=input \
---image="/home/aw/Rohdaten/Stanford Dogs Dataset/Images/n02085620-Chihuahua/n02085620_949.jpg" --input_width=224 --input_height=224
+--image="/home/alice/Schreibtisch/Rohdaten/Stanford Dogs Dataset/Images/n02085620-Chihuahua/n02085620_949.jpg" --input_width=224 --input_height=224
