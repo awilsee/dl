@@ -1,0 +1,15 @@
+Android Studio:
+
+Process: org.tensorflow.demo, PID: 23699java.lang.RuntimeException: Failed to load model from 'file:///android_asset/rounded_dog_graph_mobilenet_1.0_224.pb'at org.tensorflow.contrib.android.TensorFlowInferenceInterface.<init>(TensorFlowInferenceInterface.java:100)at org.tensorflow.demo.TensorFlowImageClassifier.create(TensorFlowImageClassifier.java:103)at org.tensorflow.demo.ClassifierActivity.onPreviewSizeChosen(ClassifierActivity.java:133)at org.tensorflow.demo.CameraActivity$1.onPreviewSizeChosen(CameraActivity.java:159)at org.tensorflow.demo.CameraConnectionFragment.setUpCameraOutputs(CameraConnectionFragment.java:421)at org.tensorflow.demo.CameraConnectionFragment.openCamera(CameraConnectionFragment.java:428)at org.tensorflow.demo.CameraConnectionFragment.access$000(CameraConnectionFragment.java:64)at org.tensorflow.demo.CameraConnectionFragment$1.onSurfaceTextureAvailable(CameraConnectionFragment.java:95)
+
+--> 
+https://github.com/tensorflow/tensorflow/issues/15698
+
+just: 
+in build.gradle:
+ 
+dependencies {
+    compile 'org.tensorflow:tensorflow-android:+'
+}
+
+more: https://www.tensorflow.org/mobile/android_build
