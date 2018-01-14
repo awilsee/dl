@@ -1,0 +1,400 @@
+affenpinscher
+afghan hound
+airedale terrier
+akita
+alaskan malamute
+american eskimo dog
+american foxhound
+american staffordshire terrier
+american water spaniel
+anatolian shepherd dog
+australian cattle dog
+australian shepherd
+australian terrier
+basenji
+basset hound
+beagle
+bearded collie
+beauceron
+bedlington terrier
+belgian malinois
+belgian sheepdog
+belgian tervuren
+bernese mountain dog
+bichon frise
+black and tan coonhound
+black russian terrier
+bloodhound
+bluetick coonhound
+border collie
+border terrier
+borzoi
+boston terrier
+bouvier des flandres
+boxer
+boykin spaniel
+briard
+brittany
+brussels griffon
+bull terrier
+bulldog
+bullmastiff
+cairn terrier
+canaan dog
+cane corso
+cardigan welsh corgi
+cavalier king charles spaniel
+chesapeake bay retriever
+chihuahua
+chinese crested
+chinese shar pei
+chow chow
+clumber spaniel
+cocker spaniel
+collie
+curly coated retriever
+dachshund
+dalmatian
+dandie dinmont terrier
+doberman pinscher
+dogue de bordeaux
+english cocker spaniel
+english setter
+english springer spaniel
+english toy spaniel
+entlebucher mountain dog
+field spaniel
+finnish spitz
+flat coated retriever
+french bulldog
+german pinscher
+german shepherd dog
+german shorthaired pointer
+german wirehaired pointer
+giant schnauzer
+glen of imaal terrier
+golden retriever
+gordon setter
+great dane
+great pyrenees
+greater swiss mountain dog
+greyhound
+havanese
+ibizan hound
+icelandic sheepdog
+irish red and white setter
+irish setter
+irish terrier
+irish water spaniel
+irish wolfhound
+italian greyhound
+japanese chin
+keeshond
+kerry blue terrier
+komondor
+kuvasz
+labrador retriever
+lakeland terrier
+leonberger
+lhasa apso
+lowchen
+maltese
+manchester terrier
+mastiff
+miniature schnauzer
+neapolitan mastiff
+newfoundland
+norfolk terrier
+norwegian buhund
+norwegian elkhound
+norwegian lundehund
+norwich terrier
+nova scotia duck tolling retriever
+old english sheepdog
+otterhound
+papillon
+parson russell terrier
+pekingese
+pembroke welsh corgi
+petit basset griffon vendeen
+pharaoh hound
+plott
+pointer
+pomeranian
+poodle
+portuguese water dog
+saint bernard
+silky terrier
+smooth fox terrier
+tibetan mastiff
+welsh springer spaniel
+wirehaired pointing griffon
+xoloitzcuintli
+yorkshire terrier
+affenpinscher
+afghan hound
+airedale terrier
+akita
+alaskan malamute
+american eskimo dog
+american foxhound
+american staffordshire terrier
+american water spaniel
+anatolian shepherd dog
+australian cattle dog
+australian shepherd
+australian terrier
+basenji
+basset hound
+beagle
+bearded collie
+beauceron
+bedlington terrier
+belgian malinois
+belgian sheepdog
+belgian tervuren
+bernese mountain dog
+bichon frise
+black and tan coonhound
+black russian terrier
+bloodhound
+bluetick coonhound
+border collie
+border terrier
+borzoi
+boston terrier
+bouvier des flandres
+boxer
+boykin spaniel
+briard
+brittany
+brussels griffon
+bull terrier
+bulldog
+bullmastiff
+cairn terrier
+canaan dog
+cane corso
+cardigan welsh corgiaffenpinscher
+afghan hound
+airedale terrier
+akita
+alaskan malamute
+american eskimo dog
+american foxhound
+american staffordshire terrier
+american water spaniel
+anatolian shepherd dog
+australian cattle dog
+australian shepherd
+australian terrier
+basenji
+basset hound
+beagle
+bearded collie
+beauceron
+bedlington terrier
+belgian malinois
+belgian sheepdog
+belgian tervuren
+bernese mountain dog
+bichon frise
+black and tan coonhound
+black russian terrier
+bloodhound
+bluetick coonhound
+border collie
+border terrier
+borzoi
+boston terrier
+bouvier des flandres
+boxer
+boykin spaniel
+briard
+brittany
+brussels griffon
+bull terrier
+bulldog
+bullmastiff
+cairn terrier
+canaan dog
+cane corso
+cardigan welsh corgi
+cavalier king charles spaniel
+chesapeake bay retriever
+chihuahua
+chinese crested
+chinese shar pei
+chow chow
+clumber spaniel
+cocker spaniel
+collie
+curly coated retriever
+dachshund
+dalmatian
+dandie dinmont terrier
+doberman pinscher
+dogue de bordeaux
+english cocker spaniel
+english setter
+english springer spaniel
+english toy spaniel
+entlebucher mountain dog
+field spaniel
+finnish spitz
+flat coated retriever
+french bulldog
+german pinscher
+german shepherd dog
+german shorthaired pointer
+german wirehaired pointer
+giant schnauzer
+glen of imaal terrier
+golden retriever
+gordon setter
+great dane
+great pyrenees
+greater swiss mountain dog
+greyhound
+havanese
+ibizan hound
+icelandic sheepdog
+irish red and white setter
+irish setter
+irish terrier
+irish water spaniel
+irish wolfhound
+italian greyhound
+japanese chin
+keeshond
+kerry blue terrier
+komondor
+kuvasz
+labrador retriever
+lakeland terrier
+leonberger
+lhasa apso
+lowchen
+maltese
+manchester terrier
+mastiff
+miniature schnauzer
+neapolitan mastiff
+newfoundland
+norfolk terrier
+norwegian buhund
+norwegian elkhound
+norwegian lundehund
+norwich terrier
+nova scotia duck tolling retriever
+old english sheepdog
+otterhound
+papillon
+parson russell terrier
+pekingese
+pembroke welsh corgi
+petit basset griffon vendeen
+pharaoh hound
+plott
+pointer
+pomeranian
+poodle
+portuguese water dog
+saint bernard
+silky terrier
+smooth fox terrier
+tibetan mastiff
+welsh springer spaniel
+wirehaired pointing griffon
+xoloitzcuintli
+yorkshire terrier
+
+cavalier king charles spaniel
+chesapeake bay retriever
+chihuahua
+chinese crested
+chinese shar pei
+chow chow
+clumber spaniel
+cocker spaniel
+collie
+curly coated retriever
+dachshund
+dalmatian
+dandie dinmont terrier
+doberman pinscher
+dogue de bordeaux
+english cocker spaniel
+english setter
+english springer spaniel
+english toy spaniel
+entlebucher mountain dog
+field spaniel
+finnish spitz
+flat coated retriever
+french bulldog
+german pinscher
+german shepherd dog
+german shorthaired pointer
+german wirehaired pointer
+giant schnauzer
+glen of imaal terrier
+golden retriever
+gordon setter
+great dane
+great pyrenees
+greater swiss mountain dog
+greyhound
+havanese
+ibizan hound
+icelandic sheepdog
+irish red and white setter
+irish setter
+irish terrier
+irish water spaniel
+irish wolfhound
+italian greyhound
+japanese chin
+keeshond
+kerry blue terrier
+komondor
+kuvasz
+labrador retriever
+lakeland terrier
+leonberger
+lhasa apso
+lowchen
+maltese
+manchester terrier
+mastiff
+miniature schnauzer
+neapolitan mastiff
+newfoundland
+norfolk terrier
+norwegian buhund
+norwegian elkhound
+norwegian lundehund
+norwich terrier
+nova scotia duck tolling retriever
+old english sheepdog
+otterhound
+papillon
+parson russell terrier
+pekingese
+pembroke welsh corgi
+petit basset griffon vendeen
+pharaoh hound
+plott
+pointer
+pomeranian
+poodle
+portuguese water dog
+saint bernard
+silky terrier
+smooth fox terrier
+tibetan mastiff
+welsh springer spaniel
+wirehaired pointing griffon
+xoloitzcuintli
+yorkshire terrier
+
