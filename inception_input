@@ -1,0 +1,44 @@
+1) 
+bazel build --config opt --copt=-msse4.2 tensorflow/examples/image_retraining:retrain
+
+2)
+bazel-bin/tensorflow/examples/image_retraining/retrain --image_dir ~/dog_photos
+
+3)
+bazel build tensorflow/examples/label_image:label_image && \
+bazel-bin/tensorflow/examples/label_image/label_image \
+--graph=/home/alice/tensorflow_graphs/output_graph.pb --labels=/home/alice/tensorflow_graphs/output_labels.txt \
+--output_layer=final_result:0 \
+--input_layer=Mul \
+--image=/home/alice/Schreibtisch/dl/label_image_pics/Affenpinscher_00001.jpg
+
+bazel-bin/tensorflow/examples/label_image/label_image \
+--graph=/home/alice/tensorflow_graphs/output_graph.pb --labels=/home/alice/tensorflow_graphs/output_labels.txt \
+--output_layer=final_result:0 \
+--input_layer=Mul \
+--image=/home/alice/Schreibtisch/dl/label_image_pics/n02085620_949.jpg
+
+bazel build tensorflow/tools/graph_transforms:transform_graph
+bazel-bin/tensorflow/tools/graph_transforms/transform_graph \
+--in_graph=/home/alice/tensorflow_graphs/output_graph.pb \
+--out_graph=/home/alice/tensorflow_graphs/round_output_graph.pb \
+--inputs='Mul' \
+--outputs='final_result:0' \
+--transforms='
+  strip_unused_nodes(type=float, shape="1,299,299,3")
+  fold_constants(ignore_errors=true)
+  fold_batch_norms
+  quantize_weights'
+
+bazel-bin/tensorflow/python/tools/optimize_for_inference \
+     --input=/home/alice/tensorflow_graphs/output_graph.pb \
+     --output=/home/alice/tensorflow_graphs/round_output_graph.pb \
+     --input_names='Mul' \
+     --output_names='final_result:0' \
+     --frozen_graph=True
+
+remove_nodes(op=Identity, op=CheckNumerics)
+Link:
+https://github.com/tensorflow/tensorflow/tree/master/tensorflow/tools/graph_transforms#optimizing-for-deployment
+
+
