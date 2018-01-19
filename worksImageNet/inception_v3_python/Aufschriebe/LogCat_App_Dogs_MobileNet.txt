@@ -1,0 +1,72 @@
+OUTPUT poets_mobile_MobileNet_scipts
+
+01-19 18:24:10.054 25305-25305/? I/art: Late-enabling -Xcheck:jni
+01-19 18:24:10.135 25305-25315/? E/art: Failed writing handshake bytes (-1 of 14): Broken pipe
+01-19 18:24:10.135 25305-25315/? I/art: Debugger is no longer active
+01-19 18:24:10.221 25305-25305/? D/tensorflow: CameraActivity: onCreate org.tensorflow.demo.ClassifierActivity@d318b4b
+01-19 18:24:10.273 25305-25305/? D/tensorflow: CameraActivity: onStart org.tensorflow.demo.ClassifierActivity@d318b4b
+01-19 18:24:10.273 25305-25305/? D/tensorflow: CameraActivity: onResume org.tensorflow.demo.ClassifierActivity@d318b4b
+01-19 18:24:10.282 25305-25326/? D/OpenGLRenderer: Use EGL_SWAP_BEHAVIOR_PRESERVED: true
+01-19 18:24:10.430 25305-25326/? I/Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build: Nondeterministic_AU_msm8974_LA.BF.1.1.3_RB1__release_AU (I3193f6e94a)
+                                               OpenGL ES Shader Compiler Version: E031.28.00.02
+                                               Build Date: 10/09/15 Fri
+                                               Local Branch: mybranch15039904
+                                               Remote Branch: quic/LA.BF.1.1.3_rb1.2
+                                               Local Patches: NONE
+                                               Reconstruct Branch: NOTHING
+01-19 18:24:10.434 25305-25326/? I/OpenGLRenderer: Initialized EGL, version 1.4
+01-19 18:24:10.573 25305-25305/? I/CameraManagerGlobal: Connecting to camera service
+01-19 18:24:10.668 25305-25305/? I/tensorflow: CameraConnectionFragment: Desired size: 640x480, min size: 480x480
+01-19 18:24:10.668 25305-25305/? I/tensorflow: CameraConnectionFragment: Valid preview sizes: [1440x1080, 1280x960, 1280x720, 960x720, 864x480, 720x480, 640x480]
+01-19 18:24:10.668 25305-25305/? I/tensorflow: CameraConnectionFragment: Rejected preview sizes: [768x432, 320x240, 176x144]
+01-19 18:24:10.668 25305-25305/? I/tensorflow: CameraConnectionFragment: Exact size match found.
+01-19 18:24:10.673 25305-25305/? I/TensorFlowImageClassifier: Reading labels from: retrained_mobilnet_1.0_244_labels.txt
+01-19 18:24:10.678 25305-25305/? I/TensorFlowInferenceInterface: Checking to see if TensorFlow native methods are already loaded
+01-19 18:24:10.678 25305-25305/? E/art: No implementation found for long org.tensorflow.contrib.android.RunStats.allocate() (tried Java_org_tensorflow_contrib_android_RunStats_allocate and Java_org_tensorflow_contrib_android_RunStats_allocate__)
+01-19 18:24:10.678 25305-25305/? I/TensorFlowInferenceInterface: TensorFlow native methods not found, attempting to load via tensorflow_inference
+01-19 18:24:10.775 25305-25305/? I/TensorFlowInferenceInterface: Successfully loaded TensorFlow native methods (RunStats error may be ignored)
+01-19 18:24:11.175 25305-25305/org.tensorflow.demo I/TensorFlowInferenceInterface: Model load took 156ms, TensorFlow version: 1.5.0-rc1
+01-19 18:24:11.177 25305-25305/org.tensorflow.demo I/TensorFlowInferenceInterface: Successfully loaded model from 'file:///android_asset/retrained_mobilnet_1.0_244_graph.pb'
+01-19 18:24:11.178 25305-25305/org.tensorflow.demo I/TensorFlowImageClassifier: Read 133 labels, output layer size is 133
+01-19 18:24:11.183 25305-25305/org.tensorflow.demo I/tensorflow: ClassifierActivity: Sensor orientation: 90, Screen orientation: 0
+01-19 18:24:11.183 25305-25305/org.tensorflow.demo I/tensorflow: ClassifierActivity: Initializing at size 640x480
+01-19 18:24:11.200 25305-25305/org.tensorflow.demo I/CameraManager: Using legacy camera HAL.
+01-19 18:24:11.659 25305-25325/org.tensorflow.demo I/tensorflow: CameraConnectionFragment: Opening camera preview: 640x480
+01-19 18:24:11.744 25305-25325/org.tensorflow.demo I/CameraDeviceState: Legacy camera service transitioning to state CONFIGURING
+01-19 18:24:11.749 25305-25430/org.tensorflow.demo I/RequestThread-0: Configure outputs: 2 surfaces configured.
+01-19 18:24:11.749 25305-25430/org.tensorflow.demo D/Camera: app passed NULL surface
+01-19 18:24:11.855 25305-25305/org.tensorflow.demo I/Choreographer: Skipped 70 frames!  The application may be doing too much work on its main thread.
+01-19 18:24:11.978 25305-25325/org.tensorflow.demo I/CameraDeviceState: Legacy camera service transitioning to state IDLE
+01-19 18:24:12.020 25305-25325/org.tensorflow.demo I/RequestQueue: Repeating capture request set.
+01-19 18:24:12.036 25305-25430/org.tensorflow.demo W/LegacyRequestMapper: convertRequestMetadata - control.awbRegions setting is not supported, ignoring value
+01-19 18:24:12.036 25305-25430/org.tensorflow.demo W/LegacyRequestMapper: Only received metering rectangles with weight 0.
+01-19 18:24:12.036 25305-25430/org.tensorflow.demo W/LegacyRequestMapper: Only received metering rectangles with weight 0.
+01-19 18:24:12.596 25305-25438/org.tensorflow.demo I/CameraDeviceState: Legacy camera service transitioning to state CAPTURING
+01-19 18:24:12.674 25305-25325/org.tensorflow.demo D/tensorflow: CameraActivity: Initializing buffer 0 at size 307200
+01-19 18:24:12.675 25305-25325/org.tensorflow.demo D/tensorflow: CameraActivity: Initializing buffer 1 at size 153599
+01-19 18:24:12.675 25305-25325/org.tensorflow.demo D/tensorflow: CameraActivity: Initializing buffer 2 at size 153599
+01-19 18:24:27.710 25305-25305/org.tensorflow.demo I/RequestQueue: Repeating capture request cancelled.
+01-19 18:24:27.800 25305-25437/org.tensorflow.demo W/MessageQueue: Handler (android.graphics.SurfaceTexture$1) {e2c0bd2} sending message to a Handler on a dead thread
+                                                                   java.lang.IllegalStateException: Handler (android.graphics.SurfaceTexture$1) {e2c0bd2} sending message to a Handler on a dead thread
+                                                                       at android.os.MessageQueue.enqueueMessage(MessageQueue.java:543)
+                                                                       at android.os.Handler.enqueueMessage(Handler.java:631)
+                                                                       at android.os.Handler.sendMessageAtTime(Handler.java:600)
+                                                                       at android.os.Handler.sendMessageDelayed(Handler.java:570)
+                                                                       at android.os.Handler.sendEmptyMessageDelayed(Handler.java:534)
+                                                                       at android.os.Handler.sendEmptyMessage(Handler.java:519)
+                                                                       at android.graphics.SurfaceTexture.postEventFromNative(SurfaceTexture.java:376)
+01-19 18:24:27.800 25305-25321/org.tensorflow.demo E/BufferQueueProducer: [SurfaceTexture-1-25305-1] dequeueBuffer: BufferQueue has been abandoned
+01-19 18:24:27.914 25305-25320/org.tensorflow.demo E/BufferQueueProducer: [SurfaceTexture-1-25305-1] cancelBuffer: BufferQueue has been abandoned
+01-19 18:24:27.914 25305-25562/org.tensorflow.demo E/BufferQueueProducer: [SurfaceTexture-1-25305-1] cancelBuffer: BufferQueue has been abandoned
+01-19 18:24:27.914 25305-25437/org.tensorflow.demo E/BufferQueueProducer: [SurfaceTexture-1-25305-1] cancelBuffer: BufferQueue has been abandoned
+01-19 18:24:27.915 25305-25321/org.tensorflow.demo E/BufferQueueProducer: [SurfaceTexture-1-25305-1] cancelBuffer: BufferQueue has been abandoned
+01-19 18:24:27.915 25305-25320/org.tensorflow.demo E/BufferQueueProducer: [SurfaceTexture-1-25305-1] cancelBuffer: BufferQueue has been abandoned
+01-19 18:24:27.916 25305-25562/org.tensorflow.demo E/BufferQueueProducer: [SurfaceTexture-1-25305-1] cancelBuffer: BufferQueue has been abandoned
+01-19 18:24:27.916 25305-25437/org.tensorflow.demo E/BufferQueueProducer: [SurfaceTexture-1-25305-1] cancelBuffer: BufferQueue has been abandoned
+01-19 18:24:27.916 25305-25321/org.tensorflow.demo E/BufferQueueProducer: [SurfaceTexture-1-25305-1] cancelBuffer: BufferQueue has been abandoned
+01-19 18:24:28.000 25305-25305/org.tensorflow.demo D/tensorflow: CameraActivity: onPause org.tensorflow.demo.ClassifierActivity@d318b4b
+01-19 18:24:28.001 25305-25305/org.tensorflow.demo D/tensorflow: CameraActivity: Requesting finish
+01-19 18:24:28.881 25305-25305/org.tensorflow.demo D/tensorflow: CameraActivity: onStop org.tensorflow.demo.ClassifierActivity@d318b4b
+01-19 18:24:28.886 25305-25305/org.tensorflow.demo D/tensorflow: CameraActivity: onDestroy org.tensorflow.demo.ClassifierActivity@d318b4b
+01-19 18:24:28.890 25305-25326/org.tensorflow.demo E/Surface: getSlotFromBufferLocked: unknown buffer: 0xb9782b00
+

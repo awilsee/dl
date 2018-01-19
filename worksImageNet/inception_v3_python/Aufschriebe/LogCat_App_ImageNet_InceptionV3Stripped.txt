@@ -1,0 +1,56 @@
+01-19 18:38:56.754 28680-28680/org.tensorflow.demo D/tensorflow: CameraActivity: onCreate org.tensorflow.demo.ClassifierActivity@a88fb0b
+01-19 18:38:56.765 28680-28680/org.tensorflow.demo D/tensorflow: CameraActivity: onStart org.tensorflow.demo.ClassifierActivity@a88fb0b
+01-19 18:38:56.766 28680-28680/org.tensorflow.demo D/tensorflow: CameraActivity: onResume org.tensorflow.demo.ClassifierActivity@a88fb0b
+01-19 18:38:56.840 28680-28680/org.tensorflow.demo I/tensorflow: CameraConnectionFragment: Desired size: 640x480, min size: 480x480
+01-19 18:38:56.840 28680-28680/org.tensorflow.demo I/tensorflow: CameraConnectionFragment: Valid preview sizes: [1440x1080, 1280x960, 1280x720, 960x720, 864x480, 720x480, 640x480]
+01-19 18:38:56.840 28680-28680/org.tensorflow.demo I/tensorflow: CameraConnectionFragment: Rejected preview sizes: [768x432, 320x240, 176x144]
+01-19 18:38:56.840 28680-28680/org.tensorflow.demo I/tensorflow: CameraConnectionFragment: Exact size match found.
+01-19 18:38:56.846 28680-28680/org.tensorflow.demo I/TensorFlowImageClassifier: Reading labels from: retrained_dog_labels_inception_v3.txt
+01-19 18:38:56.847 28680-28680/org.tensorflow.demo I/TensorFlowInferenceInterface: Checking to see if TensorFlow native methods are already loaded
+01-19 18:38:56.847 28680-28680/org.tensorflow.demo I/TensorFlowInferenceInterface: TensorFlow native methods already loaded
+01-19 18:38:58.349 28680-28680/org.tensorflow.demo I/TensorFlowInferenceInterface: Model load took 474ms, TensorFlow version: 1.5.0-rc1
+01-19 18:38:58.358 28680-28680/org.tensorflow.demo I/TensorFlowInferenceInterface: Successfully loaded model from 'file:///android_asset/stripped_retrained_dog_graph_inception_v3.pb'
+01-19 18:38:58.358 28680-28680/org.tensorflow.demo I/TensorFlowImageClassifier: Read 120 labels, output layer size is 120
+01-19 18:38:58.359 28680-28680/org.tensorflow.demo I/tensorflow: ClassifierActivity: Sensor orientation: 90, Screen orientation: 0
+01-19 18:38:58.359 28680-28680/org.tensorflow.demo I/tensorflow: ClassifierActivity: Initializing at size 640x480
+01-19 18:38:58.364 28680-28680/org.tensorflow.demo I/CameraManager: Using legacy camera HAL.
+01-19 18:38:58.606 28680-29843/org.tensorflow.demo I/tensorflow: CameraConnectionFragment: Opening camera preview: 640x480
+01-19 18:38:58.628 28680-28680/org.tensorflow.demo I/Choreographer: Skipped 107 frames!  The application may be doing too much work on its main thread.
+01-19 18:38:58.670 28680-29843/org.tensorflow.demo I/CameraDeviceState: Legacy camera service transitioning to state CONFIGURING
+01-19 18:38:58.670 28680-29888/org.tensorflow.demo I/RequestThread-0: Configure outputs: 2 surfaces configured.
+01-19 18:38:58.670 28680-29888/org.tensorflow.demo D/Camera: app passed NULL surface
+01-19 18:38:58.700 28680-29843/org.tensorflow.demo I/CameraDeviceState: Legacy camera service transitioning to state IDLE
+01-19 18:38:58.701 28680-29843/org.tensorflow.demo I/RequestQueue: Repeating capture request set.
+01-19 18:38:58.704 28680-29888/org.tensorflow.demo W/LegacyRequestMapper: convertRequestMetadata - control.awbRegions setting is not supported, ignoring value
+01-19 18:38:58.704 28680-29888/org.tensorflow.demo W/LegacyRequestMapper: Only received metering rectangles with weight 0.
+01-19 18:38:58.704 28680-29888/org.tensorflow.demo W/LegacyRequestMapper: Only received metering rectangles with weight 0.
+01-19 18:38:59.213 28680-29889/org.tensorflow.demo I/CameraDeviceState: Legacy camera service transitioning to state CAPTURING
+01-19 18:38:59.249 28680-29843/org.tensorflow.demo D/tensorflow: CameraActivity: Initializing buffer 0 at size 307200
+01-19 18:38:59.253 28680-29843/org.tensorflow.demo D/tensorflow: CameraActivity: Initializing buffer 1 at size 153599
+01-19 18:38:59.254 28680-29843/org.tensorflow.demo D/tensorflow: CameraActivity: Initializing buffer 2 at size 153599
+01-19 18:39:27.583 28680-28690/org.tensorflow.demo I/art: Background sticky concurrent mark sweep GC freed 119120(3MB) AllocSpace objects, 14(9MB) LOS objects, 35% free, 23MB/36MB, paused 97.753ms total 131.758ms
+01-19 18:39:29.066 28680-28680/org.tensorflow.demo I/RequestQueue: Repeating capture request cancelled.
+01-19 18:39:29.144 28680-29598/org.tensorflow.demo W/MessageQueue: Handler (android.graphics.SurfaceTexture$1) {b15d073} sending message to a Handler on a dead thread
+                                                                   java.lang.IllegalStateException: Handler (android.graphics.SurfaceTexture$1) {b15d073} sending message to a Handler on a dead thread
+                                                                       at android.os.MessageQueue.enqueueMessage(MessageQueue.java:543)
+                                                                       at android.os.Handler.enqueueMessage(Handler.java:631)
+                                                                       at android.os.Handler.sendMessageAtTime(Handler.java:600)
+                                                                       at android.os.Handler.sendMessageDelayed(Handler.java:570)
+                                                                       at android.os.Handler.sendEmptyMessageDelayed(Handler.java:534)
+                                                                       at android.os.Handler.sendEmptyMessage(Handler.java:519)
+                                                                       at android.graphics.SurfaceTexture.postEventFromNative(SurfaceTexture.java:376)
+01-19 18:39:29.280 28680-28937/org.tensorflow.demo E/BufferQueueProducer: [SurfaceTexture-1-28680-5] cancelBuffer: BufferQueue has been abandoned
+01-19 18:39:29.281 28680-28691/org.tensorflow.demo E/BufferQueueProducer: [SurfaceTexture-1-28680-5] cancelBuffer: BufferQueue has been abandoned
+01-19 18:39:29.281 28680-28700/org.tensorflow.demo E/BufferQueueProducer: [SurfaceTexture-1-28680-5] cancelBuffer: BufferQueue has been abandoned
+01-19 18:39:29.281 28680-29598/org.tensorflow.demo E/BufferQueueProducer: [SurfaceTexture-1-28680-5] cancelBuffer: BufferQueue has been abandoned
+01-19 18:39:29.281 28680-28692/org.tensorflow.demo E/BufferQueueProducer: [SurfaceTexture-1-28680-5] cancelBuffer: BufferQueue has been abandoned
+01-19 18:39:29.282 28680-28937/org.tensorflow.demo E/BufferQueueProducer: [SurfaceTexture-1-28680-5] cancelBuffer: BufferQueue has been abandoned
+01-19 18:39:29.282 28680-28691/org.tensorflow.demo E/BufferQueueProducer: [SurfaceTexture-1-28680-5] cancelBuffer: BufferQueue has been abandoned
+01-19 18:39:29.282 28680-28700/org.tensorflow.demo E/BufferQueueProducer: [SurfaceTexture-1-28680-5] cancelBuffer: BufferQueue has been abandoned
+01-19 18:39:29.282 28680-29598/org.tensorflow.demo E/BufferQueueProducer: [SurfaceTexture-1-28680-5] cancelBuffer: BufferQueue has been abandoned
+01-19 18:39:29.397 28680-28680/org.tensorflow.demo D/tensorflow: CameraActivity: onPause org.tensorflow.demo.ClassifierActivity@a88fb0b
+01-19 18:39:30.035 28680-28680/org.tensorflow.demo I/Choreographer: Skipped 57 frames!  The application may be doing too much work on its main thread.
+01-19 18:39:30.040 28680-28680/org.tensorflow.demo D/tensorflow: CameraActivity: onStop org.tensorflow.demo.ClassifierActivity@a88fb0b
+01-19 18:39:30.051 28680-28680/org.tensorflow.demo D/tensorflow: CameraActivity: onDestroy org.tensorflow.demo.ClassifierActivity@a88fb0b
+01-19 18:39:30.056 28680-28695/org.tensorflow.demo E/Surface: getSlotFromBufferLocked: unknown buffer: 0xb96c5428
+
