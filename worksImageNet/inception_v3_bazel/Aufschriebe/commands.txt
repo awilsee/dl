@@ -1,0 +1,141 @@
+********** Inception with Bazel-build with ImageNet on Android ***********
+
+1) 
+InceptionV3
+export DOG_PATH=$HOME/dog_photos
+export RETRAIN_PATH=$HOME/MobileInceptionBazelRetrained
+export ARCHITECTURE=inception_v3
+export INPUT_SIZE=299
+export INPUT_LAYER=Mul
+
+2)
+bazel-bin/tensorflow/examples/image_retraining/retrain \
+  --bottleneck_dir=$RETRAIN_PATH/bottlenecks \
+  --how_many_training_steps=500 \
+  --model_dir=$RETRAIN_PATH/models/ \
+  --summaries_dir=$RETRAIN_PATH/training_dog_summaries_$ARCHITECTURE \
+  --output_graph=$RETRAIN_PATH/retrained_dog_graph_$ARCHITECTURE.pb \
+  --output_labels=$RETRAIN_PATH/retrained_dog_labels_$ARCHITECTURE.txt \
+  --architecture=$ARCHITECTURE \
+  --image_dir=$DOG_PATH
+
+3) 
+bazel-bin/tensorflow/examples/label_image/label_image \
+--graph=$RETRAIN_PATH/retrained_dog_graph_$ARCHITECTURE.pb \
+--labels=$RETRAIN_PATH/retrained_dog_labels_$ARCHITECTURE.txt \
+--output_layer=final_result --input_layer=$INPUT_LAYER \
+--image=$HOME/dl/label_image_pics/Affenpinscher_00001.jpg \
+--input_width=$INPUT_SIZE --input_height=$INPUT_SIZE
+
+
+bazel-bin/tensorflow/examples/label_image/label_image \
+--graph=$RETRAIN_PATH/retrained_dog_graph_$ARCHITECTURE.pb \
+--labels=$RETRAIN_PATH/retrained_dog_labels_$ARCHITECTURE.txt \
+--output_layer=final_result --input_layer=$INPUT_LAYER \
+--image=$HOME/dl/label_image_pics/n02085620_949.jpg \
+--input_width=$INPUT_SIZE --input_height=$INPUT_SIZE
+
+_____________
+
+4)
+python -m tensorflow.python.tools.optimize_for_inference \
+  --input=tf_files/retrained_mobilnet_1.0_244_graph.pb \
+  --output=tf_files/optimized_mobilnet_1.0_244_graph.pb \
+  --input_names="input" \
+  --output_names="final_result"
+
+5) 
+bazel-bin/tensorflow/examples/label_image/label_image \
+--graph=$RETRAIN_PATH/optimized_retrained_dog_graph_$ARCHITECTURE.pb \
+--labels=$RETRAIN_PATH/retrained_dog_labels_$ARCHITECTURE.txt \
+--output_layer=final_result --input_layer=$INPUT_LAYER \
+--image=$HOME/dl/label_image_pics/Affenpinscher_00001.jpg \
+--input_width=$INPUT_SIZE --input_height=$INPUT_SIZE
+
+
+bazel-bin/tensorflow/examples/label_image/label_image \
+--graph=$RETRAIN_PATH/optimized_retrained_dog_graph_$ARCHITECTURE.pb \
+--labels=$RETRAIN_PATH/retrained_dog_labels_$ARCHITECTURE.txt \
+--output_layer=final_result --input_layer=$INPUT_LAYER \
+--image=$HOME/dl/label_image_pics/n02085620_949.jpg \
+--input_width=$INPUT_SIZE --input_height=$INPUT_SIZE
+
+
+________________________________
+
+
+
+
+
+6)
+python -m scripts.quantize_graph \
+  --input=tf_files/optimized_mobilnet_1.0_244_graph.pb \
+  --output=tf_files/rounded_mobilnet_1.0_244_graph.pb \
+  --output_node_names=final_result \
+  --mode=weights_rounded
+
+7)
+python -m scripts.label_image \
+    --graph=tf_files/rounded_mobilnet_1.0_244_graph.pb  \
+    --image=/home/alice/Schreibtisch/dl/label_image_pics/Affenpinscher_00001.jpg
+
+python -m scripts.label_image \
+    --graph=tf_files/rounded_mobilnet_1.0_244_graph.pb  \
+    --image=/home/alice/Schreibtisch/dl/label_image_pics/n02085620_949.jpg
+
+
+Tensorboard:
+pkill -f "tensorboard"
+tensorboard --logdir tf_files/training_summaries &
+python -m scripts.graph_pb2tb tf_files/training_summaries/retrained \
+  tf_files/retrained_mobilnet_1.0_244_graph.pb 
+
+python -m scripts.graph_pb2tb tf_files/training_summaries/optimized \
+  tf_files/optimized_mobilnet_1.0_244_graph.pb
+
+Compressed rates:
+1) Retrained:
+gzip -c tf_files/retrained_mobilnet_1.0_244_graph.pb > tf_files/retrained_mobilnet_1.0_244_graph.pb.gz
+
+gzip -l tf_files/retrained_mobilnet_1.0_244_graph.pb.gz
+
+2) Optimized:
+gzip -c tf_files/optimized_mobilnet_1.0_244_graph.pb > tf_files/optimized_mobilnet_1.0_244_graph.pb.gz
+
+gzip -l tf_files/optimized_mobilnet_1.0_244_graph.pb.gz
+
+3)
+gzip -c tf_files/rounded_mobilnet_1.0_244_graph.pb > tf_files/rounded_mobilnet_1.0_244_graph.pb.gz
+
+gzip -l tf_files/rounded_mobilnet_1.0_244_graph.pb.gz
+
+old:
+
+https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/index.html
+
+bazel-bin/tensorflow/examples/image_retraining/retrain \
+  --bottleneck_dir=/home/alice/tensorflow_graphs_dog/bottlenecks \
+  --how_many_training_steps=500 \
+  --model_dir=/home/alice/tensorflow_graphs_dog/models/ \
+  --summaries_dir=/home/alice/tensorflow_graphs_dog/training_dog_summaries/mobilenet_1.0_224 \
+  --output_graph=/home/alice/tensorflow_graphs_dog/retrained_dog_graph.pb \
+  --output_labels=/home/alice/tensorflow_graphs_dog/retrained_dog_labels.txt \
+  --architecture=mobilenet_0.50_224 --image_dir=/home/alice/dog_photos
+
+
+bazel-bin/tensorflow/examples/label_image/label_image \
+--graph=/home/alice/tensorflow_graphs_dog/retrained_dog_graph.pb --labels=/home/alice/tensorflow_graphs_dog/retrained_dog_labels.txt \
+--output_layer=final_result --input_layer=input \
+--image=/home/alice/dog_photos/101.Maltese/Maltese_06730.jpg --input_width=224 --input_height=224
+
+bazel-bin/tensorflow/examples/label_image/label_image \
+--graph=/home/alice/tensorflow_graphs_dog/retrained_dog_graph.pb --labels=/home/alice/tensorflow_graphs_dog/retrained_dog_labels.txt \
+--output_layer=final_result --input_layer=input \
+--image="/home/alice/Schreibtisch/Rohdaten/Stanford Dogs Dataset/Images/n02085620-Chihuahua/n02085620_949.jpg" --input_width=224 --input_height=224
+
+
+python -m tensorflow.python.tools.optimize_for_inference \
+  --input=/home/alice/tensorflow_graphs_dog/retrained_dog_graph.pb \
+  --output=/home/alice/tensorflow_graphs_dog/optimized_dog_graph.pb \
+  --input_names="input" \
+  --output_names="final_result"
