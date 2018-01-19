@@ -1,0 +1,69 @@
+1) Retrained - 4000 training steps
+
+****** Affenpinscher ******
+2018-01-18 14:09:53.275386: I tensorflow/examples/label_image/main.cc:250] 001 affenpinscher (12): 0.956616
+2018-01-18 14:09:53.275413: I tensorflow/examples/label_image/main.cc:250] 038 brussels griffon (22): 0.0115011
+2018-01-18 14:09:53.275419: I tensorflow/examples/label_image/main.cc:250] 042 cairn terrier (100): 0.00321254
+2018-01-18 14:09:53.275424: I tensorflow/examples/label_image/main.cc:250] 100 lowchen (67): 0.00124461
+2018-01-18 14:09:53.275430: I tensorflow/examples/label_image/main.cc:250] 099 lhasa apso (52): 0.00115351
+
+
+****** Chihuauaaaaaaa *******
+2018-01-18 14:11:22.117325: I tensorflow/examples/label_image/main.cc:250] 048 chihuahua (31): 0.988588
+2018-01-18 14:11:22.117356: I tensorflow/examples/label_image/main.cc:250] 049 chinese crested (127): 0.00132458
+2018-01-18 14:11:22.117363: I tensorflow/examples/label_image/main.cc:250] 102 manchester terrier (9): 0.000777732
+2018-01-18 14:11:22.117374: I tensorflow/examples/label_image/main.cc:250] 110 norwegian lundehund (114): 0.00063726
+2018-01-18 14:11:22.117383: I tensorflow/examples/label_image/main.cc:250] 108 norwegian buhund (37): 0.000596926
+
+2) Opimized
+****** Affenpinscher ******
+Evaluation time (1-image): 0.810s
+
+001 affenpinscher 0.20339471
+038 brussels griffon 0.028857363
+042 cairn terrier 0.016947683
+099 lhasa apso 0.010555204
+
+****** Chihuauaaaaaaa *******
+Evaluation time (1-image): 0.798s
+
+048 chihuahua 0.14006928
+049 chinese crested 0.02276212
+115 papillon 0.019390116
+108 norwegian buhund 0.014994579
+091 japanese chin 0.014282358
+
+
+3) Rounded
+****** Affenpinscher ******
+Evaluation time (1-image): 0.805s
+
+001 affenpinscher 0.19272074
+038 brussels griffon 0.027161118
+042 cairn terrier 0.017729267
+099 lhasa apso 0.010647796
+049 chinese crested 0.00994656
+
+
+****** Chihuauaaaaaaa *******
+Evaluation time (1-image): 0.790s
+
+048 chihuahua 0.14103356
+049 chinese crested 0.022569627
+115 papillon 0.01973684
+091 japanese chin 0.0144158695
+108 norwegian buhund 0.013803802
+
+
+Compressed:
+1) Retrained
+compressed        uncompressed  ratio uncompressed_name
+           81970966            88507837   7.4% tf_files/retrained_inceptionV3_graph.pb
+
+2) Optimized
+compressed        uncompressed  ratio uncompressed_name
+           81840157            88224307   7.2% tf_files/optimized_inceptionV3_graph.pb
+
+3) Rounded
+compressed        uncompressed  ratio uncompressed_name
+           24148619            88226559  72.6% tf_files/rounded_inceptionV3_graph.pb
