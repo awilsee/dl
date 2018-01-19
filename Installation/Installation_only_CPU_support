@@ -1,0 +1,86 @@
+MyNote: You have to install CUDA Toolkit 8.0 and cuDNN 6.0. The version 9.1 currently doesn't work with Tensorflow. Additionally you should install all with Pyhton 3.5 because of a warning if working with 3.6.
+Nevertheless on my PC is version 3.6 installed and used.
+
+
+Installing anaconda:
+https://conda.io/docs/user-guide/install/linux.html#installing-on-linux
+- Download Anaconda Installer:
+  https://www.anaconda.com/download/#linux
+- run downloaded script and follow the prompts
+  Info: on promt: "Do you wish the installer to prepend the Anaconda3 install location
+to PATH in your /home/aw/.bashrc ? [yes|no]" you should type 'yes' and confirm
+Test with:
+conda list
+-> you should see a list with installed packages in environment
+
+installing Tensorflow:
+https://www.tensorflow.org/install/install_linux#InstallingAnaconda
+with tfBinaryURL with GPU support from 
+https://www.tensorflow.org/install/install_linux#the_url_of_the_tensorflow_python_package
+
+Verify Installation with test program
+- activate your container:
+    source activate tensorflow
+- invoke python shell:
+    python
+- enter lines:
+import tensorflow as tf
+hello = tf.constant('Hello, TensorFlow!')
+sess = tf.Session()
+print(sess.run(hello))
+- system should print:
+	Hello, TensorFlow!
+
+WATCH OUT: IMPORTANT:
+If you use python scripts which uses tensorflow, you have to activate the environment in each of your console before you can execute it!!!
+
+
+
+history_log:
+    1  df -h
+    2  git config --global alias.s status
+    3  git config --global user.name "Andreas Wilhelm"
+    4  git config --global user.email "awilsee@gmail.com"
+    5  cd Downloads/
+    6  ls
+    7  bash Anaconda3-5.0.1-Linux-x86_64.sh 
+    8  exit
+    9  sudo apt update
+   10  sudo apt upgrade
+   11  chmod +x UbuntuProgsInstall2.sh 
+   12  ./UbuntuProgsInstall2.sh 
+   13  sudo apt install texlive-full 
+   14  timedatectl set-local-rtc 
+   15  sudo apt install texmaker
+   16  git 
+   17  ssh-keygen 
+   18  cat /home/aw/.ssh/id_rsa.pub.
+   19  cat /home/aw/.ssh/id_rsa.pub
+   20  git clone git@github.com:awilsee/dl.git
+   21  git s
+   22  cd dl
+   23  git s
+   24  exit
+   25  conda list
+   26  conda create -n tensorflow python=3.6
+   27  source activate tensorflow
+   28  pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.4.1-cp36-cp36m-linux_x86_64.whl
+   29  python
+   30  source deactivate
+   31  git clone
+   32  git clone https://github.com/tensorflow/tensorflow.git
+   33  echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
+   34  sudo apt-get update && sudo apt-get install bazel
+   35  sudo apt-get upgrade bazel
+   36  sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
+   37  cd android-studio/bin/
+   38  ./studio.sh 
+   39  df -h
+   40  tensorboard --logdir=.
+   41  source activate tensorflow
+   42  deactivate
+   43  source deactivate
+   44  exit
+   45  history > install_history.txt
+
+
