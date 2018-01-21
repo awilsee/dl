@@ -1,0 +1,22 @@
+InceptionV3 vs MobileNet1.0
+Steps
+M: LR0.01 500 steps ziemlich gut, ab ca 800?! overfitted -> vgl mit Test accuracy
+I: LR0.01 500 steps eig zu wenig, -> 5000 schon gut -> vgl mit Test accuracy
+
+Learning rate
+M: LR0.1 ca 100 steps genug;
+   LR0.001 bissl zu wenig steps
+   -> best 0.01 passt gut -> vgl mit Test accuracy
+I: LR1 ca 200 steps genug;
+   LR0.01 label results eher mies
+   -> best 0.1 aber evtl no bisle potenzial-> vgl mit Test accuracy
+
+size
+retrained
+M: 17 MB
+I: 88 MB
+
+rounded stripped
+M: 1,6 MB
+I: 22 MB
+
