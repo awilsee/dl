@@ -1,0 +1,21 @@
+1) Retrained
+
+****** Affenpinscher ******
+Evaluation time (1-image): 0.149s
+
+001 affenpinscher 1.0
+038 brussels griffon 1.4473672e-17
+042 cairn terrier 3.79509e-18
+049 chinese crested 0.0
+035 boykin spaniel 0.0
+
+
+****** Chihuauaaaaaaa *******
+Evaluation time (1-image): 0.155s
+
+048 chihuahua 1.0
+014 basenji 3.5165874e-32
+049 chinese crested 2.933381e-32
+043 canaan dog 0.0
+047 chesapeake bay retriever 0.0
+
