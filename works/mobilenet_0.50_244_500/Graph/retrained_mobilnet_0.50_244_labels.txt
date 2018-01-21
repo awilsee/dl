@@ -1,0 +1,133 @@
+001 affenpinscher
+002 afghan hound
+003 airedale terrier
+004 akita
+005 alaskan malamute
+006 american eskimo dog
+007 american foxhound
+008 american staffordshire terrier
+009 american water spaniel
+010 anatolian shepherd dog
+011 australian cattle dog
+012 australian shepherd
+013 australian terrier
+014 basenji
+015 basset hound
+016 beagle
+017 bearded collie
+018 beauceron
+019 bedlington terrier
+020 belgian malinois
+021 belgian sheepdog
+022 belgian tervuren
+023 bernese mountain dog
+024 bichon frise
+025 black and tan coonhound
+026 black russian terrier
+027 bloodhound
+028 bluetick coonhound
+029 border collie
+030 border terrier
+031 borzoi
+032 boston terrier
+033 bouvier des flandres
+034 boxer
+035 boykin spaniel
+036 briard
+037 brittany
+038 brussels griffon
+039 bull terrier
+040 bulldog
+041 bullmastiff
+042 cairn terrier
+043 canaan dog
+044 cane corso
+045 cardigan welsh corgi
+046 cavalier king charles spaniel
+047 chesapeake bay retriever
+048 chihuahua
+049 chinese crested
+050 chinese shar pei
+051 chow chow
+052 clumber spaniel
+053 cocker spaniel
+054 collie
+055 curly coated retriever
+056 dachshund
+057 dalmatian
+058 dandie dinmont terrier
+059 doberman pinscher
+060 dogue de bordeaux
+061 english cocker spaniel
+062 english setter
+063 english springer spaniel
+064 english toy spaniel
+065 entlebucher mountain dog
+066 field spaniel
+067 finnish spitz
+068 flat coated retriever
+069 french bulldog
+070 german pinscher
+071 german shepherd dog
+072 german shorthaired pointer
+073 german wirehaired pointer
+074 giant schnauzer
+075 glen of imaal terrier
+076 golden retriever
+077 gordon setter
+078 great dane
+079 great pyrenees
+080 greater swiss mountain dog
+081 greyhound
+082 havanese
+083 ibizan hound
+084 icelandic sheepdog
+085 irish red and white setter
+086 irish setter
+087 irish terrier
+088 irish water spaniel
+089 irish wolfhound
+090 italian greyhound
+091 japanese chin
+092 keeshond
+093 kerry blue terrier
+094 komondor
+095 kuvasz
+096 labrador retriever
+097 lakeland terrier
+098 leonberger
+099 lhasa apso
+100 lowchen
+101 maltese
+102 manchester terrier
+103 mastiff
+104 miniature schnauzer
+105 neapolitan mastiff
+106 newfoundland
+107 norfolk terrier
+108 norwegian buhund
+109 norwegian elkhound
+110 norwegian lundehund
+111 norwich terrier
+112 nova scotia duck tolling retriever
+113 old english sheepdog
+114 otterhound
+115 papillon
+116 parson russell terrier
+117 pekingese
+118 pembroke welsh corgi
+119 petit basset griffon vendeen
+120 pharaoh hound
+121 plott
+122 pointer
+123 pomeranian
+124 poodle
+125 portuguese water dog
+126 saint bernard
+127 silky terrier
+128 smooth fox terrier
+129 tibetan mastiff
+130 welsh springer spaniel
+131 wirehaired pointing griffon
+132 xoloitzcuintli
+133 yorkshire terrier

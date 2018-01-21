@@ -1,0 +1,21 @@
+1) Retrained
+
+*************** Affenpinscher **********
+Evaluation time (1-image): 0.273s
+
+026 black russian terrier 0.019207548
+001 affenpinscher 0.019003514
+033 bouvier des flandres 0.01756428
+074 giant schnauzer 0.017463416
+104 miniature schnauzer 0.016911099
+
+************** Chiahuaha ***************
+Evaluation time (1-image): 0.274s
+
+048 chihuahua 0.020135343
+014 basenji 0.016426107
+032 boston terrier 0.016224045
+069 french bulldog 0.016135836
+108 norwegian buhund 0.014743973
+
+
