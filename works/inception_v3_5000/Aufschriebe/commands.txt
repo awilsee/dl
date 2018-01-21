@@ -12,9 +12,9 @@ LEARNING_RATE=0.01
 
 2)
 python -m scripts.retrain \
-  --bottleneck_dir=${RETRAIN_PATH}/bottlenecks \
+  --bottleneck_dir=${RETRAIN_PATH}/bottlenecks_inception_v3 \
   --how_many_training_steps=${TRAINING_STEPS} \
-  --model_dir=${RETRAIN_PATH}/models/ \
+  --model_dir=${RETRAIN_PATH}/models_inception_v3/ \
   --summaries_dir=${RETRAIN_PATH}/training_summaries/${ARCHITECTURE}_${TRAINING_STEPS}/${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE} \
   --output_graph=${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/retrained_dog_graph_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.pb \
   --output_labels=${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/retrained_dog_labels_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.txt \
