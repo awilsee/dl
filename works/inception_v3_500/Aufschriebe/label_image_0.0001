@@ -1,0 +1,20 @@
+1) Retrained
+
+****** Affenpinscher ******
+Evaluation time (1-image): 0.348s
+
+164 english toy spaniel 0.007824174
+082 havanese 0.0078032464
+078 great dane 0.0077639758
+017 bearded collie 0.007760717
+040 bulldog 0.0077463994
+
+
+****** Chihuauaaaaaaa *******
+Evaluation time (1-image): 0.346s
+
+164 english toy spaniel 0.007932917
+108 norwegian buhund 0.007828674
+056 dachshund 0.00780852
+109 norwegian elkhound 0.0077830143
+131 wirehaired pointing griffon 0.007781898

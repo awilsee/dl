@@ -1,0 +1,76 @@
+1) Retrained - 4000 training steps
+
+****** Affenpinscher ******
+Evaluation time (1-image): 0.342s
+
+001 affenpinscher 0.97379136
+038 brussels griffon 0.0067910245
+042 cairn terrier 0.0022775955
+100 lowchen 0.0007410831
+099 lhasa apso 0.0006862558
+
+****** Chihuauaaaaaaa *******
+Evaluation time (1-image): 0.348s
+
+048 chihuahua 0.994166
+049 chinese crested 0.0008064653
+110 norwegian lundehund 0.00042598203
+102 manchester terrier 0.000309279
+115 papillon 0.00025392728
+
+2) stripped
+****** Affenpinscher ******
+Evaluation time (1-image): 0.333s
+
+001 affenpinscher 0.97379136
+038 brussels griffon 0.0067910245
+042 cairn terrier 0.0022775955
+100 lowchen 0.0007410831
+099 lhasa apso 0.0006862558
+
+
+****** Chihuauaaaaaaa *******
+Evaluation time (1-image): 0.341s
+
+048 chihuahua 0.994166
+049 chinese crested 0.0008064653
+110 norwegian lundehund 0.00042598203
+102 manchester terrier 0.000309279
+115 papillon 0.00025392728
+
+
+3) Rounded stripped
+****** Affenpinscher ******
+Evaluation time (1-image): 0.329s
+
+001 affenpinscher 0.97715193
+038 brussels griffon 0.0064863903
+042 cairn terrier 0.0020337566
+100 lowchen 0.00072264986
+099 lhasa apso 0.0006868906
+
+
+****** Chihuauaaaaaaa *******
+Evaluation time (1-image): 0.331s
+
+048 chihuahua 0.9925971
+049 chinese crested 0.0008802854
+110 norwegian lundehund 0.0005104647
+102 manchester terrier 0.00037212114
+115 papillon 0.0003102231
+
+
+Compressed:
+1) Retrained
+         compressed        uncompressed  ratio uncompressed_name
+           81970168            88505675   7.4% /home/aw/MobileInceptionRetrained/retrained_dog_graph_inception_v3.pb
+
+2) stripped
+         compressed        uncompressed  ratio uncompressed_name
+           81967152            88502250   7.4% /home/aw/MobileInceptionRetrained/stripped_retrained_dog_graph_inception_v3.pb
+
+3) Rounded stripped
+         compressed        uncompressed  ratio uncompressed_name
+           22701206            88502265  74.3% /home/aw/MobileInceptionRetrained/rounded_stripped_retrained_dog_graph_inception_v3.pb
+
+
