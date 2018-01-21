@@ -1,0 +1,22 @@
+1) Retrained
+
+**** Affenpinscher *****
+Evaluation time (1-image): 0.274s
+
+001 affenpinscher 0.9316001
+074 giant schnauzer 0.021968303
+042 cairn terrier 0.021962646
+038 brussels griffon 0.016541984
+033 bouvier des flandres 0.0030117922
+
+*** Chihuaha *******
+
+Evaluation time (1-image): 0.274s
+
+048 chihuahua 0.9717946
+069 french bulldog 0.02419409
+110 norwegian lundehund 0.0012259933
+108 norwegian buhund 0.0007349141
+123 pomeranian 0.0007041355
+
+

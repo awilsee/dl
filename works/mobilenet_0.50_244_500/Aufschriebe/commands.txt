@@ -2,9 +2,9 @@
 
 1) 
 IMAGE_SIZE=224
-VERSION=1.0
+VERSION=0.5
 ARCHITECTURE=mobilenet_${VERSION}_${IMAGE_SIZE}
-training_steps=500
+training_steps=5000
 learning_rate=1
 
 2)
@@ -22,10 +22,12 @@ python -m scripts.retrain \
 3) 
 python -m scripts.label_image \
     --graph=tf_files/retrained_${ARCHITECTURE}_${training_steps}_${learning_rate}.pb  \
+    --labels=tf_files/retrained_${ARCHITECTURE}_${training_steps}_${learning_rate}.txt \
     --image=/home/alice/Schreibtisch/dl/label_image_pics/Affenpinscher_00001.jpg
 
 python -m scripts.label_image \
     --graph=tf_files/retrained_${ARCHITECTURE}_${training_steps}_${learning_rate}.pb  \
+    --labels=tf_files/retrained_${ARCHITECTURE}_${training_steps}_${learning_rate}.txt \
     --image=/home/alice/Schreibtisch/dl/label_image_pics/n02085620_949.jpg
 
 4)

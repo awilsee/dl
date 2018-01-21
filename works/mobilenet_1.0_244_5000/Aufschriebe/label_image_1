@@ -1,0 +1,21 @@
+1) Retrained
+
+**** Affenpinscher *****
+Evaluation time (1-image): 0.275s
+
+001 affenpinscher 1.0
+049 chinese crested 0.0
+035 boykin spaniel 0.0
+036 briard 0.0
+037 brittany 0.0
+
+*** Chihuaha *******
+Evaluation time (1-image): 0.283s
+
+048 chihuahua 1.0
+069 french bulldog 2.0900186e-34
+133 yorkshire terrier 0.0
+042 cairn terrier 0.0
+047 chesapeake bay retriever 0.0
+
+

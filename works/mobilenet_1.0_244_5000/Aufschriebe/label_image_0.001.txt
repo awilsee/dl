@@ -1,0 +1,20 @@
+1) Retrained
+
+**** Affenpinscher *****
+Evaluation time (1-image): 0.274s
+
+001 affenpinscher 0.54716307
+074 giant schnauzer 0.16660371
+038 brussels griffon 0.09428599
+042 cairn terrier 0.06993382
+104 miniature schnauzer 0.041138794
+
+*** Chihuaha *******
+Evaluation time (1-image): 0.274s
+
+048 chihuahua 0.8939673
+069 french bulldog 0.055448562
+110 norwegian lundehund 0.012515795
+108 norwegian buhund 0.009617935
+014 basenji 0.0065049375
+alice@alice:~/Schreibtisch
