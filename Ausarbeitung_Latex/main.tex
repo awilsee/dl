@@ -43,6 +43,7 @@
 \Studiengruppe{IG}
 \Semester{WS 17/18}
 \Betreuer{Lorenzo Servadei}
+\selectlanguage{english}
 \Datum{\today} %falls gewünscht auf Versuchsdatum ändern, z.B. 21. November 2012
 
 \PDFStartpage{1} %Seite die im Reader beim Start geöffnet wird
@@ -115,83 +116,17 @@
 %            Thesis Reworded
 %        Recommendations
 
-\section{Introduction}
-	\subsection{Deep learning}
-		- what is deep learning -> purpose, usage, current research projects, state of the arts
-	\subsection{Terms of Referencee}
-		- dog breed analyzer -> goals, purpose, \\
-		-> high perfomance computing but native android app
-		
+\input{01introduction.tex}
 
-\section{Methodological fundamentals}
-	\subsection{Common Frameworks for Deep Learning Applications}
-		- some examples, tensorflow (tensorflow slim -> High  level api for easier use, tensorflow lite), Caffe, Keras, Torch, PyTorch, ... \\
-		https://datahub.packtpub.com/deep-learning/top-10-deep-learning-frameworks/ \\
-	\subsection{Common Models in Deep Learning Applications}
-		- short differences between different architecuteres (?, CNN, RNN) \\
- 		- AlexNet, Mobilenet, Inception, VGG, -> short decsription, useCases, important things, differences \\
-	\subsection{Qualified Models for mobile App Integration}
- 		- Mobilenet, Inception etc -> short decsription, useCases, important things, differences \\
-	\subsection{Key requirements for an appropriate dataset}
-		- generall why you need a huge dataset -> different backgrounds \\
-		- self trained needs a huge dataset, a lot of computing performance and time \\
-		-> so use pre trained, if small dataset. \\
-		-> pretrained used millions of pictures (e.g. ImageNet)
+\input{02methodology.tex}
 
-\section{Concept}
-	\subsection{Frameworks}
-	- tensorflow -> why	
-	\subsection{Model based Architectures}
-	 - general architectures of models -> Mobilenet, Inception
-	\subsection{Application based Architecture}
+\input{03concept.tex}
 
-\section{Realisation}
-	\subsection{dataset}
-	\subsection{hardware environment}
-		used CPU, GPU -> NVIDIA, handys
-	\subsection{software environment}
-	- Bazel, Java, Android Studio, Python, Operating System \\
- 	- Android system
-	\subsection{installation of software}
- 		- software environment
-			\subsubsection{Tensorflow based on Python}
-			\subsubsection{Tensorflow based on Bazel}
-				- e.g. Workspace changes for Android SDK, msse4.2
-			\subsubsection{Installing Android Studio and its Delevopment Kit}
-				- also possible with bazel but easier Android studio (needs correct versions of sdk, ndk) \\
-				- SDK, NDK \\
-				- IMPORTANT: tf versions updaten (same as trained)
+\input{04realization.tex}
 
-	\subsection{building the models}
-	-> evtl extra subsubsection: \\
-		- execution methods -> Bazel and Python (incompatible versions) \\
-		- Mobilnet -> steps, optimierung \\
-		- Inception -> steps, optimierung \\
-		- time related differences of execution  \\
-		  -> time CPUs/GPU
+\input{05evaluation.tex}
 
-	\subsection{Output Tests and Validation}
-	 	- test pictures and if it works -> label image \\
-	 	- validation script?!
-
-	\subsection{Implementation of an native Android App}
-		- list all necessary things to do (e.g. tensorflow version, Interpreter -> load Model)
-
-	\subsection{Deployment and Validation}
-
-\section{Evaluation}
-- prio von nierdig zu hoch \\
-- regarding implementation time \\
-- regarding performance \\
-- regarding quality in accuracy \\
-- handy perfomance? \\
-
-\section{Conclusion}
-- tutorials not complete, different \\
-- which model is better \\
-- prospects, improvements, Recommendations \\
-
-
+\input{06conclusion.tex}
 
 %%HIER ENDET DIE ARBEIT! DER REST IST KOMMENTAR MIT EIN PAAR PRAKTISCHEN FORMATIERUNGEN!!
 \end{document}
