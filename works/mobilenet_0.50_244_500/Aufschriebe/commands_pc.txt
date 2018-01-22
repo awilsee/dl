@@ -1,20 +1,23 @@
-********** InceptionV3 with own Dog Photos on Android ***********
-used Version: inception-2015-12-05.tgz
+********** MobileNet with own Dog Photos on Android ***********
+used Version: mobilenet_v1_0.50_224_frozen
 
 1) 
 DOG_PATH=${HOME}/dog_photos
-RETRAIN_PATH=${HOME}/MobileInceptionRetrained
-ARCHITECTURE=inception_v3
-INPUT_SIZE=299
-INPUT_LAYER=Mul
-TRAINING_STEPS=10000
+RETRAIN_PATH=${HOME}/MobileMobileNetRetrained
+VERSION=0.50
+INPUT_SIZE=224
+ARCHITECTURE=mobilenet_${VERSION}_${INPUT_SIZE}
+INPUT_LAYER=input
+TRAINING_STEPS=500
 LEARNING_RATE=0.01
+
+mkdir -p ${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}
 
 2)
 python -m scripts.retrain \
-  --bottleneck_dir=${RETRAIN_PATH}/bottlenecks \
+  --bottleneck_dir=${RETRAIN_PATH}/bottlenecks_${ARCHITECTURE} \
   --how_many_training_steps=${TRAINING_STEPS} \
-  --model_dir=${RETRAIN_PATH}/models/ \
+  --model_dir=${RETRAIN_PATH}/models_${ARCHITECTURE}/ \
   --summaries_dir=${RETRAIN_PATH}/training_summaries/${ARCHITECTURE}_${TRAINING_STEPS}/${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE} \
   --output_graph=${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/retrained_dog_graph_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.pb \
   --output_labels=${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/retrained_dog_labels_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.txt \

@@ -1,0 +1,19 @@
+1) Retrained
+
+****** Affenpinscher ******
+Evaluation time (1-image): 0.358s
+
+001 affenpinscher 0.9999865
+042 cairn terrier 8.230352e-06
+038 brussels griffon 3.5378187e-06
+100 lowchen 3.257133e-07
+035 boykin spaniel 1.7647778e-07
+
+****** Chihuauaaaaaaa *******
+Evaluation time (1-image): 0.350s
+
+048 chihuahua 1.0
+091 japanese chin 9.302906e-09
+049 chinese crested 8.56648e-09
+110 norwegian lundehund 8.424344e-09
+069 french bulldog 8.168877e-09

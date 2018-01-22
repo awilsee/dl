@@ -1,0 +1,103 @@
+********** MobileNet with own Dog Photos on Android ***********
+used Version: mobilenet_v1_1.0_224_frozen
+
+1) 
+DOG_PATH=${HOME}/dog_photos
+RETRAIN_PATH=${HOME}/MobileMobileNetRetrained
+VERSION=1.0
+INPUT_SIZE=224
+ARCHITECTURE=mobilenet_${VERSION}_${INPUT_SIZE}
+INPUT_LAYER=input
+TRAINING_STEPS=500
+LEARNING_RATE=0.01
+
+mkdir -p ${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}
+
+2)
+python -m scripts.retrain \
+  --bottleneck_dir=${RETRAIN_PATH}/bottlenecks_${ARCHITECTURE} \
+  --how_many_training_steps=${TRAINING_STEPS} \
+  --model_dir=${RETRAIN_PATH}/models_${ARCHITECTURE}/ \
+  --summaries_dir=${RETRAIN_PATH}/training_summaries/${ARCHITECTURE}_${TRAINING_STEPS}/${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE} \
+  --output_graph=${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/retrained_dog_graph_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.pb \
+  --output_labels=${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/retrained_dog_labels_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.txt \
+  --architecture=${ARCHITECTURE} \
+  --image_dir=${DOG_PATH} \
+  --learning_rate=${LEARNING_RATE}
+
+3) 
+python -m scripts.label_image \
+--graph=${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/retrained_dog_graph_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.pb \
+--labels=${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/retrained_dog_labels_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.txt \
+--output_layer=final_result --input_layer=${INPUT_LAYER} \
+--image=${HOME}/dl/label_image_pics/Affenpinscher_00001.jpg \
+--input_width=${INPUT_SIZE} --input_height=${INPUT_SIZE}
+
+python -m scripts.label_image \
+--graph=${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/retrained_dog_graph_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.pb \
+--labels=${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/retrained_dog_labels_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.txt \
+--output_layer=final_result --input_layer=${INPUT_LAYER} \
+--image=${HOME}/dl/label_image_pics/n02085620_949.jpg \
+--input_width=${INPUT_SIZE} --input_height=${INPUT_SIZE}
+
+4)
+python -m tensorflow.python.tools.strip_unused \
+  --input_graph=${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/retrained_dog_graph_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.pb \
+  --output_graph=${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/stripped_retrained_dog_graph_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.pb \
+  --input_node_names=${INPUT_LAYER} \
+  --output_node_names="final_result" \
+  --input_binary=true
+
+5)
+python -m scripts.quantize_graph \
+  --input=${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/stripped_retrained_dog_graph_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.pb \
+  --output=${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/rounded_stripped_retrained_dog_graph_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.pb \
+  --output_node_names=final_result \
+  --mode=weights_rounded
+
+6)
+python -m scripts.label_image \
+--graph=${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/rounded_stripped_retrained_dog_graph_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.pb \
+--labels=${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/retrained_dog_labels_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.txt \
+--output_layer=final_result --input_layer=${INPUT_LAYER} \
+--image=${HOME}/dl/label_image_pics/Affenpinscher_00001.jpg \
+--input_width=${INPUT_SIZE} --input_height=${INPUT_SIZE}
+
+python -m scripts.label_image \
+--graph=${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/rounded_stripped_retrained_dog_graph_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.pb \
+--labels=${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/retrained_dog_labels_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.txt \
+--output_layer=final_result --input_layer=${INPUT_LAYER} \
+--image=${HOME}/dl/label_image_pics/n02085620_949.jpg \
+--input_width=${INPUT_SIZE} --input_height=${INPUT_SIZE}
+
+
+
+Tensorboard:
+pkill -f "tensorboard"
+tensorboard --logdir ${RETRAIN_PATH}/training_summaries/${ARCHITECTURE}_${TRAINING_STEPS}/ &
+python -m scripts.graph_pb2tb ${RETRAIN_PATH}/training_summaries/${ARCHITECTURE}_${TRAINING_STEPS}/${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}/retrained \
+  ${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/retrained_dog_graph_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.pb 
+
+python -m scripts.graph_pb2tb ${RETRAIN_PATH}/training_summaries/${ARCHITECTURE}_${TRAINING_STEPS}/${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}/stripped \
+  ${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/stripped_retrained_dog_graph_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.pb
+
+python -m scripts.graph_pb2tb ${RETRAIN_PATH}/training_summaries/${ARCHITECTURE}_${TRAINING_STEPS}/${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}/rounded_stripped \
+  ${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/rounded_stripped_retrained_dog_graph_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.pb
+
+
+Compressed rates:
+1) Retrained:
+gzip -c ${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/retrained_dog_graph_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.pb > ${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/retrained_dog_graph_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.pb.gz
+
+gzip -l ${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/retrained_dog_graph_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.pb.gz
+
+2) stripped:
+gzip -c ${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/stripped_retrained_dog_graph_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.pb > ${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/stripped_retrained_dog_graph_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.pb.gz
+
+gzip -l ${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/stripped_retrained_dog_graph_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.pb.gz
+
+3) rounded_stripped
+gzip -c ${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/rounded_stripped_retrained_dog_graph_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.pb > ${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/rounded_stripped_retrained_dog_graph_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.pb.gz
+
+gzip -l ${RETRAIN_PATH}/graphs/${ARCHITECTURE}_${TRAINING_STEPS}/rounded_stripped_retrained_dog_graph_${ARCHITECTURE}_${TRAINING_STEPS}_${LEARNING_RATE}.pb.gz
+
