@@ -1009,6 +1009,7 @@ def main(_):
         model_info['input_depth'], model_info['input_mean'],
         model_info['input_std'])
 
+    bottleneck_time = 0.0
     if do_distort_images:
       # We will be applying distortions, so setup the operations we'll need.
       (distorted_jpeg_data_tensor,
@@ -1020,10 +1021,14 @@ def main(_):
     else:
       # We'll make sure we've calculated the 'bottleneck' image summaries and
       # cached them on disk.
+
+      bottle_start = time.time()
       cache_bottlenecks(sess, image_lists, FLAGS.image_dir,
                         FLAGS.bottleneck_dir, jpeg_data_tensor,
                         decoded_image_tensor, resized_image_tensor,
                         bottleneck_tensor, FLAGS.architecture)
+      bottle_end = time.time()
+      bottleneck_time = bottle_end - bottle_start
 
     # Add the new layer that we'll be training.
     (train_step, cross_entropy, bottleneck_input, ground_truth_input,
@@ -1146,8 +1151,11 @@ def main(_):
     with gfile.FastGFile(FLAGS.output_labels, 'w') as f:
       f.write('\n'.join(image_lists.keys()) + '\n')
     
+    print('\nbottleneck time: {:.5f}s\n'.format(bottleneck_time))
+
     print('\nEvaluation training time: {:.5f}s\n'.format(training_time))
     print('\nEvaluation total time: {:.5f}s\n'.format(total_end-total_start))
+
 
 
 if __name__ == '__main__':
