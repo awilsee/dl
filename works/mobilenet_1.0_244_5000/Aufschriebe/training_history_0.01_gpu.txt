@@ -1,0 +1,1513 @@
+INFO:tensorflow:2018-01-22 13:28:26.043165: Step 0: Train accuracy = 35.0%
+INFO:tensorflow:2018-01-22 13:28:26.043285: Step 0: Cross entropy = 3.776142
+INFO:tensorflow:2018-01-22 13:28:26.095319: Step 0: Validation accuracy = 4.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:26.354534: Step 10: Train accuracy = 66.0%
+INFO:tensorflow:2018-01-22 13:28:26.354632: Step 10: Cross entropy = 2.591871
+INFO:tensorflow:2018-01-22 13:28:26.380184: Step 10: Validation accuracy = 33.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:26.639448: Step 20: Train accuracy = 80.0%
+INFO:tensorflow:2018-01-22 13:28:26.639550: Step 20: Cross entropy = 1.636054
+INFO:tensorflow:2018-01-22 13:28:26.665133: Step 20: Validation accuracy = 47.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:26.921812: Step 30: Train accuracy = 88.0%
+INFO:tensorflow:2018-01-22 13:28:26.921910: Step 30: Cross entropy = 1.255599
+INFO:tensorflow:2018-01-22 13:28:26.947397: Step 30: Validation accuracy = 65.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:27.204965: Step 40: Train accuracy = 90.0%
+INFO:tensorflow:2018-01-22 13:28:27.205061: Step 40: Cross entropy = 1.071454
+INFO:tensorflow:2018-01-22 13:28:27.230894: Step 40: Validation accuracy = 59.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:27.489730: Step 50: Train accuracy = 94.0%
+INFO:tensorflow:2018-01-22 13:28:27.489830: Step 50: Cross entropy = 0.892531
+INFO:tensorflow:2018-01-22 13:28:27.515499: Step 50: Validation accuracy = 69.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:27.775230: Step 60: Train accuracy = 92.0%
+INFO:tensorflow:2018-01-22 13:28:27.775326: Step 60: Cross entropy = 0.804012
+INFO:tensorflow:2018-01-22 13:28:27.800624: Step 60: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:28.058951: Step 70: Train accuracy = 94.0%
+INFO:tensorflow:2018-01-22 13:28:28.059051: Step 70: Cross entropy = 0.736370
+INFO:tensorflow:2018-01-22 13:28:28.084704: Step 70: Validation accuracy = 66.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:28.342175: Step 80: Train accuracy = 96.0%
+INFO:tensorflow:2018-01-22 13:28:28.342275: Step 80: Cross entropy = 0.697047
+INFO:tensorflow:2018-01-22 13:28:28.367795: Step 80: Validation accuracy = 72.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:28.630009: Step 90: Train accuracy = 92.0%
+INFO:tensorflow:2018-01-22 13:28:28.630107: Step 90: Cross entropy = 0.691606
+INFO:tensorflow:2018-01-22 13:28:28.656390: Step 90: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:28.918746: Step 100: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:28:28.918845: Step 100: Cross entropy = 0.487410
+INFO:tensorflow:2018-01-22 13:28:28.944659: Step 100: Validation accuracy = 74.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:29.207335: Step 110: Train accuracy = 94.0%
+INFO:tensorflow:2018-01-22 13:28:29.207435: Step 110: Cross entropy = 0.621640
+INFO:tensorflow:2018-01-22 13:28:29.232943: Step 110: Validation accuracy = 75.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:29.490373: Step 120: Train accuracy = 97.0%
+INFO:tensorflow:2018-01-22 13:28:29.490471: Step 120: Cross entropy = 0.486747
+INFO:tensorflow:2018-01-22 13:28:29.516365: Step 120: Validation accuracy = 76.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:29.775006: Step 130: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:28:29.775101: Step 130: Cross entropy = 0.346447
+INFO:tensorflow:2018-01-22 13:28:29.800928: Step 130: Validation accuracy = 77.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:30.060946: Step 140: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:28:30.061044: Step 140: Cross entropy = 0.425640
+INFO:tensorflow:2018-01-22 13:28:30.087272: Step 140: Validation accuracy = 73.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:30.346055: Step 150: Train accuracy = 96.0%
+INFO:tensorflow:2018-01-22 13:28:30.346153: Step 150: Cross entropy = 0.393592
+INFO:tensorflow:2018-01-22 13:28:30.371651: Step 150: Validation accuracy = 75.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:30.630315: Step 160: Train accuracy = 97.0%
+INFO:tensorflow:2018-01-22 13:28:30.630412: Step 160: Cross entropy = 0.370255
+INFO:tensorflow:2018-01-22 13:28:30.655736: Step 160: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:30.914176: Step 170: Train accuracy = 94.0%
+INFO:tensorflow:2018-01-22 13:28:30.914276: Step 170: Cross entropy = 0.402561
+INFO:tensorflow:2018-01-22 13:28:30.940563: Step 170: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:31.200956: Step 180: Train accuracy = 98.0%
+INFO:tensorflow:2018-01-22 13:28:31.201055: Step 180: Cross entropy = 0.334614
+INFO:tensorflow:2018-01-22 13:28:31.226585: Step 180: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:31.487096: Step 190: Train accuracy = 96.0%
+INFO:tensorflow:2018-01-22 13:28:31.487191: Step 190: Cross entropy = 0.389845
+INFO:tensorflow:2018-01-22 13:28:31.513161: Step 190: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:31.772099: Step 200: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:28:31.772195: Step 200: Cross entropy = 0.316249
+INFO:tensorflow:2018-01-22 13:28:31.797819: Step 200: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:32.058239: Step 210: Train accuracy = 98.0%
+INFO:tensorflow:2018-01-22 13:28:32.058340: Step 210: Cross entropy = 0.294314
+INFO:tensorflow:2018-01-22 13:28:32.084012: Step 210: Validation accuracy = 76.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:32.344267: Step 220: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:28:32.344367: Step 220: Cross entropy = 0.316259
+INFO:tensorflow:2018-01-22 13:28:32.369853: Step 220: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:32.632744: Step 230: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:28:32.632847: Step 230: Cross entropy = 0.301579
+INFO:tensorflow:2018-01-22 13:28:32.658323: Step 230: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:32.917559: Step 240: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:28:32.917657: Step 240: Cross entropy = 0.315066
+INFO:tensorflow:2018-01-22 13:28:32.943362: Step 240: Validation accuracy = 77.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:33.202974: Step 250: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:28:33.203072: Step 250: Cross entropy = 0.268832
+INFO:tensorflow:2018-01-22 13:28:33.229033: Step 250: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:33.487681: Step 260: Train accuracy = 98.0%
+INFO:tensorflow:2018-01-22 13:28:33.487780: Step 260: Cross entropy = 0.296307
+INFO:tensorflow:2018-01-22 13:28:33.513772: Step 260: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:33.772618: Step 270: Train accuracy = 98.0%
+INFO:tensorflow:2018-01-22 13:28:33.772714: Step 270: Cross entropy = 0.234778
+INFO:tensorflow:2018-01-22 13:28:33.798810: Step 270: Validation accuracy = 77.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:34.058298: Step 280: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:28:34.058397: Step 280: Cross entropy = 0.218565
+INFO:tensorflow:2018-01-22 13:28:34.084318: Step 280: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:34.343363: Step 290: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:34.343460: Step 290: Cross entropy = 0.232617
+INFO:tensorflow:2018-01-22 13:28:34.369471: Step 290: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:34.628929: Step 300: Train accuracy = 98.0%
+INFO:tensorflow:2018-01-22 13:28:34.629027: Step 300: Cross entropy = 0.236173
+INFO:tensorflow:2018-01-22 13:28:34.654645: Step 300: Validation accuracy = 73.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:34.914791: Step 310: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:34.914888: Step 310: Cross entropy = 0.229404
+INFO:tensorflow:2018-01-22 13:28:34.940797: Step 310: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:35.198874: Step 320: Train accuracy = 98.0%
+INFO:tensorflow:2018-01-22 13:28:35.198972: Step 320: Cross entropy = 0.244047
+INFO:tensorflow:2018-01-22 13:28:35.224423: Step 320: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:35.483870: Step 330: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:35.483965: Step 330: Cross entropy = 0.210027
+INFO:tensorflow:2018-01-22 13:28:35.509584: Step 330: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:35.768756: Step 340: Train accuracy = 97.0%
+INFO:tensorflow:2018-01-22 13:28:35.768851: Step 340: Cross entropy = 0.301288
+INFO:tensorflow:2018-01-22 13:28:35.794299: Step 340: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:36.054349: Step 350: Train accuracy = 98.0%
+INFO:tensorflow:2018-01-22 13:28:36.054446: Step 350: Cross entropy = 0.215196
+INFO:tensorflow:2018-01-22 13:28:36.080107: Step 350: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:36.340332: Step 360: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:36.340428: Step 360: Cross entropy = 0.213734
+INFO:tensorflow:2018-01-22 13:28:36.366266: Step 360: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:36.625273: Step 370: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:36.625368: Step 370: Cross entropy = 0.215346
+INFO:tensorflow:2018-01-22 13:28:36.651142: Step 370: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:36.910815: Step 380: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:36.910910: Step 380: Cross entropy = 0.203785
+INFO:tensorflow:2018-01-22 13:28:36.937040: Step 380: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:37.197247: Step 390: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:37.197344: Step 390: Cross entropy = 0.186316
+INFO:tensorflow:2018-01-22 13:28:37.223178: Step 390: Validation accuracy = 87.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:37.482531: Step 400: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:37.482626: Step 400: Cross entropy = 0.184570
+INFO:tensorflow:2018-01-22 13:28:37.508770: Step 400: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:37.768325: Step 410: Train accuracy = 96.0%
+INFO:tensorflow:2018-01-22 13:28:37.768424: Step 410: Cross entropy = 0.239631
+INFO:tensorflow:2018-01-22 13:28:37.794389: Step 410: Validation accuracy = 76.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:38.054325: Step 420: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:28:38.054424: Step 420: Cross entropy = 0.161684
+INFO:tensorflow:2018-01-22 13:28:38.080622: Step 420: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:38.340923: Step 430: Train accuracy = 98.0%
+INFO:tensorflow:2018-01-22 13:28:38.341020: Step 430: Cross entropy = 0.188305
+INFO:tensorflow:2018-01-22 13:28:38.366919: Step 430: Validation accuracy = 72.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:38.625433: Step 440: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:38.625530: Step 440: Cross entropy = 0.157851
+INFO:tensorflow:2018-01-22 13:28:38.651408: Step 440: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:38.910564: Step 450: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:28:38.910661: Step 450: Cross entropy = 0.211111
+INFO:tensorflow:2018-01-22 13:28:38.936253: Step 450: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:39.196013: Step 460: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:28:39.196110: Step 460: Cross entropy = 0.187059
+INFO:tensorflow:2018-01-22 13:28:39.221789: Step 460: Validation accuracy = 90.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:39.481134: Step 470: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:39.481230: Step 470: Cross entropy = 0.147858
+INFO:tensorflow:2018-01-22 13:28:39.507194: Step 470: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:39.766462: Step 480: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:39.766562: Step 480: Cross entropy = 0.162953
+INFO:tensorflow:2018-01-22 13:28:39.792132: Step 480: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:40.052528: Step 490: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:40.052625: Step 490: Cross entropy = 0.166358
+INFO:tensorflow:2018-01-22 13:28:40.078333: Step 490: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:40.337888: Step 500: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:40.337985: Step 500: Cross entropy = 0.140821
+INFO:tensorflow:2018-01-22 13:28:40.363583: Step 500: Validation accuracy = 76.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:40.622050: Step 510: Train accuracy = 98.0%
+INFO:tensorflow:2018-01-22 13:28:40.622146: Step 510: Cross entropy = 0.212910
+INFO:tensorflow:2018-01-22 13:28:40.647740: Step 510: Validation accuracy = 88.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:40.906449: Step 520: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:28:40.906545: Step 520: Cross entropy = 0.166397
+INFO:tensorflow:2018-01-22 13:28:40.932175: Step 520: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:41.191941: Step 530: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:28:41.192040: Step 530: Cross entropy = 0.171332
+INFO:tensorflow:2018-01-22 13:28:41.217799: Step 530: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:41.477884: Step 540: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:28:41.477980: Step 540: Cross entropy = 0.119253
+INFO:tensorflow:2018-01-22 13:28:41.503649: Step 540: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:41.761925: Step 550: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:41.762024: Step 550: Cross entropy = 0.155424
+INFO:tensorflow:2018-01-22 13:28:41.788643: Step 550: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:42.047850: Step 560: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:28:42.047947: Step 560: Cross entropy = 0.163897
+INFO:tensorflow:2018-01-22 13:28:42.073945: Step 560: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:42.333894: Step 570: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:42.333991: Step 570: Cross entropy = 0.117758
+INFO:tensorflow:2018-01-22 13:28:42.359861: Step 570: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:42.618648: Step 580: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:28:42.618745: Step 580: Cross entropy = 0.191820
+INFO:tensorflow:2018-01-22 13:28:42.644624: Step 580: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:42.903024: Step 590: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:28:42.903122: Step 590: Cross entropy = 0.188870
+INFO:tensorflow:2018-01-22 13:28:42.929088: Step 590: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:43.189068: Step 600: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:43.189165: Step 600: Cross entropy = 0.140941
+INFO:tensorflow:2018-01-22 13:28:43.214697: Step 600: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:43.473889: Step 610: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:43.473986: Step 610: Cross entropy = 0.148020
+INFO:tensorflow:2018-01-22 13:28:43.500011: Step 610: Validation accuracy = 77.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:43.759651: Step 620: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:28:43.759752: Step 620: Cross entropy = 0.122052
+INFO:tensorflow:2018-01-22 13:28:43.785352: Step 620: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:44.047190: Step 630: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:44.047289: Step 630: Cross entropy = 0.126023
+INFO:tensorflow:2018-01-22 13:28:44.073031: Step 630: Validation accuracy = 88.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:44.331339: Step 640: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:44.331439: Step 640: Cross entropy = 0.134646
+INFO:tensorflow:2018-01-22 13:28:44.357481: Step 640: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:44.616374: Step 650: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:44.616471: Step 650: Cross entropy = 0.111610
+INFO:tensorflow:2018-01-22 13:28:44.642486: Step 650: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:44.902927: Step 660: Train accuracy = 98.0%
+INFO:tensorflow:2018-01-22 13:28:44.903026: Step 660: Cross entropy = 0.173813
+INFO:tensorflow:2018-01-22 13:28:44.928743: Step 660: Validation accuracy = 87.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:45.187980: Step 670: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:45.188077: Step 670: Cross entropy = 0.110665
+INFO:tensorflow:2018-01-22 13:28:45.213566: Step 670: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:45.473416: Step 680: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:45.473512: Step 680: Cross entropy = 0.123464
+INFO:tensorflow:2018-01-22 13:28:45.498988: Step 680: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:45.758327: Step 690: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:45.758425: Step 690: Cross entropy = 0.110717
+INFO:tensorflow:2018-01-22 13:28:45.784187: Step 690: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:46.043428: Step 700: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:28:46.043533: Step 700: Cross entropy = 0.140910
+INFO:tensorflow:2018-01-22 13:28:46.069674: Step 700: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:46.330080: Step 710: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:46.330178: Step 710: Cross entropy = 0.143440
+INFO:tensorflow:2018-01-22 13:28:46.355782: Step 710: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:46.618213: Step 720: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:28:46.618312: Step 720: Cross entropy = 0.156766
+INFO:tensorflow:2018-01-22 13:28:46.644512: Step 720: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:46.903990: Step 730: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:46.904084: Step 730: Cross entropy = 0.099048
+INFO:tensorflow:2018-01-22 13:28:46.930342: Step 730: Validation accuracy = 74.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:47.190113: Step 740: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:47.190214: Step 740: Cross entropy = 0.138207
+INFO:tensorflow:2018-01-22 13:28:47.215935: Step 740: Validation accuracy = 88.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:47.475495: Step 750: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:47.475599: Step 750: Cross entropy = 0.117374
+INFO:tensorflow:2018-01-22 13:28:47.501789: Step 750: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:47.762354: Step 760: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:47.762457: Step 760: Cross entropy = 0.112491
+INFO:tensorflow:2018-01-22 13:28:47.788035: Step 760: Validation accuracy = 89.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:48.048072: Step 770: Train accuracy = 98.0%
+INFO:tensorflow:2018-01-22 13:28:48.048171: Step 770: Cross entropy = 0.158423
+INFO:tensorflow:2018-01-22 13:28:48.073921: Step 770: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:48.333855: Step 780: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:48.333954: Step 780: Cross entropy = 0.144297
+INFO:tensorflow:2018-01-22 13:28:48.359781: Step 780: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:48.619641: Step 790: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:48.619737: Step 790: Cross entropy = 0.109855
+INFO:tensorflow:2018-01-22 13:28:48.646220: Step 790: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:48.905569: Step 800: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:48.905668: Step 800: Cross entropy = 0.116803
+INFO:tensorflow:2018-01-22 13:28:48.931249: Step 800: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:49.190181: Step 810: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:49.190279: Step 810: Cross entropy = 0.100769
+INFO:tensorflow:2018-01-22 13:28:49.215989: Step 810: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:49.475978: Step 820: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:49.476076: Step 820: Cross entropy = 0.135936
+INFO:tensorflow:2018-01-22 13:28:49.501680: Step 820: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:49.760839: Step 830: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:49.760937: Step 830: Cross entropy = 0.098354
+INFO:tensorflow:2018-01-22 13:28:49.786478: Step 830: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:50.045927: Step 840: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:50.046025: Step 840: Cross entropy = 0.092819
+INFO:tensorflow:2018-01-22 13:28:50.072285: Step 840: Validation accuracy = 89.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:50.333219: Step 850: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:50.333316: Step 850: Cross entropy = 0.101472
+INFO:tensorflow:2018-01-22 13:28:50.359090: Step 850: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:50.618747: Step 860: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:50.618847: Step 860: Cross entropy = 0.100184
+INFO:tensorflow:2018-01-22 13:28:50.644394: Step 860: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:50.904332: Step 870: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:50.904429: Step 870: Cross entropy = 0.116585
+INFO:tensorflow:2018-01-22 13:28:50.930501: Step 870: Validation accuracy = 87.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:51.190392: Step 880: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:51.190490: Step 880: Cross entropy = 0.113111
+INFO:tensorflow:2018-01-22 13:28:51.216663: Step 880: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:51.476837: Step 890: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:51.476946: Step 890: Cross entropy = 0.099587
+INFO:tensorflow:2018-01-22 13:28:51.502785: Step 890: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:51.762669: Step 900: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:51.762768: Step 900: Cross entropy = 0.116458
+INFO:tensorflow:2018-01-22 13:28:51.788588: Step 900: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:52.048852: Step 910: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:52.048949: Step 910: Cross entropy = 0.113247
+INFO:tensorflow:2018-01-22 13:28:52.074857: Step 910: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:52.335530: Step 920: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:52.335626: Step 920: Cross entropy = 0.107306
+INFO:tensorflow:2018-01-22 13:28:52.361537: Step 920: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:52.621449: Step 930: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:52.621546: Step 930: Cross entropy = 0.094789
+INFO:tensorflow:2018-01-22 13:28:52.646976: Step 930: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:52.906228: Step 940: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:52.906323: Step 940: Cross entropy = 0.103882
+INFO:tensorflow:2018-01-22 13:28:52.931974: Step 940: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:53.193431: Step 950: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:28:53.193531: Step 950: Cross entropy = 0.117890
+INFO:tensorflow:2018-01-22 13:28:53.219347: Step 950: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:53.479806: Step 960: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:53.479902: Step 960: Cross entropy = 0.090983
+INFO:tensorflow:2018-01-22 13:28:53.505768: Step 960: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:53.765346: Step 970: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:53.765443: Step 970: Cross entropy = 0.098338
+INFO:tensorflow:2018-01-22 13:28:53.791422: Step 970: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:54.051330: Step 980: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:28:54.051427: Step 980: Cross entropy = 0.118227
+INFO:tensorflow:2018-01-22 13:28:54.076994: Step 980: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:54.336670: Step 990: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:54.336766: Step 990: Cross entropy = 0.098847
+INFO:tensorflow:2018-01-22 13:28:54.362591: Step 990: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:54.622995: Step 1000: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:54.623095: Step 1000: Cross entropy = 0.099386
+INFO:tensorflow:2018-01-22 13:28:54.649458: Step 1000: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:54.909145: Step 1010: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:54.909241: Step 1010: Cross entropy = 0.102561
+INFO:tensorflow:2018-01-22 13:28:54.935151: Step 1010: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:55.196092: Step 1020: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:55.196188: Step 1020: Cross entropy = 0.099110
+INFO:tensorflow:2018-01-22 13:28:55.221903: Step 1020: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:55.481600: Step 1030: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:55.481697: Step 1030: Cross entropy = 0.081263
+INFO:tensorflow:2018-01-22 13:28:55.507601: Step 1030: Validation accuracy = 75.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:55.766714: Step 1040: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:55.766812: Step 1040: Cross entropy = 0.107752
+INFO:tensorflow:2018-01-22 13:28:55.792412: Step 1040: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:56.052877: Step 1050: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:28:56.052979: Step 1050: Cross entropy = 0.098310
+INFO:tensorflow:2018-01-22 13:28:56.078642: Step 1050: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:56.339882: Step 1060: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:56.339976: Step 1060: Cross entropy = 0.099325
+INFO:tensorflow:2018-01-22 13:28:56.366202: Step 1060: Validation accuracy = 76.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:56.625946: Step 1070: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:56.626049: Step 1070: Cross entropy = 0.079643
+INFO:tensorflow:2018-01-22 13:28:56.651937: Step 1070: Validation accuracy = 77.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:56.913898: Step 1080: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:56.913997: Step 1080: Cross entropy = 0.096436
+INFO:tensorflow:2018-01-22 13:28:56.939589: Step 1080: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:57.199121: Step 1090: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:57.199219: Step 1090: Cross entropy = 0.097321
+INFO:tensorflow:2018-01-22 13:28:57.225285: Step 1090: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:57.490339: Step 1100: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:57.490439: Step 1100: Cross entropy = 0.086688
+INFO:tensorflow:2018-01-22 13:28:57.516131: Step 1100: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:57.775398: Step 1110: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:28:57.775494: Step 1110: Cross entropy = 0.104060
+INFO:tensorflow:2018-01-22 13:28:57.801380: Step 1110: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:58.063552: Step 1120: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:58.063650: Step 1120: Cross entropy = 0.083471
+INFO:tensorflow:2018-01-22 13:28:58.089693: Step 1120: Validation accuracy = 76.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:58.351435: Step 1130: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:28:58.351538: Step 1130: Cross entropy = 0.090094
+INFO:tensorflow:2018-01-22 13:28:58.377648: Step 1130: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:58.637327: Step 1140: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:28:58.637426: Step 1140: Cross entropy = 0.089225
+INFO:tensorflow:2018-01-22 13:28:58.663176: Step 1140: Validation accuracy = 76.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:58.925130: Step 1150: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:58.925231: Step 1150: Cross entropy = 0.084956
+INFO:tensorflow:2018-01-22 13:28:58.951246: Step 1150: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:59.212051: Step 1160: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:59.212149: Step 1160: Cross entropy = 0.097854
+INFO:tensorflow:2018-01-22 13:28:59.237779: Step 1160: Validation accuracy = 87.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:59.498633: Step 1170: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:59.498732: Step 1170: Cross entropy = 0.079605
+INFO:tensorflow:2018-01-22 13:28:59.524387: Step 1170: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:28:59.783708: Step 1180: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:28:59.783805: Step 1180: Cross entropy = 0.084539
+INFO:tensorflow:2018-01-22 13:28:59.809527: Step 1180: Validation accuracy = 90.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:00.069869: Step 1190: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:00.069971: Step 1190: Cross entropy = 0.086705
+INFO:tensorflow:2018-01-22 13:29:00.096347: Step 1190: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:00.356917: Step 1200: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:29:00.357041: Step 1200: Cross entropy = 0.086522
+INFO:tensorflow:2018-01-22 13:29:00.382505: Step 1200: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:00.643496: Step 1210: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:00.643601: Step 1210: Cross entropy = 0.064237
+INFO:tensorflow:2018-01-22 13:29:00.669411: Step 1210: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:00.928818: Step 1220: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:29:00.928917: Step 1220: Cross entropy = 0.076243
+INFO:tensorflow:2018-01-22 13:29:00.955437: Step 1220: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:01.216450: Step 1230: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:01.216549: Step 1230: Cross entropy = 0.078274
+INFO:tensorflow:2018-01-22 13:29:01.242118: Step 1230: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:01.501952: Step 1240: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:01.502051: Step 1240: Cross entropy = 0.080248
+INFO:tensorflow:2018-01-22 13:29:01.528131: Step 1240: Validation accuracy = 87.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:01.787637: Step 1250: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:01.787736: Step 1250: Cross entropy = 0.078021
+INFO:tensorflow:2018-01-22 13:29:01.813886: Step 1250: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:02.074992: Step 1260: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:02.075093: Step 1260: Cross entropy = 0.071138
+INFO:tensorflow:2018-01-22 13:29:02.101199: Step 1260: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:02.362263: Step 1270: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:02.362364: Step 1270: Cross entropy = 0.072267
+INFO:tensorflow:2018-01-22 13:29:02.389535: Step 1270: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:02.649602: Step 1280: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:02.649702: Step 1280: Cross entropy = 0.092161
+INFO:tensorflow:2018-01-22 13:29:02.675714: Step 1280: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:02.935203: Step 1290: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:29:02.935300: Step 1290: Cross entropy = 0.112813
+INFO:tensorflow:2018-01-22 13:29:02.960981: Step 1290: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:03.220952: Step 1300: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:03.221049: Step 1300: Cross entropy = 0.077837
+INFO:tensorflow:2018-01-22 13:29:03.246897: Step 1300: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:03.507340: Step 1310: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:03.507442: Step 1310: Cross entropy = 0.081597
+INFO:tensorflow:2018-01-22 13:29:03.533400: Step 1310: Validation accuracy = 92.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:03.794062: Step 1320: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:03.794162: Step 1320: Cross entropy = 0.084539
+INFO:tensorflow:2018-01-22 13:29:03.820073: Step 1320: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:04.079638: Step 1330: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:04.079736: Step 1330: Cross entropy = 0.073990
+INFO:tensorflow:2018-01-22 13:29:04.105126: Step 1330: Validation accuracy = 77.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:04.367025: Step 1340: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:04.367123: Step 1340: Cross entropy = 0.106270
+INFO:tensorflow:2018-01-22 13:29:04.392663: Step 1340: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:04.652434: Step 1350: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:04.652539: Step 1350: Cross entropy = 0.080499
+INFO:tensorflow:2018-01-22 13:29:04.678571: Step 1350: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:04.939838: Step 1360: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:04.939937: Step 1360: Cross entropy = 0.067945
+INFO:tensorflow:2018-01-22 13:29:04.965812: Step 1360: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:05.227094: Step 1370: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:05.227192: Step 1370: Cross entropy = 0.059181
+INFO:tensorflow:2018-01-22 13:29:05.253189: Step 1370: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:05.513183: Step 1380: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:05.513282: Step 1380: Cross entropy = 0.075485
+INFO:tensorflow:2018-01-22 13:29:05.538836: Step 1380: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:05.799457: Step 1390: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:29:05.799561: Step 1390: Cross entropy = 0.077646
+INFO:tensorflow:2018-01-22 13:29:05.825393: Step 1390: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:06.085721: Step 1400: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:06.085825: Step 1400: Cross entropy = 0.070225
+INFO:tensorflow:2018-01-22 13:29:06.111714: Step 1400: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:06.372093: Step 1410: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:06.372190: Step 1410: Cross entropy = 0.085337
+INFO:tensorflow:2018-01-22 13:29:06.397999: Step 1410: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:06.658338: Step 1420: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:06.658438: Step 1420: Cross entropy = 0.072249
+INFO:tensorflow:2018-01-22 13:29:06.684021: Step 1420: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:06.946328: Step 1430: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:06.946428: Step 1430: Cross entropy = 0.075337
+INFO:tensorflow:2018-01-22 13:29:06.972752: Step 1430: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:07.234822: Step 1440: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:07.234920: Step 1440: Cross entropy = 0.064847
+INFO:tensorflow:2018-01-22 13:29:07.260807: Step 1440: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:07.521697: Step 1450: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:07.521798: Step 1450: Cross entropy = 0.055106
+INFO:tensorflow:2018-01-22 13:29:07.547618: Step 1450: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:07.809446: Step 1460: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:07.809546: Step 1460: Cross entropy = 0.065916
+INFO:tensorflow:2018-01-22 13:29:07.835333: Step 1460: Validation accuracy = 87.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:08.096182: Step 1470: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:08.096281: Step 1470: Cross entropy = 0.083819
+INFO:tensorflow:2018-01-22 13:29:08.122005: Step 1470: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:08.382647: Step 1480: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:29:08.382746: Step 1480: Cross entropy = 0.064032
+INFO:tensorflow:2018-01-22 13:29:08.408898: Step 1480: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:08.670057: Step 1490: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:08.670155: Step 1490: Cross entropy = 0.078853
+INFO:tensorflow:2018-01-22 13:29:08.696190: Step 1490: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:08.957840: Step 1500: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:08.957938: Step 1500: Cross entropy = 0.067949
+INFO:tensorflow:2018-01-22 13:29:08.984256: Step 1500: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:09.245852: Step 1510: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:09.245950: Step 1510: Cross entropy = 0.069980
+INFO:tensorflow:2018-01-22 13:29:09.271808: Step 1510: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:09.533238: Step 1520: Train accuracy = 99.0%
+INFO:tensorflow:2018-01-22 13:29:09.533335: Step 1520: Cross entropy = 0.068884
+INFO:tensorflow:2018-01-22 13:29:09.559503: Step 1520: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:09.819928: Step 1530: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:09.820029: Step 1530: Cross entropy = 0.067640
+INFO:tensorflow:2018-01-22 13:29:09.845806: Step 1530: Validation accuracy = 87.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:10.106602: Step 1540: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:10.106701: Step 1540: Cross entropy = 0.054156
+INFO:tensorflow:2018-01-22 13:29:10.132590: Step 1540: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:10.393761: Step 1550: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:10.393861: Step 1550: Cross entropy = 0.060142
+INFO:tensorflow:2018-01-22 13:29:10.420344: Step 1550: Validation accuracy = 87.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:10.682393: Step 1560: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:10.682490: Step 1560: Cross entropy = 0.068404
+INFO:tensorflow:2018-01-22 13:29:10.708228: Step 1560: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:10.969736: Step 1570: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:10.969836: Step 1570: Cross entropy = 0.062745
+INFO:tensorflow:2018-01-22 13:29:10.995371: Step 1570: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:11.257195: Step 1580: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:11.257294: Step 1580: Cross entropy = 0.050443
+INFO:tensorflow:2018-01-22 13:29:11.283139: Step 1580: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:11.545594: Step 1590: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:11.545692: Step 1590: Cross entropy = 0.064222
+INFO:tensorflow:2018-01-22 13:29:11.571419: Step 1590: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:11.833054: Step 1600: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:11.833152: Step 1600: Cross entropy = 0.072669
+INFO:tensorflow:2018-01-22 13:29:11.859228: Step 1600: Validation accuracy = 75.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:12.119814: Step 1610: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:12.119914: Step 1610: Cross entropy = 0.064695
+INFO:tensorflow:2018-01-22 13:29:12.145696: Step 1610: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:12.407018: Step 1620: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:12.407115: Step 1620: Cross entropy = 0.060834
+INFO:tensorflow:2018-01-22 13:29:12.433478: Step 1620: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:12.694690: Step 1630: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:12.694790: Step 1630: Cross entropy = 0.060124
+INFO:tensorflow:2018-01-22 13:29:12.721119: Step 1630: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:12.983750: Step 1640: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:12.983847: Step 1640: Cross entropy = 0.052715
+INFO:tensorflow:2018-01-22 13:29:13.009624: Step 1640: Validation accuracy = 89.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:13.270060: Step 1650: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:13.270160: Step 1650: Cross entropy = 0.053112
+INFO:tensorflow:2018-01-22 13:29:13.296227: Step 1650: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:13.558120: Step 1660: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:13.558218: Step 1660: Cross entropy = 0.069519
+INFO:tensorflow:2018-01-22 13:29:13.583763: Step 1660: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:13.844054: Step 1670: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:13.844155: Step 1670: Cross entropy = 0.070413
+INFO:tensorflow:2018-01-22 13:29:13.870184: Step 1670: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:14.129971: Step 1680: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:14.130071: Step 1680: Cross entropy = 0.058348
+INFO:tensorflow:2018-01-22 13:29:14.156053: Step 1680: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:14.415752: Step 1690: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:14.415852: Step 1690: Cross entropy = 0.055906
+INFO:tensorflow:2018-01-22 13:29:14.441698: Step 1690: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:14.701210: Step 1700: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:14.701311: Step 1700: Cross entropy = 0.057052
+INFO:tensorflow:2018-01-22 13:29:14.727325: Step 1700: Validation accuracy = 89.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:14.988092: Step 1710: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:14.988191: Step 1710: Cross entropy = 0.064382
+INFO:tensorflow:2018-01-22 13:29:15.013870: Step 1710: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:15.274827: Step 1720: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:15.274924: Step 1720: Cross entropy = 0.060171
+INFO:tensorflow:2018-01-22 13:29:15.300858: Step 1720: Validation accuracy = 89.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:15.562345: Step 1730: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:15.562444: Step 1730: Cross entropy = 0.057108
+INFO:tensorflow:2018-01-22 13:29:15.588063: Step 1730: Validation accuracy = 88.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:15.848050: Step 1740: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:15.848148: Step 1740: Cross entropy = 0.049202
+INFO:tensorflow:2018-01-22 13:29:15.873810: Step 1740: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:16.134765: Step 1750: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:16.134862: Step 1750: Cross entropy = 0.060363
+INFO:tensorflow:2018-01-22 13:29:16.160483: Step 1750: Validation accuracy = 91.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:16.422622: Step 1760: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:16.422720: Step 1760: Cross entropy = 0.066411
+INFO:tensorflow:2018-01-22 13:29:16.448435: Step 1760: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:16.709686: Step 1770: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:16.709785: Step 1770: Cross entropy = 0.054685
+INFO:tensorflow:2018-01-22 13:29:16.736038: Step 1770: Validation accuracy = 77.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:16.998378: Step 1780: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:16.998478: Step 1780: Cross entropy = 0.054774
+INFO:tensorflow:2018-01-22 13:29:17.024076: Step 1780: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:17.285763: Step 1790: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:17.285862: Step 1790: Cross entropy = 0.055658
+INFO:tensorflow:2018-01-22 13:29:17.311895: Step 1790: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:17.574670: Step 1800: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:17.574770: Step 1800: Cross entropy = 0.047468
+INFO:tensorflow:2018-01-22 13:29:17.600699: Step 1800: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:17.864462: Step 1810: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:17.864559: Step 1810: Cross entropy = 0.067498
+INFO:tensorflow:2018-01-22 13:29:17.890605: Step 1810: Validation accuracy = 74.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:18.152628: Step 1820: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:18.152726: Step 1820: Cross entropy = 0.061031
+INFO:tensorflow:2018-01-22 13:29:18.178872: Step 1820: Validation accuracy = 77.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:18.441043: Step 1830: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:18.441143: Step 1830: Cross entropy = 0.059726
+INFO:tensorflow:2018-01-22 13:29:18.467220: Step 1830: Validation accuracy = 76.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:18.728148: Step 1840: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:18.728245: Step 1840: Cross entropy = 0.054844
+INFO:tensorflow:2018-01-22 13:29:18.753739: Step 1840: Validation accuracy = 77.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:19.015562: Step 1850: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:19.015662: Step 1850: Cross entropy = 0.065761
+INFO:tensorflow:2018-01-22 13:29:19.041440: Step 1850: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:19.303587: Step 1860: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:19.303686: Step 1860: Cross entropy = 0.061877
+INFO:tensorflow:2018-01-22 13:29:19.329645: Step 1860: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:19.592460: Step 1870: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:19.592560: Step 1870: Cross entropy = 0.061424
+INFO:tensorflow:2018-01-22 13:29:19.618500: Step 1870: Validation accuracy = 89.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:19.879686: Step 1880: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:19.879787: Step 1880: Cross entropy = 0.053656
+INFO:tensorflow:2018-01-22 13:29:19.905830: Step 1880: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:20.167208: Step 1890: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:20.167310: Step 1890: Cross entropy = 0.058761
+INFO:tensorflow:2018-01-22 13:29:20.192917: Step 1890: Validation accuracy = 74.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:20.454720: Step 1900: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:20.454817: Step 1900: Cross entropy = 0.047618
+INFO:tensorflow:2018-01-22 13:29:20.480805: Step 1900: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:20.742992: Step 1910: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:20.743090: Step 1910: Cross entropy = 0.054344
+INFO:tensorflow:2018-01-22 13:29:20.768967: Step 1910: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:21.029760: Step 1920: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:21.029857: Step 1920: Cross entropy = 0.053175
+INFO:tensorflow:2018-01-22 13:29:21.055529: Step 1920: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:21.316844: Step 1930: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:21.316942: Step 1930: Cross entropy = 0.051592
+INFO:tensorflow:2018-01-22 13:29:21.342751: Step 1930: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:21.604651: Step 1940: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:21.604749: Step 1940: Cross entropy = 0.050528
+INFO:tensorflow:2018-01-22 13:29:21.630358: Step 1940: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:21.891994: Step 1950: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:21.892094: Step 1950: Cross entropy = 0.054973
+INFO:tensorflow:2018-01-22 13:29:21.917878: Step 1950: Validation accuracy = 90.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:22.179758: Step 1960: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:22.179856: Step 1960: Cross entropy = 0.050950
+INFO:tensorflow:2018-01-22 13:29:22.206168: Step 1960: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:22.465758: Step 1970: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:22.465857: Step 1970: Cross entropy = 0.064346
+INFO:tensorflow:2018-01-22 13:29:22.491724: Step 1970: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:22.753283: Step 1980: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:22.753382: Step 1980: Cross entropy = 0.047317
+INFO:tensorflow:2018-01-22 13:29:22.779645: Step 1980: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:23.042246: Step 1990: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:23.042345: Step 1990: Cross entropy = 0.058299
+INFO:tensorflow:2018-01-22 13:29:23.068014: Step 1990: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:23.329280: Step 2000: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:23.329381: Step 2000: Cross entropy = 0.050574
+INFO:tensorflow:2018-01-22 13:29:23.355168: Step 2000: Validation accuracy = 76.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:23.617585: Step 2010: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:23.617684: Step 2010: Cross entropy = 0.057540
+INFO:tensorflow:2018-01-22 13:29:23.643747: Step 2010: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:23.904899: Step 2020: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:23.905000: Step 2020: Cross entropy = 0.053291
+INFO:tensorflow:2018-01-22 13:29:23.931346: Step 2020: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:24.192801: Step 2030: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:24.192898: Step 2030: Cross entropy = 0.054883
+INFO:tensorflow:2018-01-22 13:29:24.218497: Step 2030: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:24.481673: Step 2040: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:24.481773: Step 2040: Cross entropy = 0.043774
+INFO:tensorflow:2018-01-22 13:29:24.508077: Step 2040: Validation accuracy = 77.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:24.771918: Step 2050: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:24.772019: Step 2050: Cross entropy = 0.046626
+INFO:tensorflow:2018-01-22 13:29:24.797830: Step 2050: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:25.060243: Step 2060: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:25.060345: Step 2060: Cross entropy = 0.054054
+INFO:tensorflow:2018-01-22 13:29:25.086322: Step 2060: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:25.348649: Step 2070: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:25.348747: Step 2070: Cross entropy = 0.049770
+INFO:tensorflow:2018-01-22 13:29:25.374741: Step 2070: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:25.637044: Step 2080: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:25.637145: Step 2080: Cross entropy = 0.043191
+INFO:tensorflow:2018-01-22 13:29:25.662747: Step 2080: Validation accuracy = 77.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:25.924169: Step 2090: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:25.924270: Step 2090: Cross entropy = 0.052382
+INFO:tensorflow:2018-01-22 13:29:25.950153: Step 2090: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:26.212381: Step 2100: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:26.212482: Step 2100: Cross entropy = 0.053077
+INFO:tensorflow:2018-01-22 13:29:26.238374: Step 2100: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:26.501110: Step 2110: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:26.501209: Step 2110: Cross entropy = 0.042966
+INFO:tensorflow:2018-01-22 13:29:26.527073: Step 2110: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:26.787846: Step 2120: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:26.787945: Step 2120: Cross entropy = 0.051851
+INFO:tensorflow:2018-01-22 13:29:26.814665: Step 2120: Validation accuracy = 87.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:27.075946: Step 2130: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:27.076047: Step 2130: Cross entropy = 0.056281
+INFO:tensorflow:2018-01-22 13:29:27.102321: Step 2130: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:27.364336: Step 2140: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:27.364440: Step 2140: Cross entropy = 0.041496
+INFO:tensorflow:2018-01-22 13:29:27.390260: Step 2140: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:27.652244: Step 2150: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:27.652343: Step 2150: Cross entropy = 0.052713
+INFO:tensorflow:2018-01-22 13:29:27.678171: Step 2150: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:27.940988: Step 2160: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:27.941087: Step 2160: Cross entropy = 0.060774
+INFO:tensorflow:2018-01-22 13:29:27.967057: Step 2160: Validation accuracy = 87.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:28.228897: Step 2170: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:28.229001: Step 2170: Cross entropy = 0.051605
+INFO:tensorflow:2018-01-22 13:29:28.255193: Step 2170: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:28.517210: Step 2180: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:28.517308: Step 2180: Cross entropy = 0.044428
+INFO:tensorflow:2018-01-22 13:29:28.543043: Step 2180: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:28.806545: Step 2190: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:28.806643: Step 2190: Cross entropy = 0.049946
+INFO:tensorflow:2018-01-22 13:29:28.832685: Step 2190: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:29.098111: Step 2200: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:29.098211: Step 2200: Cross entropy = 0.042448
+INFO:tensorflow:2018-01-22 13:29:29.124593: Step 2200: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:29.387401: Step 2210: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:29.387501: Step 2210: Cross entropy = 0.055746
+INFO:tensorflow:2018-01-22 13:29:29.414032: Step 2210: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:29.683442: Step 2220: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:29.683544: Step 2220: Cross entropy = 0.052282
+INFO:tensorflow:2018-01-22 13:29:29.709405: Step 2220: Validation accuracy = 76.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:29.973257: Step 2230: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:29.973353: Step 2230: Cross entropy = 0.062200
+INFO:tensorflow:2018-01-22 13:29:29.999822: Step 2230: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:30.261479: Step 2240: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:30.261582: Step 2240: Cross entropy = 0.043252
+INFO:tensorflow:2018-01-22 13:29:30.287348: Step 2240: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:30.549249: Step 2250: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:30.549347: Step 2250: Cross entropy = 0.043590
+INFO:tensorflow:2018-01-22 13:29:30.575083: Step 2250: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:30.836613: Step 2260: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:30.836712: Step 2260: Cross entropy = 0.055433
+INFO:tensorflow:2018-01-22 13:29:30.862698: Step 2260: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:31.125188: Step 2270: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:31.125287: Step 2270: Cross entropy = 0.045362
+INFO:tensorflow:2018-01-22 13:29:31.151087: Step 2270: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:31.415152: Step 2280: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:31.415253: Step 2280: Cross entropy = 0.053863
+INFO:tensorflow:2018-01-22 13:29:31.440919: Step 2280: Validation accuracy = 76.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:31.702822: Step 2290: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:31.702921: Step 2290: Cross entropy = 0.052204
+INFO:tensorflow:2018-01-22 13:29:31.728507: Step 2290: Validation accuracy = 76.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:31.990245: Step 2300: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:31.990343: Step 2300: Cross entropy = 0.054973
+INFO:tensorflow:2018-01-22 13:29:32.016562: Step 2300: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:32.278384: Step 2310: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:32.278484: Step 2310: Cross entropy = 0.045400
+INFO:tensorflow:2018-01-22 13:29:32.304712: Step 2310: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:32.567399: Step 2320: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:32.567500: Step 2320: Cross entropy = 0.057905
+INFO:tensorflow:2018-01-22 13:29:32.593258: Step 2320: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:32.854229: Step 2330: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:32.854331: Step 2330: Cross entropy = 0.038781
+INFO:tensorflow:2018-01-22 13:29:32.880352: Step 2330: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:33.143739: Step 2340: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:33.143839: Step 2340: Cross entropy = 0.044284
+INFO:tensorflow:2018-01-22 13:29:33.169580: Step 2340: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:33.429966: Step 2350: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:33.430066: Step 2350: Cross entropy = 0.050974
+INFO:tensorflow:2018-01-22 13:29:33.455919: Step 2350: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:33.718611: Step 2360: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:33.718710: Step 2360: Cross entropy = 0.042768
+INFO:tensorflow:2018-01-22 13:29:33.744422: Step 2360: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:34.006093: Step 2370: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:34.006194: Step 2370: Cross entropy = 0.051170
+INFO:tensorflow:2018-01-22 13:29:34.032017: Step 2370: Validation accuracy = 92.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:34.293907: Step 2380: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:34.294004: Step 2380: Cross entropy = 0.040402
+INFO:tensorflow:2018-01-22 13:29:34.319729: Step 2380: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:34.580570: Step 2390: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:34.580670: Step 2390: Cross entropy = 0.044708
+INFO:tensorflow:2018-01-22 13:29:34.606730: Step 2390: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:34.869494: Step 2400: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:34.869594: Step 2400: Cross entropy = 0.051216
+INFO:tensorflow:2018-01-22 13:29:34.895770: Step 2400: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:35.157266: Step 2410: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:35.157366: Step 2410: Cross entropy = 0.043912
+INFO:tensorflow:2018-01-22 13:29:35.183689: Step 2410: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:35.446899: Step 2420: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:35.446998: Step 2420: Cross entropy = 0.055387
+INFO:tensorflow:2018-01-22 13:29:35.473030: Step 2420: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:35.735795: Step 2430: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:35.735892: Step 2430: Cross entropy = 0.050594
+INFO:tensorflow:2018-01-22 13:29:35.761520: Step 2430: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:36.021984: Step 2440: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:36.022083: Step 2440: Cross entropy = 0.037528
+INFO:tensorflow:2018-01-22 13:29:36.047951: Step 2440: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:36.309247: Step 2450: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:36.309348: Step 2450: Cross entropy = 0.038671
+INFO:tensorflow:2018-01-22 13:29:36.336066: Step 2450: Validation accuracy = 88.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:36.599066: Step 2460: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:36.599163: Step 2460: Cross entropy = 0.052324
+INFO:tensorflow:2018-01-22 13:29:36.624658: Step 2460: Validation accuracy = 87.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:36.886029: Step 2470: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:36.886130: Step 2470: Cross entropy = 0.053391
+INFO:tensorflow:2018-01-22 13:29:36.911806: Step 2470: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:37.173134: Step 2480: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:37.173232: Step 2480: Cross entropy = 0.043415
+INFO:tensorflow:2018-01-22 13:29:37.199266: Step 2480: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:37.462249: Step 2490: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:37.462346: Step 2490: Cross entropy = 0.052124
+INFO:tensorflow:2018-01-22 13:29:37.488440: Step 2490: Validation accuracy = 89.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:37.749942: Step 2500: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:37.750039: Step 2500: Cross entropy = 0.045615
+INFO:tensorflow:2018-01-22 13:29:37.775601: Step 2500: Validation accuracy = 88.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:38.038732: Step 2510: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:38.038830: Step 2510: Cross entropy = 0.039045
+INFO:tensorflow:2018-01-22 13:29:38.064736: Step 2510: Validation accuracy = 77.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:38.324839: Step 2520: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:38.324938: Step 2520: Cross entropy = 0.042558
+INFO:tensorflow:2018-01-22 13:29:38.351430: Step 2520: Validation accuracy = 77.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:38.613851: Step 2530: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:38.613948: Step 2530: Cross entropy = 0.048995
+INFO:tensorflow:2018-01-22 13:29:38.640140: Step 2530: Validation accuracy = 76.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:38.904944: Step 2540: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:38.905043: Step 2540: Cross entropy = 0.044226
+INFO:tensorflow:2018-01-22 13:29:38.930908: Step 2540: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:39.192950: Step 2550: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:39.193049: Step 2550: Cross entropy = 0.046672
+INFO:tensorflow:2018-01-22 13:29:39.218879: Step 2550: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:39.481205: Step 2560: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:39.481303: Step 2560: Cross entropy = 0.039958
+INFO:tensorflow:2018-01-22 13:29:39.507222: Step 2560: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:39.769657: Step 2570: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:39.769757: Step 2570: Cross entropy = 0.037135
+INFO:tensorflow:2018-01-22 13:29:39.795766: Step 2570: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:40.057420: Step 2580: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:40.057519: Step 2580: Cross entropy = 0.045961
+INFO:tensorflow:2018-01-22 13:29:40.083283: Step 2580: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:40.346707: Step 2590: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:40.346804: Step 2590: Cross entropy = 0.049175
+INFO:tensorflow:2018-01-22 13:29:40.372915: Step 2590: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:40.635695: Step 2600: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:40.635792: Step 2600: Cross entropy = 0.035000
+INFO:tensorflow:2018-01-22 13:29:40.662012: Step 2600: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:40.927173: Step 2610: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:40.927272: Step 2610: Cross entropy = 0.049563
+INFO:tensorflow:2018-01-22 13:29:40.953336: Step 2610: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:41.217856: Step 2620: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:41.217954: Step 2620: Cross entropy = 0.042519
+INFO:tensorflow:2018-01-22 13:29:41.244129: Step 2620: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:41.508543: Step 2630: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:41.508640: Step 2630: Cross entropy = 0.046345
+INFO:tensorflow:2018-01-22 13:29:41.534688: Step 2630: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:41.796877: Step 2640: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:41.796975: Step 2640: Cross entropy = 0.044381
+INFO:tensorflow:2018-01-22 13:29:41.823034: Step 2640: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:42.084884: Step 2650: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:42.084981: Step 2650: Cross entropy = 0.044320
+INFO:tensorflow:2018-01-22 13:29:42.111015: Step 2650: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:42.374630: Step 2660: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:42.374731: Step 2660: Cross entropy = 0.040570
+INFO:tensorflow:2018-01-22 13:29:42.400779: Step 2660: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:42.662254: Step 2670: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:42.662352: Step 2670: Cross entropy = 0.043678
+INFO:tensorflow:2018-01-22 13:29:42.687945: Step 2670: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:42.948915: Step 2680: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:42.949013: Step 2680: Cross entropy = 0.033247
+INFO:tensorflow:2018-01-22 13:29:42.974859: Step 2680: Validation accuracy = 76.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:43.237201: Step 2690: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:43.237300: Step 2690: Cross entropy = 0.046709
+INFO:tensorflow:2018-01-22 13:29:43.263117: Step 2690: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:43.526312: Step 2700: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:43.526412: Step 2700: Cross entropy = 0.031326
+INFO:tensorflow:2018-01-22 13:29:43.552467: Step 2700: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:43.814989: Step 2710: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:43.815089: Step 2710: Cross entropy = 0.044093
+INFO:tensorflow:2018-01-22 13:29:43.841316: Step 2710: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:44.104175: Step 2720: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:44.104273: Step 2720: Cross entropy = 0.039409
+INFO:tensorflow:2018-01-22 13:29:44.130448: Step 2720: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:44.393827: Step 2730: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:44.393926: Step 2730: Cross entropy = 0.035478
+INFO:tensorflow:2018-01-22 13:29:44.420565: Step 2730: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:44.682898: Step 2740: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:44.682996: Step 2740: Cross entropy = 0.039454
+INFO:tensorflow:2018-01-22 13:29:44.709241: Step 2740: Validation accuracy = 77.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:44.973940: Step 2750: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:44.974040: Step 2750: Cross entropy = 0.039398
+INFO:tensorflow:2018-01-22 13:29:44.999630: Step 2750: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:45.261989: Step 2760: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:45.262088: Step 2760: Cross entropy = 0.037170
+INFO:tensorflow:2018-01-22 13:29:45.287729: Step 2760: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:45.549695: Step 2770: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:45.549794: Step 2770: Cross entropy = 0.027385
+INFO:tensorflow:2018-01-22 13:29:45.576163: Step 2770: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:45.838025: Step 2780: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:45.838123: Step 2780: Cross entropy = 0.048823
+INFO:tensorflow:2018-01-22 13:29:45.863990: Step 2780: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:46.124362: Step 2790: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:46.124460: Step 2790: Cross entropy = 0.050562
+INFO:tensorflow:2018-01-22 13:29:46.150235: Step 2790: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:46.411128: Step 2800: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:46.411231: Step 2800: Cross entropy = 0.038966
+INFO:tensorflow:2018-01-22 13:29:46.437715: Step 2800: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:46.701114: Step 2810: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:46.701212: Step 2810: Cross entropy = 0.029837
+INFO:tensorflow:2018-01-22 13:29:46.727024: Step 2810: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:46.989189: Step 2820: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:46.989291: Step 2820: Cross entropy = 0.043106
+INFO:tensorflow:2018-01-22 13:29:47.015710: Step 2820: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:47.279150: Step 2830: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:47.279247: Step 2830: Cross entropy = 0.044187
+INFO:tensorflow:2018-01-22 13:29:47.305060: Step 2830: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:47.568280: Step 2840: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:47.568380: Step 2840: Cross entropy = 0.036962
+INFO:tensorflow:2018-01-22 13:29:47.594731: Step 2840: Validation accuracy = 89.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:47.860048: Step 2850: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:47.860148: Step 2850: Cross entropy = 0.040203
+INFO:tensorflow:2018-01-22 13:29:47.886539: Step 2850: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:48.150223: Step 2860: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:48.150323: Step 2860: Cross entropy = 0.030199
+INFO:tensorflow:2018-01-22 13:29:48.176561: Step 2860: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:48.440717: Step 2870: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:48.440814: Step 2870: Cross entropy = 0.030311
+INFO:tensorflow:2018-01-22 13:29:48.466928: Step 2870: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:48.728949: Step 2880: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:48.729048: Step 2880: Cross entropy = 0.040818
+INFO:tensorflow:2018-01-22 13:29:48.755361: Step 2880: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:49.017476: Step 2890: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:49.017574: Step 2890: Cross entropy = 0.041800
+INFO:tensorflow:2018-01-22 13:29:49.043552: Step 2890: Validation accuracy = 89.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:49.306111: Step 2900: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:49.306214: Step 2900: Cross entropy = 0.035987
+INFO:tensorflow:2018-01-22 13:29:49.332965: Step 2900: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:49.594888: Step 2910: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:49.594987: Step 2910: Cross entropy = 0.037492
+INFO:tensorflow:2018-01-22 13:29:49.621153: Step 2910: Validation accuracy = 72.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:49.883949: Step 2920: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:49.884046: Step 2920: Cross entropy = 0.035481
+INFO:tensorflow:2018-01-22 13:29:49.910288: Step 2920: Validation accuracy = 87.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:50.173372: Step 2930: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:50.173469: Step 2930: Cross entropy = 0.038412
+INFO:tensorflow:2018-01-22 13:29:50.199627: Step 2930: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:50.463097: Step 2940: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:50.463195: Step 2940: Cross entropy = 0.038819
+INFO:tensorflow:2018-01-22 13:29:50.488944: Step 2940: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:50.750951: Step 2950: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:50.751047: Step 2950: Cross entropy = 0.037426
+INFO:tensorflow:2018-01-22 13:29:50.776690: Step 2950: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:51.038840: Step 2960: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:51.038936: Step 2960: Cross entropy = 0.046890
+INFO:tensorflow:2018-01-22 13:29:51.065178: Step 2960: Validation accuracy = 88.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:51.327532: Step 2970: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:51.327631: Step 2970: Cross entropy = 0.029273
+INFO:tensorflow:2018-01-22 13:29:51.353488: Step 2970: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:51.615821: Step 2980: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:51.615920: Step 2980: Cross entropy = 0.038673
+INFO:tensorflow:2018-01-22 13:29:51.641515: Step 2980: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:51.902916: Step 2990: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:51.903017: Step 2990: Cross entropy = 0.036284
+INFO:tensorflow:2018-01-22 13:29:51.929522: Step 2990: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:52.191049: Step 3000: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:52.191146: Step 3000: Cross entropy = 0.037863
+INFO:tensorflow:2018-01-22 13:29:52.217083: Step 3000: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:52.479117: Step 3010: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:52.479215: Step 3010: Cross entropy = 0.040095
+INFO:tensorflow:2018-01-22 13:29:52.505561: Step 3010: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:52.767709: Step 3020: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:52.767809: Step 3020: Cross entropy = 0.036378
+INFO:tensorflow:2018-01-22 13:29:52.793588: Step 3020: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:53.056370: Step 3030: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:53.056473: Step 3030: Cross entropy = 0.036601
+INFO:tensorflow:2018-01-22 13:29:53.082759: Step 3030: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:53.346195: Step 3040: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:53.346295: Step 3040: Cross entropy = 0.037371
+INFO:tensorflow:2018-01-22 13:29:53.372730: Step 3040: Validation accuracy = 76.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:53.635001: Step 3050: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:53.635099: Step 3050: Cross entropy = 0.031893
+INFO:tensorflow:2018-01-22 13:29:53.660647: Step 3050: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:53.923788: Step 3060: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:53.923889: Step 3060: Cross entropy = 0.032041
+INFO:tensorflow:2018-01-22 13:29:53.949786: Step 3060: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:54.211698: Step 3070: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:54.211799: Step 3070: Cross entropy = 0.036329
+INFO:tensorflow:2018-01-22 13:29:54.237594: Step 3070: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:54.500337: Step 3080: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:54.500435: Step 3080: Cross entropy = 0.031980
+INFO:tensorflow:2018-01-22 13:29:54.526794: Step 3080: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:54.789567: Step 3090: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:54.789664: Step 3090: Cross entropy = 0.039677
+INFO:tensorflow:2018-01-22 13:29:54.815719: Step 3090: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:55.077752: Step 3100: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:55.077851: Step 3100: Cross entropy = 0.035453
+INFO:tensorflow:2018-01-22 13:29:55.103590: Step 3100: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:55.366176: Step 3110: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:55.366279: Step 3110: Cross entropy = 0.038431
+INFO:tensorflow:2018-01-22 13:29:55.392113: Step 3110: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:55.654602: Step 3120: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:55.654697: Step 3120: Cross entropy = 0.039398
+INFO:tensorflow:2018-01-22 13:29:55.680327: Step 3120: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:55.944286: Step 3130: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:55.944385: Step 3130: Cross entropy = 0.036231
+INFO:tensorflow:2018-01-22 13:29:55.970585: Step 3130: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:56.233504: Step 3140: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:56.233602: Step 3140: Cross entropy = 0.030015
+INFO:tensorflow:2018-01-22 13:29:56.259437: Step 3140: Validation accuracy = 87.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:56.524048: Step 3150: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:56.524149: Step 3150: Cross entropy = 0.035548
+INFO:tensorflow:2018-01-22 13:29:56.550663: Step 3150: Validation accuracy = 72.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:56.814097: Step 3160: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:56.814196: Step 3160: Cross entropy = 0.033367
+INFO:tensorflow:2018-01-22 13:29:56.840191: Step 3160: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:57.103031: Step 3170: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:57.103131: Step 3170: Cross entropy = 0.034735
+INFO:tensorflow:2018-01-22 13:29:57.128962: Step 3170: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:57.392047: Step 3180: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:57.392146: Step 3180: Cross entropy = 0.032923
+INFO:tensorflow:2018-01-22 13:29:57.418300: Step 3180: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:57.686261: Step 3190: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:57.686358: Step 3190: Cross entropy = 0.033361
+INFO:tensorflow:2018-01-22 13:29:57.711914: Step 3190: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:57.974535: Step 3200: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:57.974633: Step 3200: Cross entropy = 0.041045
+INFO:tensorflow:2018-01-22 13:29:58.000584: Step 3200: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:58.266186: Step 3210: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:58.266287: Step 3210: Cross entropy = 0.029444
+INFO:tensorflow:2018-01-22 13:29:58.292163: Step 3210: Validation accuracy = 75.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:58.556310: Step 3220: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:58.556408: Step 3220: Cross entropy = 0.032004
+INFO:tensorflow:2018-01-22 13:29:58.582336: Step 3220: Validation accuracy = 75.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:58.844013: Step 3230: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:58.844110: Step 3230: Cross entropy = 0.039698
+INFO:tensorflow:2018-01-22 13:29:58.870420: Step 3230: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:59.131789: Step 3240: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:59.131890: Step 3240: Cross entropy = 0.047497
+INFO:tensorflow:2018-01-22 13:29:59.157639: Step 3240: Validation accuracy = 89.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:59.420182: Step 3250: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:59.420283: Step 3250: Cross entropy = 0.035605
+INFO:tensorflow:2018-01-22 13:29:59.446216: Step 3250: Validation accuracy = 77.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:59.709016: Step 3260: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:59.709114: Step 3260: Cross entropy = 0.029675
+INFO:tensorflow:2018-01-22 13:29:59.734921: Step 3260: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:29:59.998762: Step 3270: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:29:59.998860: Step 3270: Cross entropy = 0.041600
+INFO:tensorflow:2018-01-22 13:30:00.025564: Step 3270: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:00.291536: Step 3280: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:00.291637: Step 3280: Cross entropy = 0.033576
+INFO:tensorflow:2018-01-22 13:30:00.317733: Step 3280: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:00.578554: Step 3290: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:00.578653: Step 3290: Cross entropy = 0.030454
+INFO:tensorflow:2018-01-22 13:30:00.605286: Step 3290: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:00.868466: Step 3300: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:00.868564: Step 3300: Cross entropy = 0.039672
+INFO:tensorflow:2018-01-22 13:30:00.894215: Step 3300: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:01.156958: Step 3310: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:01.157057: Step 3310: Cross entropy = 0.034526
+INFO:tensorflow:2018-01-22 13:30:01.183132: Step 3310: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:01.446497: Step 3320: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:01.446599: Step 3320: Cross entropy = 0.027921
+INFO:tensorflow:2018-01-22 13:30:01.472850: Step 3320: Validation accuracy = 77.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:01.736763: Step 3330: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:01.736864: Step 3330: Cross entropy = 0.031302
+INFO:tensorflow:2018-01-22 13:30:01.762669: Step 3330: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:02.026308: Step 3340: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:02.026407: Step 3340: Cross entropy = 0.036986
+INFO:tensorflow:2018-01-22 13:30:02.052048: Step 3340: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:02.316109: Step 3350: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:02.316205: Step 3350: Cross entropy = 0.038229
+INFO:tensorflow:2018-01-22 13:30:02.341928: Step 3350: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:02.604245: Step 3360: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:02.604344: Step 3360: Cross entropy = 0.037469
+INFO:tensorflow:2018-01-22 13:30:02.630058: Step 3360: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:02.893599: Step 3370: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:02.893696: Step 3370: Cross entropy = 0.031243
+INFO:tensorflow:2018-01-22 13:30:02.919561: Step 3370: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:03.184756: Step 3380: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:03.184852: Step 3380: Cross entropy = 0.030815
+INFO:tensorflow:2018-01-22 13:30:03.210793: Step 3380: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:03.474044: Step 3390: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:03.474142: Step 3390: Cross entropy = 0.036709
+INFO:tensorflow:2018-01-22 13:30:03.500487: Step 3390: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:03.765842: Step 3400: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:03.765940: Step 3400: Cross entropy = 0.026741
+INFO:tensorflow:2018-01-22 13:30:03.791709: Step 3400: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:04.053316: Step 3410: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:04.053414: Step 3410: Cross entropy = 0.030575
+INFO:tensorflow:2018-01-22 13:30:04.079194: Step 3410: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:04.343465: Step 3420: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:04.343571: Step 3420: Cross entropy = 0.032437
+INFO:tensorflow:2018-01-22 13:30:04.369346: Step 3420: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:04.630937: Step 3430: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:04.631035: Step 3430: Cross entropy = 0.036298
+INFO:tensorflow:2018-01-22 13:30:04.657082: Step 3430: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:04.920095: Step 3440: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:04.920191: Step 3440: Cross entropy = 0.036473
+INFO:tensorflow:2018-01-22 13:30:04.945874: Step 3440: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:05.209320: Step 3450: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:05.209417: Step 3450: Cross entropy = 0.029008
+INFO:tensorflow:2018-01-22 13:30:05.234946: Step 3450: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:05.498450: Step 3460: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:05.498548: Step 3460: Cross entropy = 0.031792
+INFO:tensorflow:2018-01-22 13:30:05.524790: Step 3460: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:05.788232: Step 3470: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:05.788331: Step 3470: Cross entropy = 0.039279
+INFO:tensorflow:2018-01-22 13:30:05.814209: Step 3470: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:06.077658: Step 3480: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:06.077757: Step 3480: Cross entropy = 0.030467
+INFO:tensorflow:2018-01-22 13:30:06.104210: Step 3480: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:06.366659: Step 3490: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:06.366757: Step 3490: Cross entropy = 0.034799
+INFO:tensorflow:2018-01-22 13:30:06.393663: Step 3490: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:06.656790: Step 3500: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:06.656891: Step 3500: Cross entropy = 0.023657
+INFO:tensorflow:2018-01-22 13:30:06.683317: Step 3500: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:06.946712: Step 3510: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:06.946807: Step 3510: Cross entropy = 0.029910
+INFO:tensorflow:2018-01-22 13:30:06.972574: Step 3510: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:07.236028: Step 3520: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:07.236129: Step 3520: Cross entropy = 0.031915
+INFO:tensorflow:2018-01-22 13:30:07.262256: Step 3520: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:07.525110: Step 3530: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:07.525209: Step 3530: Cross entropy = 0.031304
+INFO:tensorflow:2018-01-22 13:30:07.551304: Step 3530: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:07.815291: Step 3540: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:07.815389: Step 3540: Cross entropy = 0.033761
+INFO:tensorflow:2018-01-22 13:30:07.841538: Step 3540: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:08.104145: Step 3550: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:08.104243: Step 3550: Cross entropy = 0.026706
+INFO:tensorflow:2018-01-22 13:30:08.130230: Step 3550: Validation accuracy = 75.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:08.393168: Step 3560: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:08.393268: Step 3560: Cross entropy = 0.032733
+INFO:tensorflow:2018-01-22 13:30:08.419419: Step 3560: Validation accuracy = 87.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:08.683943: Step 3570: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:08.684042: Step 3570: Cross entropy = 0.025470
+INFO:tensorflow:2018-01-22 13:30:08.710566: Step 3570: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:08.974510: Step 3580: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:08.974608: Step 3580: Cross entropy = 0.030278
+INFO:tensorflow:2018-01-22 13:30:09.000583: Step 3580: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:09.262014: Step 3590: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:09.262114: Step 3590: Cross entropy = 0.028064
+INFO:tensorflow:2018-01-22 13:30:09.288080: Step 3590: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:09.549389: Step 3600: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:09.549490: Step 3600: Cross entropy = 0.037045
+INFO:tensorflow:2018-01-22 13:30:09.575467: Step 3600: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:09.839463: Step 3610: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:09.839569: Step 3610: Cross entropy = 0.031614
+INFO:tensorflow:2018-01-22 13:30:09.865585: Step 3610: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:10.127622: Step 3620: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:10.127719: Step 3620: Cross entropy = 0.033076
+INFO:tensorflow:2018-01-22 13:30:10.154071: Step 3620: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:10.417964: Step 3630: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:10.418060: Step 3630: Cross entropy = 0.031332
+INFO:tensorflow:2018-01-22 13:30:10.444119: Step 3630: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:10.707847: Step 3640: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:10.707943: Step 3640: Cross entropy = 0.034898
+INFO:tensorflow:2018-01-22 13:30:10.733846: Step 3640: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:10.997652: Step 3650: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:10.997750: Step 3650: Cross entropy = 0.033429
+INFO:tensorflow:2018-01-22 13:30:11.023781: Step 3650: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:11.285889: Step 3660: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:11.285991: Step 3660: Cross entropy = 0.023998
+INFO:tensorflow:2018-01-22 13:30:11.312440: Step 3660: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:11.576390: Step 3670: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:11.576489: Step 3670: Cross entropy = 0.028556
+INFO:tensorflow:2018-01-22 13:30:11.602236: Step 3670: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:11.864725: Step 3680: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:11.864825: Step 3680: Cross entropy = 0.030190
+INFO:tensorflow:2018-01-22 13:30:11.891045: Step 3680: Validation accuracy = 89.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:12.154756: Step 3690: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:12.154854: Step 3690: Cross entropy = 0.026752
+INFO:tensorflow:2018-01-22 13:30:12.181227: Step 3690: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:12.442924: Step 3700: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:12.443022: Step 3700: Cross entropy = 0.028090
+INFO:tensorflow:2018-01-22 13:30:12.469043: Step 3700: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:12.730575: Step 3710: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:12.730675: Step 3710: Cross entropy = 0.034645
+INFO:tensorflow:2018-01-22 13:30:12.756562: Step 3710: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:13.018101: Step 3720: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:13.018200: Step 3720: Cross entropy = 0.030557
+INFO:tensorflow:2018-01-22 13:30:13.044522: Step 3720: Validation accuracy = 74.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:13.308136: Step 3730: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:13.308236: Step 3730: Cross entropy = 0.028066
+INFO:tensorflow:2018-01-22 13:30:13.334006: Step 3730: Validation accuracy = 88.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:13.596765: Step 3740: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:13.596863: Step 3740: Cross entropy = 0.024758
+INFO:tensorflow:2018-01-22 13:30:13.623008: Step 3740: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:13.886306: Step 3750: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:13.886403: Step 3750: Cross entropy = 0.028898
+INFO:tensorflow:2018-01-22 13:30:13.912280: Step 3750: Validation accuracy = 88.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:14.174747: Step 3760: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:14.174845: Step 3760: Cross entropy = 0.032652
+INFO:tensorflow:2018-01-22 13:30:14.200896: Step 3760: Validation accuracy = 75.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:14.463785: Step 3770: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:14.463885: Step 3770: Cross entropy = 0.027150
+INFO:tensorflow:2018-01-22 13:30:14.489541: Step 3770: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:14.751172: Step 3780: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:14.751268: Step 3780: Cross entropy = 0.026810
+INFO:tensorflow:2018-01-22 13:30:14.777167: Step 3780: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:15.041522: Step 3790: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:15.041623: Step 3790: Cross entropy = 0.030420
+INFO:tensorflow:2018-01-22 13:30:15.068102: Step 3790: Validation accuracy = 76.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:15.331771: Step 3800: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:15.331871: Step 3800: Cross entropy = 0.028074
+INFO:tensorflow:2018-01-22 13:30:15.357925: Step 3800: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:15.621953: Step 3810: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:15.622051: Step 3810: Cross entropy = 0.031759
+INFO:tensorflow:2018-01-22 13:30:15.648037: Step 3810: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:15.909790: Step 3820: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:15.909891: Step 3820: Cross entropy = 0.027350
+INFO:tensorflow:2018-01-22 13:30:15.935860: Step 3820: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:16.198857: Step 3830: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:16.198954: Step 3830: Cross entropy = 0.028318
+INFO:tensorflow:2018-01-22 13:30:16.225319: Step 3830: Validation accuracy = 89.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:16.489089: Step 3840: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:16.489187: Step 3840: Cross entropy = 0.029765
+INFO:tensorflow:2018-01-22 13:30:16.514799: Step 3840: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:16.778757: Step 3850: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:16.778856: Step 3850: Cross entropy = 0.030696
+INFO:tensorflow:2018-01-22 13:30:16.804873: Step 3850: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:17.068855: Step 3860: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:17.068953: Step 3860: Cross entropy = 0.029583
+INFO:tensorflow:2018-01-22 13:30:17.095303: Step 3860: Validation accuracy = 77.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:17.359099: Step 3870: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:17.359198: Step 3870: Cross entropy = 0.030929
+INFO:tensorflow:2018-01-22 13:30:17.385678: Step 3870: Validation accuracy = 74.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:17.648457: Step 3880: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:17.648553: Step 3880: Cross entropy = 0.026456
+INFO:tensorflow:2018-01-22 13:30:17.674388: Step 3880: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:17.938148: Step 3890: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:17.938245: Step 3890: Cross entropy = 0.027702
+INFO:tensorflow:2018-01-22 13:30:17.964218: Step 3890: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:18.226626: Step 3900: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:18.226726: Step 3900: Cross entropy = 0.033495
+INFO:tensorflow:2018-01-22 13:30:18.252432: Step 3900: Validation accuracy = 91.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:18.515560: Step 3910: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:18.515662: Step 3910: Cross entropy = 0.030670
+INFO:tensorflow:2018-01-22 13:30:18.541929: Step 3910: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:18.804975: Step 3920: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:18.805074: Step 3920: Cross entropy = 0.028521
+INFO:tensorflow:2018-01-22 13:30:18.830854: Step 3920: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:19.095368: Step 3930: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:19.095466: Step 3930: Cross entropy = 0.027266
+INFO:tensorflow:2018-01-22 13:30:19.121032: Step 3930: Validation accuracy = 87.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:19.383329: Step 3940: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:19.383428: Step 3940: Cross entropy = 0.036036
+INFO:tensorflow:2018-01-22 13:30:19.409631: Step 3940: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:19.673229: Step 3950: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:19.673328: Step 3950: Cross entropy = 0.028506
+INFO:tensorflow:2018-01-22 13:30:19.699822: Step 3950: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:19.962659: Step 3960: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:19.962760: Step 3960: Cross entropy = 0.030655
+INFO:tensorflow:2018-01-22 13:30:19.988580: Step 3960: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:20.251479: Step 3970: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:20.251581: Step 3970: Cross entropy = 0.024095
+INFO:tensorflow:2018-01-22 13:30:20.278211: Step 3970: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:20.541287: Step 3980: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:20.541385: Step 3980: Cross entropy = 0.025362
+INFO:tensorflow:2018-01-22 13:30:20.567565: Step 3980: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:20.832091: Step 3990: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:20.832189: Step 3990: Cross entropy = 0.026961
+INFO:tensorflow:2018-01-22 13:30:20.858122: Step 3990: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:21.119637: Step 4000: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:21.119739: Step 4000: Cross entropy = 0.031881
+INFO:tensorflow:2018-01-22 13:30:21.145720: Step 4000: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:21.410798: Step 4010: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:21.410896: Step 4010: Cross entropy = 0.022849
+INFO:tensorflow:2018-01-22 13:30:21.437316: Step 4010: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:21.699255: Step 4020: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:21.699352: Step 4020: Cross entropy = 0.023525
+INFO:tensorflow:2018-01-22 13:30:21.725402: Step 4020: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:21.989827: Step 4030: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:21.989926: Step 4030: Cross entropy = 0.034269
+INFO:tensorflow:2018-01-22 13:30:22.015711: Step 4030: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:22.276981: Step 4040: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:22.277081: Step 4040: Cross entropy = 0.027811
+INFO:tensorflow:2018-01-22 13:30:22.303297: Step 4040: Validation accuracy = 76.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:22.568041: Step 4050: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:22.568140: Step 4050: Cross entropy = 0.026124
+INFO:tensorflow:2018-01-22 13:30:22.594142: Step 4050: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:22.857003: Step 4060: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:22.857099: Step 4060: Cross entropy = 0.022558
+INFO:tensorflow:2018-01-22 13:30:22.883275: Step 4060: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:23.146462: Step 4070: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:23.146561: Step 4070: Cross entropy = 0.030861
+INFO:tensorflow:2018-01-22 13:30:23.172327: Step 4070: Validation accuracy = 88.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:23.434671: Step 4080: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:23.434769: Step 4080: Cross entropy = 0.026388
+INFO:tensorflow:2018-01-22 13:30:23.460513: Step 4080: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:23.723761: Step 4090: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:23.723858: Step 4090: Cross entropy = 0.027543
+INFO:tensorflow:2018-01-22 13:30:23.749767: Step 4090: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:24.012260: Step 4100: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:24.012356: Step 4100: Cross entropy = 0.031140
+INFO:tensorflow:2018-01-22 13:30:24.038254: Step 4100: Validation accuracy = 87.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:24.302308: Step 4110: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:24.302407: Step 4110: Cross entropy = 0.028349
+INFO:tensorflow:2018-01-22 13:30:24.328307: Step 4110: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:24.590870: Step 4120: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:24.590968: Step 4120: Cross entropy = 0.022613
+INFO:tensorflow:2018-01-22 13:30:24.616617: Step 4120: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:24.879793: Step 4130: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:24.879890: Step 4130: Cross entropy = 0.031486
+INFO:tensorflow:2018-01-22 13:30:24.905784: Step 4130: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:25.167708: Step 4140: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:25.167809: Step 4140: Cross entropy = 0.027966
+INFO:tensorflow:2018-01-22 13:30:25.193762: Step 4140: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:25.458797: Step 4150: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:25.458899: Step 4150: Cross entropy = 0.026355
+INFO:tensorflow:2018-01-22 13:30:25.485090: Step 4150: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:25.750317: Step 4160: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:25.750419: Step 4160: Cross entropy = 0.028433
+INFO:tensorflow:2018-01-22 13:30:25.776506: Step 4160: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:26.040132: Step 4170: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:26.040232: Step 4170: Cross entropy = 0.027901
+INFO:tensorflow:2018-01-22 13:30:26.066406: Step 4170: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:26.330217: Step 4180: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:26.330318: Step 4180: Cross entropy = 0.033238
+INFO:tensorflow:2018-01-22 13:30:26.355973: Step 4180: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:26.616415: Step 4190: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:26.616515: Step 4190: Cross entropy = 0.028202
+INFO:tensorflow:2018-01-22 13:30:26.642242: Step 4190: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:26.905916: Step 4200: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:26.906015: Step 4200: Cross entropy = 0.031313
+INFO:tensorflow:2018-01-22 13:30:26.932026: Step 4200: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:27.193800: Step 4210: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:27.193897: Step 4210: Cross entropy = 0.028582
+INFO:tensorflow:2018-01-22 13:30:27.219641: Step 4210: Validation accuracy = 77.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:27.481286: Step 4220: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:27.481381: Step 4220: Cross entropy = 0.024797
+INFO:tensorflow:2018-01-22 13:30:27.507242: Step 4220: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:27.770557: Step 4230: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:27.770654: Step 4230: Cross entropy = 0.026739
+INFO:tensorflow:2018-01-22 13:30:27.797561: Step 4230: Validation accuracy = 87.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:28.062356: Step 4240: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:28.062456: Step 4240: Cross entropy = 0.028564
+INFO:tensorflow:2018-01-22 13:30:28.088934: Step 4240: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:28.353695: Step 4250: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:28.353795: Step 4250: Cross entropy = 0.022881
+INFO:tensorflow:2018-01-22 13:30:28.380001: Step 4250: Validation accuracy = 88.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:28.641735: Step 4260: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:28.641835: Step 4260: Cross entropy = 0.023375
+INFO:tensorflow:2018-01-22 13:30:28.668035: Step 4260: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:28.932294: Step 4270: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:28.932395: Step 4270: Cross entropy = 0.024442
+INFO:tensorflow:2018-01-22 13:30:28.958842: Step 4270: Validation accuracy = 73.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:29.221725: Step 4280: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:29.221822: Step 4280: Cross entropy = 0.024898
+INFO:tensorflow:2018-01-22 13:30:29.248112: Step 4280: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:29.513173: Step 4290: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:29.513271: Step 4290: Cross entropy = 0.031837
+INFO:tensorflow:2018-01-22 13:30:29.539409: Step 4290: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:29.803618: Step 4300: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:29.803715: Step 4300: Cross entropy = 0.024946
+INFO:tensorflow:2018-01-22 13:30:29.830148: Step 4300: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:30.091425: Step 4310: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:30.091543: Step 4310: Cross entropy = 0.024482
+INFO:tensorflow:2018-01-22 13:30:30.117973: Step 4310: Validation accuracy = 87.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:30.379754: Step 4320: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:30.379852: Step 4320: Cross entropy = 0.023805
+INFO:tensorflow:2018-01-22 13:30:30.405558: Step 4320: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:30.670037: Step 4330: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:30.670136: Step 4330: Cross entropy = 0.027645
+INFO:tensorflow:2018-01-22 13:30:30.696380: Step 4330: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:30.960338: Step 4340: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:30.960441: Step 4340: Cross entropy = 0.028070
+INFO:tensorflow:2018-01-22 13:30:30.986392: Step 4340: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:31.249449: Step 4350: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:31.249550: Step 4350: Cross entropy = 0.028949
+INFO:tensorflow:2018-01-22 13:30:31.275858: Step 4350: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:31.539999: Step 4360: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:31.540100: Step 4360: Cross entropy = 0.023239
+INFO:tensorflow:2018-01-22 13:30:31.566833: Step 4360: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:31.831848: Step 4370: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:31.831950: Step 4370: Cross entropy = 0.031079
+INFO:tensorflow:2018-01-22 13:30:31.858068: Step 4370: Validation accuracy = 89.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:32.121284: Step 4380: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:32.121382: Step 4380: Cross entropy = 0.028341
+INFO:tensorflow:2018-01-22 13:30:32.147515: Step 4380: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:32.410531: Step 4390: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:32.410632: Step 4390: Cross entropy = 0.025918
+INFO:tensorflow:2018-01-22 13:30:32.436540: Step 4390: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:32.699355: Step 4400: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:32.699454: Step 4400: Cross entropy = 0.030724
+INFO:tensorflow:2018-01-22 13:30:32.725291: Step 4400: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:32.989144: Step 4410: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:32.989242: Step 4410: Cross entropy = 0.032222
+INFO:tensorflow:2018-01-22 13:30:33.015674: Step 4410: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:33.278693: Step 4420: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:33.278794: Step 4420: Cross entropy = 0.023974
+INFO:tensorflow:2018-01-22 13:30:33.304680: Step 4420: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:33.568199: Step 4430: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:33.568298: Step 4430: Cross entropy = 0.026042
+INFO:tensorflow:2018-01-22 13:30:33.594636: Step 4430: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:33.857219: Step 4440: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:33.857318: Step 4440: Cross entropy = 0.022388
+INFO:tensorflow:2018-01-22 13:30:33.883564: Step 4440: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:34.148307: Step 4450: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:34.148403: Step 4450: Cross entropy = 0.024618
+INFO:tensorflow:2018-01-22 13:30:34.174522: Step 4450: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:34.438128: Step 4460: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:34.438226: Step 4460: Cross entropy = 0.026079
+INFO:tensorflow:2018-01-22 13:30:34.464136: Step 4460: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:34.729275: Step 4470: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:34.729373: Step 4470: Cross entropy = 0.031191
+INFO:tensorflow:2018-01-22 13:30:34.755309: Step 4470: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:35.017782: Step 4480: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:35.017881: Step 4480: Cross entropy = 0.018068
+INFO:tensorflow:2018-01-22 13:30:35.044020: Step 4480: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:35.308882: Step 4490: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:35.308979: Step 4490: Cross entropy = 0.031115
+INFO:tensorflow:2018-01-22 13:30:35.335121: Step 4490: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:35.598271: Step 4500: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:35.598370: Step 4500: Cross entropy = 0.026028
+INFO:tensorflow:2018-01-22 13:30:35.624133: Step 4500: Validation accuracy = 91.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:35.887474: Step 4510: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:35.887576: Step 4510: Cross entropy = 0.023222
+INFO:tensorflow:2018-01-22 13:30:35.913462: Step 4510: Validation accuracy = 77.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:36.177144: Step 4520: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:36.177243: Step 4520: Cross entropy = 0.026020
+INFO:tensorflow:2018-01-22 13:30:36.203619: Step 4520: Validation accuracy = 94.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:36.466004: Step 4530: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:36.466106: Step 4530: Cross entropy = 0.023073
+INFO:tensorflow:2018-01-22 13:30:36.492164: Step 4530: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:36.755907: Step 4540: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:36.756004: Step 4540: Cross entropy = 0.020958
+INFO:tensorflow:2018-01-22 13:30:36.782091: Step 4540: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:37.047189: Step 4550: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:37.047288: Step 4550: Cross entropy = 0.024430
+INFO:tensorflow:2018-01-22 13:30:37.073361: Step 4550: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:37.336102: Step 4560: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:37.336199: Step 4560: Cross entropy = 0.031665
+INFO:tensorflow:2018-01-22 13:30:37.362137: Step 4560: Validation accuracy = 88.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:37.624960: Step 4570: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:37.625059: Step 4570: Cross entropy = 0.023390
+INFO:tensorflow:2018-01-22 13:30:37.651463: Step 4570: Validation accuracy = 88.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:37.917456: Step 4580: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:37.917553: Step 4580: Cross entropy = 0.027477
+INFO:tensorflow:2018-01-22 13:30:37.944255: Step 4580: Validation accuracy = 74.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:38.209660: Step 4590: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:38.209757: Step 4590: Cross entropy = 0.023661
+INFO:tensorflow:2018-01-22 13:30:38.235980: Step 4590: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:38.499466: Step 4600: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:38.499572: Step 4600: Cross entropy = 0.029308
+INFO:tensorflow:2018-01-22 13:30:38.525772: Step 4600: Validation accuracy = 91.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:38.788621: Step 4610: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:38.788717: Step 4610: Cross entropy = 0.021246
+INFO:tensorflow:2018-01-22 13:30:38.814852: Step 4610: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:39.078766: Step 4620: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:39.078864: Step 4620: Cross entropy = 0.027170
+INFO:tensorflow:2018-01-22 13:30:39.105148: Step 4620: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:39.369607: Step 4630: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:39.369706: Step 4630: Cross entropy = 0.022953
+INFO:tensorflow:2018-01-22 13:30:39.396051: Step 4630: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:39.660430: Step 4640: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:39.660531: Step 4640: Cross entropy = 0.023355
+INFO:tensorflow:2018-01-22 13:30:39.686670: Step 4640: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:39.949494: Step 4650: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:39.949593: Step 4650: Cross entropy = 0.028283
+INFO:tensorflow:2018-01-22 13:30:39.976067: Step 4650: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:40.241218: Step 4660: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:40.241315: Step 4660: Cross entropy = 0.025932
+INFO:tensorflow:2018-01-22 13:30:40.267179: Step 4660: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:40.531156: Step 4670: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:40.531253: Step 4670: Cross entropy = 0.028177
+INFO:tensorflow:2018-01-22 13:30:40.557161: Step 4670: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:40.820233: Step 4680: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:40.820332: Step 4680: Cross entropy = 0.022784
+INFO:tensorflow:2018-01-22 13:30:40.846500: Step 4680: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:41.108915: Step 4690: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:41.109012: Step 4690: Cross entropy = 0.026046
+INFO:tensorflow:2018-01-22 13:30:41.135984: Step 4690: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:41.399890: Step 4700: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:41.399991: Step 4700: Cross entropy = 0.027571
+INFO:tensorflow:2018-01-22 13:30:41.426159: Step 4700: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:41.690806: Step 4710: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:41.690904: Step 4710: Cross entropy = 0.024525
+INFO:tensorflow:2018-01-22 13:30:41.717025: Step 4710: Validation accuracy = 87.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:41.981833: Step 4720: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:41.981933: Step 4720: Cross entropy = 0.025596
+INFO:tensorflow:2018-01-22 13:30:42.008056: Step 4720: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:42.270709: Step 4730: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:42.270811: Step 4730: Cross entropy = 0.024147
+INFO:tensorflow:2018-01-22 13:30:42.296943: Step 4730: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:42.559244: Step 4740: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:42.559342: Step 4740: Cross entropy = 0.022885
+INFO:tensorflow:2018-01-22 13:30:42.584992: Step 4740: Validation accuracy = 86.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:42.848310: Step 4750: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:42.848407: Step 4750: Cross entropy = 0.020466
+INFO:tensorflow:2018-01-22 13:30:42.874736: Step 4750: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:43.139608: Step 4760: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:43.139705: Step 4760: Cross entropy = 0.022235
+INFO:tensorflow:2018-01-22 13:30:43.165707: Step 4760: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:43.429779: Step 4770: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:43.429875: Step 4770: Cross entropy = 0.020990
+INFO:tensorflow:2018-01-22 13:30:43.455595: Step 4770: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:43.716807: Step 4780: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:43.716903: Step 4780: Cross entropy = 0.024038
+INFO:tensorflow:2018-01-22 13:30:43.742907: Step 4780: Validation accuracy = 78.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:44.006424: Step 4790: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:44.006524: Step 4790: Cross entropy = 0.025034
+INFO:tensorflow:2018-01-22 13:30:44.032229: Step 4790: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:44.293807: Step 4800: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:44.293905: Step 4800: Cross entropy = 0.028194
+INFO:tensorflow:2018-01-22 13:30:44.319637: Step 4800: Validation accuracy = 76.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:44.583436: Step 4810: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:44.583536: Step 4810: Cross entropy = 0.023164
+INFO:tensorflow:2018-01-22 13:30:44.609420: Step 4810: Validation accuracy = 90.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:44.872285: Step 4820: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:44.872382: Step 4820: Cross entropy = 0.022039
+INFO:tensorflow:2018-01-22 13:30:44.898384: Step 4820: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:45.165294: Step 4830: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:45.165392: Step 4830: Cross entropy = 0.026884
+INFO:tensorflow:2018-01-22 13:30:45.191250: Step 4830: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:45.455009: Step 4840: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:45.455107: Step 4840: Cross entropy = 0.018633
+INFO:tensorflow:2018-01-22 13:30:45.481030: Step 4840: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:45.746870: Step 4850: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:45.746966: Step 4850: Cross entropy = 0.020772
+INFO:tensorflow:2018-01-22 13:30:45.772907: Step 4850: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:46.036152: Step 4860: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:46.036249: Step 4860: Cross entropy = 0.022557
+INFO:tensorflow:2018-01-22 13:30:46.062360: Step 4860: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:46.326902: Step 4870: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:46.326999: Step 4870: Cross entropy = 0.020490
+INFO:tensorflow:2018-01-22 13:30:46.353455: Step 4870: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:46.618929: Step 4880: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:46.619028: Step 4880: Cross entropy = 0.024177
+INFO:tensorflow:2018-01-22 13:30:46.645000: Step 4880: Validation accuracy = 77.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:46.909196: Step 4890: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:46.909293: Step 4890: Cross entropy = 0.022433
+INFO:tensorflow:2018-01-22 13:30:46.935230: Step 4890: Validation accuracy = 88.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:47.198206: Step 4900: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:47.198303: Step 4900: Cross entropy = 0.018709
+INFO:tensorflow:2018-01-22 13:30:47.224076: Step 4900: Validation accuracy = 84.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:47.486540: Step 4910: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:47.486639: Step 4910: Cross entropy = 0.023849
+INFO:tensorflow:2018-01-22 13:30:47.512669: Step 4910: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:47.776244: Step 4920: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:47.776342: Step 4920: Cross entropy = 0.024761
+INFO:tensorflow:2018-01-22 13:30:47.802204: Step 4920: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:48.065054: Step 4930: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:48.065157: Step 4930: Cross entropy = 0.022114
+INFO:tensorflow:2018-01-22 13:30:48.091242: Step 4930: Validation accuracy = 82.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:48.355132: Step 4940: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:48.355228: Step 4940: Cross entropy = 0.025327
+INFO:tensorflow:2018-01-22 13:30:48.381516: Step 4940: Validation accuracy = 85.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:48.643575: Step 4950: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:48.643674: Step 4950: Cross entropy = 0.022050
+INFO:tensorflow:2018-01-22 13:30:48.670192: Step 4950: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:48.931999: Step 4960: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:48.932100: Step 4960: Cross entropy = 0.025991
+INFO:tensorflow:2018-01-22 13:30:48.958295: Step 4960: Validation accuracy = 79.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:49.223580: Step 4970: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:49.223677: Step 4970: Cross entropy = 0.027458
+INFO:tensorflow:2018-01-22 13:30:49.249775: Step 4970: Validation accuracy = 83.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:49.513435: Step 4980: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:49.513533: Step 4980: Cross entropy = 0.026744
+INFO:tensorflow:2018-01-22 13:30:49.539360: Step 4980: Validation accuracy = 80.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:49.805589: Step 4990: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:49.805688: Step 4990: Cross entropy = 0.022987
+INFO:tensorflow:2018-01-22 13:30:49.831717: Step 4990: Validation accuracy = 88.0% (N=100)
+INFO:tensorflow:2018-01-22 13:30:50.071320: Step 4999: Train accuracy = 100.0%
+INFO:tensorflow:2018-01-22 13:30:50.071418: Step 4999: Cross entropy = 0.017488
+INFO:tensorflow:2018-01-22 13:30:50.097471: Step 4999: Validation accuracy = 81.0% (N=100)
+INFO:tensorflow:Final test accuracy = 84.6% (N=818)
+INFO:tensorflow:Froze 2 variables.
+Converted 2 variables to const ops.
+
+Evaluation training time: 32.31134s
+
+
+Evaluation total time: 144.22547s
+
+

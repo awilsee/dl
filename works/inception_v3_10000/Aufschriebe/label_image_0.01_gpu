@@ -1,0 +1,20 @@
+1) Retrained
+
+****** Affenpinscher ******
+Evaluation time (1-image): 0.832s
+
+001 affenpinscher 0.9906798
+038 brussels griffon 0.0031543586
+042 cairn terrier 0.0012904626
+100 lowchen 0.00028960424
+099 lhasa apso 0.00019428668
+
+
+****** Chihuauaaaaaaa *******
+Evaluation time (1-image): 0.801s
+
+048 chihuahua 0.9986412
+049 chinese crested 0.00023643074
+110 norwegian lundehund 0.00012362398
+102 manchester terrier 9.041255e-05
+115 papillon 6.394393e-05
