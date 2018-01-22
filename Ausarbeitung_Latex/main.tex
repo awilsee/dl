@@ -67,6 +67,62 @@
 %beim arbeiten durch bilder.
 \setboolean{draftgraphics}{false}
 
+
+% Zitierung und Literaturverzeichnis
+%-------------------------------------------------------------------
+\usepackage{apacite}		% Zitierstil
+\usepackage{natbib} 		% Erweiterte zitiermöglichkeiten 
+\usepackage[fixlanguage]{babelbib}		% Übersetzung des Literaturverzeichnises und der Zitate
+\selectbiblanguage{english}
+%
+%
+%Abbildungen, Tabellen Ref mit Name
+%
+\newcommand{\mychapter}[1]{\chapter{#1} \label{chap:#1}}
+\newcommand{\mysection}[1]{\section{#1} \label{sec:#1}}
+\newcommand{\mysubsection}[1]{\subsection{#1} \label{subsec:#1}}
+\newcommand{\mysubsubsection}[1]{\subsubsection{#1} \label{subsubsec:#1}}
+%
+\newcommand*{\chapref}[1]{\chaptername~\ref{chap:#1}}
+\newcommand*{\secref}[1]{section~\ref{sec:#1}}
+\newcommand*{\subsecref}[1]{section~\ref{subsec:#1}}
+\newcommand*{\subsubsecref}[1]{section~\ref{subsubsec:#1}}
+\newcommand*{\listref}[1]{listing~\ref{list:#1}}
+\newcommand*{\figref}[1]{\figurename~\ref{fig:#1}}
+\newcommand*{\tabref}[1]{\tablename~\ref{tab:#1}}
+\usepackage[format=plain,
+      justification=raggedright,
+      singlelinecheck=false]
+     {caption}
+     
+% Colors
+%-------------------------------------------------------------------
+%usepackage[usenames]{color}
+\definecolor{myMaroon}{rgb}{0.5,0.25,0}
+\definecolor{gray}{gray}{0.9}
+\definecolor{darkGray}{gray}{0.5}
+\definecolor{lightGreen}{rgb}{0,0.2,0}
+\definecolor{darkGreen}{rgb}{0,0.4,0}
+
+
+% Listings Einbettung von Code (C/C++, Java, ...)
+%-------------------------------------------------------------------
+\usepackage{verbatim}		% Sorgt dafür, dass Text so dargestellt wird wie er eingegeben ist,
+                            % es werden keine Leerzeichen oder Tabs entfernnt
+\usepackage{moreverb}		% Erweiterte Möglichkeiten für verbatim                            
+\usepackage{listings}		% Source-Code printer for LaTeX
+\lstset{language=Python}    % Python
+%\lstloadlanguages{[Visual]C++,[ISO]C++}
+\lstset{numbers=left, numberstyle=\tiny, numbersep=-6pt,tabsize=3, stepnumber=1}
+\lstset{framexleftmargin=-5mm, frame=single, rulesepcolor=\color{darkGray}}
+\lstset{captionpos=b} 							% Beschriftung unter Listing
+\lstset{backgroundcolor=\color{gray}}
+\lstset{basicstyle=\scriptsize} 				% alle listings winzig drucken 
+%\lstset{commentstyle=\color{green}} 			% Kommentare gruen drucken 
+%\lstset{keywordstyle=\color{blue}\bfseries}		% Schlüsselwörter fett und blau
+%\lstset{morekeywords={uint8_t, uint16_t, uint32_t, uint64_t, int8_t, int16_t, int32_t, int64_t,}}
+
+
 \begin{document}
 \postinit %Initialisierung der Styles Teil 2
 %%AB HIER GEHT DIE ARBEIT LOS!
@@ -127,6 +183,17 @@
 \input{05evaluation.tex}
 
 \input{06conclusion.tex}
+
+\clearpage
+\newcounter{anhang}
+\pagenumbering{Roman}
+%\bibliographystyle{gerapali} % autor, jahr gerapali
+\bibliographystyle{apalike} % autor, jahr
+\bibliography{references}
+\addcontentsline{toc}{section}{Bibliography}
+%\clearpage
+\listoffigures
+\addcontentsline{toc}{section}{List of figures}
 
 %%HIER ENDET DIE ARBEIT! DER REST IST KOMMENTAR MIT EIN PAAR PRAKTISCHEN FORMATIERUNGEN!!
 \end{document}
