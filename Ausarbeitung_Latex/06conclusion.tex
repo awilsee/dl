@@ -1,4 +1,62 @@
-\section{Conclusion}
+\mysection{Conclusion}
 - tutorials not complete, different \\
 - which model is better \\
 - prospects, improvements, Recommendations \\
+\\
+\\ \\
+Beispiele fürs referenzieren: \\
+In \figref{FH-Logo} ist das HS München Logo zu sehen.
+
+\begin{figure}[htbp]
+\includegraphics[width=0.3\textwidth]{includes/MUASlogo}
+\caption{FH-Logo}
+\label{fig:FH-Logo}
+\end{figure}
+
+Oder auch eines Codes wie in  \listref{python_Code}.\\
+\begin{lstlisting}[caption=Some python code, label=list:python_Code]
+
+	bottleneck_path_2_bottleneck_values = {}
+
+
+	def create_bottleneck_file(bottleneck_path, image_lists, label_name, index,
+	                           image_dir, category, sess, jpeg_data_tensor,
+	                           decoded_image_tensor, resized_input_tensor,
+	                           bottleneck_tensor):
+	  """Create a single bottleneck file."""
+	  tf.logging.info('Creating bottleneck at ' + bottleneck_path)
+	  image_path = get_image_path(image_lists, label_name, index,
+	                              image_dir, category)
+	  if not gfile.Exists(image_path):
+	    tf.logging.fatal('File does not exist %s', image_path)
+	  image_data = gfile.FastGFile(image_path, 'rb').read()
+	  try:
+	    bottleneck_values = run_bottleneck_on_image(
+	        sess, image_data, jpeg_data_tensor, decoded_image_tensor,
+	        resized_input_tensor, bottleneck_tensor)
+	  except Exception as e:
+	    raise RuntimeError('Error during processing file %s (%s)' % (image_path,
+	                                                                 str(e)))
+	  bottleneck_string = ','.join(str(x) for x in bottleneck_values)
+	  with open(bottleneck_path, 'w') as bottleneck_file:
+	    bottleneck_file.write(bottleneck_string)
+\end{lstlisting}
+
+Sectionrefs: In \secref{Methodological fundamentals} ist vieles noch nicht fertig. \\
+SubSectionrefs: In \subsecref{Common Frameworks for Deep Learning Applications} wird dann näher auf den Inhalt eingegangen.\\
+SubSubSectionrefs: In \subsubsecref{Tensorflow based on Python} gehts ans eingemachte.\\
+
+Beispiele fürs zitieren:
+
+Für einen noch besseren Überblick, kann das Buch von \citet{Butler2017} hinzugezogen werden.\\
+Wenn in klammern und Seitenzahl \citep[p. 3]{Butler2017} \\
+
+als compared, aber ohne Seitenzahl \citep[cmp.][]{Butler2017} \\
+als compared mit Seitenzahl, das nd heißt "no date", da keine Jahrezahl vorhanden \citep[cmp.][p. 5]{Wang} \\
+
+%Beispiele
+%\citet{goossens93} -> Goossens et al. (1993)
+%\citep{goossens93} -> (Goossens et al., 1993)
+%
+%\citet*{goossens93} -> Goossens, Mittlebach, and Samarin (1993)
+%\citep*{goossens93} -> (Goossens, Mittlebach, and Samarin, 1993)
