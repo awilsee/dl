@@ -5,6 +5,7 @@ bottleneck time: 45.38888s
 PC:
 bottleneck time: 163.82143s
 
-NB:
+NB: 215.28830s (Mobilenet 0.5 5000)
+187.02561s (Mobilenet 0.5 500)
 
 
