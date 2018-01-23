@@ -20,3 +20,9 @@ rounded stripped
 M: 1,6 MB
 I: 22 MB
 
+__________
+
+FINAL RESULTS:
+M0.50 LR0.007  700steps
+M1.0  LR0.01   500steps
+I     LR0.03  4000steps 
