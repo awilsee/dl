@@ -1,0 +1,203 @@
+         compressed        uncompressed  ratio uncompressed_name
+           81842180            88222178   7.2% /home/aw/MobileInceptionRetrained/graphs/inception_v3_5000/opt3_retrained_dog_graph_inception_v3_5000_0.01.pb
+
+/home/aw/tensorflow-for-poets-2/label_image_pics/Great_dane_05350.jpg
+
+Evaluation time (1-image): 0.278s
+
+078 great dane 0.6074996
+121 plott 0.09653797
+044 cane corso 0.086185105
+105 neapolitan mastiff 0.047261517
+122 pointer 0.03242724
+
+/home/aw/tensorflow-for-poets-2/label_image_pics/Maltese_n02085936_2135.jpg
+
+Evaluation time (1-image): 0.277s
+
+082 havanese 0.593562
+100 lowchen 0.14847763
+101 maltese 0.07572033
+099 lhasa apso 0.044046037
+024 bichon frise 0.024764333
+
+/home/aw/tensorflow-for-poets-2/label_image_pics/Border_collie_02066.jpg
+
+Evaluation time (1-image): 0.279s
+
+029 border collie 0.85171366
+012 australian shepherd 0.10059302
+084 icelandic sheepdog 0.010787023
+054 collie 0.007001356
+112 nova scotia duck tolling retriever 0.0015393512
+
+/home/aw/tensorflow-for-poets-2/label_image_pics/Greater_swiss_mountain_dog_n02107574_678.jpg
+
+Evaluation time (1-image): 0.279s
+
+080 greater swiss mountain dog 0.50027764
+065 entlebucher mountain dog 0.35210344
+023 bernese mountain dog 0.04908232
+070 german pinscher 0.004559991
+077 gordon setter 0.00350726
+
+/home/aw/tensorflow-for-poets-2/label_image_pics/Bedlington_terrier_n02093647_2531.jpg
+
+Evaluation time (1-image): 0.280s
+
+019 bedlington terrier 0.96694547
+124 poodle 0.0019601851
+097 lakeland terrier 0.0017637032
+024 bichon frise 0.001612878
+049 chinese crested 0.0014881473
+
+/home/aw/tensorflow-for-poets-2/label_image_pics/Akita_00242.jpg
+
+Evaluation time (1-image): 0.279s
+
+004 akita 0.7288156
+108 norwegian buhund 0.05893641
+043 canaan dog 0.05554428
+167 finnish spitz 0.054823007
+110 norwegian lundehund 0.04227279
+
+/home/aw/tensorflow-for-poets-2/label_image_pics/Chihuahua_n02085620_949.jpg
+
+Evaluation time (1-image): 0.277s
+
+048 chihuahua 0.994166
+049 chinese crested 0.00080646604
+110 norwegian lundehund 0.00042598284
+102 manchester terrier 0.00030927933
+115 papillon 0.00025392705
+
+/home/aw/tensorflow-for-poets-2/label_image_pics/Pembroke_welsh_corgi_07639.jpg
+
+Evaluation time (1-image): 0.279s
+
+045 cardigan welsh corgi 0.22571668
+218 pembroke welsh corgi 0.20399058
+011 australian cattle dog 0.11566601
+071 german shepherd dog 0.10274683
+110 norwegian lundehund 0.05539066
+
+/home/aw/tensorflow-for-poets-2/label_image_pics/Canaan_dog_03069.jpg
+
+Evaluation time (1-image): 0.278s
+
+043 canaan dog 0.70390254
+004 akita 0.096188165
+108 norwegian buhund 0.08123163
+010 anatolian shepherd dog 0.015360468
+167 finnish spitz 0.014377269
+
+/home/aw/tensorflow-for-poets-2/label_image_pics/Cardigan_welsh_corgi_03213.jpg
+
+Evaluation time (1-image): 0.278s
+
+045 cardigan welsh corgi 0.5410721
+218 pembroke welsh corgi 0.395146
+110 norwegian lundehund 0.0073581934
+014 basenji 0.004219964
+084 icelandic sheepdog 0.00395421
+
+/home/aw/tensorflow-for-poets-2/label_image_pics/Basenji_00953.jpg
+
+Evaluation time (1-image): 0.278s
+
+014 basenji 0.85503614
+116 parson russell terrier 0.011337466
+218 pembroke welsh corgi 0.00848243
+128 smooth fox terrier 0.008027136
+110 norwegian lundehund 0.007171029
+
+/home/aw/tensorflow-for-poets-2/label_image_pics/Havanese_05632.jpg
+
+Evaluation time (1-image): 0.277s
+
+082 havanese 0.43043295
+100 lowchen 0.26069
+099 lhasa apso 0.15652293
+017 bearded collie 0.10018551
+101 maltese 0.011404529
+
+/home/aw/tensorflow-for-poets-2/label_image_pics/Norwegian_buhund_07111.jpg
+
+Evaluation time (1-image): 0.280s
+
+110 norwegian lundehund 0.2751129
+043 canaan dog 0.23607156
+108 norwegian buhund 0.23035163
+167 finnish spitz 0.07680595
+004 akita 0.04951078
+
+/home/aw/tensorflow-for-poets-2/label_image_pics/Miniature_schnauzer_n02097047_2487.jpg
+
+Evaluation time (1-image): 0.280s
+
+074 giant schnauzer 0.41688058
+104 miniature schnauzer 0.19104213
+093 kerry blue terrier 0.084645085
+056 dachshund 0.020160949
+087 irish terrier 0.01651199
+
+/home/aw/tensorflow-for-poets-2/label_image_pics/English_springer_n02102040_2986.jpg
+
+Evaluation time (1-image): 0.276s
+
+063 english springer spaniel 0.7870157
+037 brittany 0.03655029
+085 irish red and white setter 0.03261387
+122 pointer 0.019436136
+130 welsh springer spaniel 0.009096047
+
+/home/aw/tensorflow-for-poets-2/label_image_pics/Afghan_hound_n02088094_1007.jpg
+
+Evaluation time (1-image): 0.281s
+
+002 afghan hound 0.9906213
+031 borzoi 0.0030755461
+054 collie 0.00053212274
+124 poodle 0.00048811865
+056 dachshund 0.0003566738
+
+/home/aw/tensorflow-for-poets-2/label_image_pics/Affenpinscher_00001.jpg
+
+Evaluation time (1-image): 0.280s
+
+001 affenpinscher 0.97379136
+038 brussels griffon 0.0067910566
+042 cairn terrier 0.0022776083
+100 lowchen 0.00074108667
+099 lhasa apso 0.00068625645
+
+/home/aw/tensorflow-for-poets-2/label_image_pics/Pomeranian_07889.jpg
+
+Evaluation time (1-image): 0.277s
+
+123 pomeranian 0.94825745
+006 american eskimo dog 0.011768942
+084 icelandic sheepdog 0.003301328
+092 keeshond 0.003195902
+048 chihuahua 0.0024922714
+
+/home/aw/tensorflow-for-poets-2/label_image_pics/German_shepherd_n02106662_3260.jpg
+
+Evaluation time (1-image): 0.279s
+
+071 german shepherd dog 0.8602032
+020 belgian malinois 0.061116472
+022 belgian tervuren 0.029026557
+011 australian cattle dog 0.008594283
+018 beauceron 0.007302932
+
+/home/aw/tensorflow-for-poets-2/label_image_pics/Australian_shepherd_00829.jpg
+
+Evaluation time (1-image): 0.277s
+
+012 australian shepherd 0.9697075
+029 border collie 0.011993288
+084 icelandic sheepdog 0.0060070273
+112 nova scotia duck tolling retriever 0.0045434493
+110 norwegian lundehund 0.0014199809
+
