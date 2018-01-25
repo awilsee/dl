@@ -17,16 +17,18 @@
 \BOOKMARK [1][]{section.4}{Realization}{}% 17
 \BOOKMARK [2][]{subsection.4.1}{dataset}{section.4}% 18
 \BOOKMARK [2][]{subsection.4.2}{hardware environment}{section.4}% 19
-\BOOKMARK [2][]{subsection.4.3}{software environment}{section.4}% 20
-\BOOKMARK [2][]{subsection.4.4}{installation of software}{section.4}% 21
-\BOOKMARK [3][]{subsubsection.4.4.1}{Tensorflow based on Python}{subsection.4.4}% 22
-\BOOKMARK [3][]{subsubsection.4.4.2}{Tensorflow based on Bazel}{subsection.4.4}% 23
-\BOOKMARK [3][]{subsubsection.4.4.3}{Installing Android Studio and its Delevopment Kit}{subsection.4.4}% 24
-\BOOKMARK [2][]{subsection.4.5}{building the models}{section.4}% 25
-\BOOKMARK [2][]{subsection.4.6}{Output Tests and Validation}{section.4}% 26
-\BOOKMARK [2][]{subsection.4.7}{Implementation of an native Android App}{section.4}% 27
-\BOOKMARK [2][]{subsection.4.8}{Deployment and Validation}{section.4}% 28
+\BOOKMARK [2][]{subsection.4.3}{installation of software}{section.4}% 20
+\BOOKMARK [3][]{subsubsection.4.3.1}{Prerequisites}{subsection.4.3}% 21
+\BOOKMARK [3][]{subsubsection.4.3.2}{Tensorflow based on Python}{subsection.4.3}% 22
+\BOOKMARK [3][]{subsubsection.4.3.3}{Tensorflow based on Bazel}{subsection.4.3}% 23
+\BOOKMARK [3][]{subsubsection.4.3.4}{Installing Android Studio and its Delevopment Kit}{subsection.4.3}% 24
+\BOOKMARK [2][]{subsection.4.4}{building the models}{section.4}% 25
+\BOOKMARK [2][]{subsection.4.5}{Output Tests and Validation}{section.4}% 26
+\BOOKMARK [2][]{subsection.4.6}{Implementation of an native Android App}{section.4}% 27
+\BOOKMARK [2][]{subsection.4.7}{Deployment and Validation}{section.4}% 28
 \BOOKMARK [1][]{section.5}{Evaluation}{}% 29
 \BOOKMARK [1][]{section.6}{Conclusion}{}% 30
-\BOOKMARK [1][]{lstnumber.1.25}{Bibliography}{}% 31
+\BOOKMARK [1][]{lstnumber.2.25}{Bibliography}{}% 31
 \BOOKMARK [1][]{section*.3}{List of figures}{}% 32
+\BOOKMARK [1][]{appendix.A}{Anhang}{}% 33
+\BOOKMARK [2][]{subsection.A.1}{Anhang vom Anhang}{appendix.A}% 34
