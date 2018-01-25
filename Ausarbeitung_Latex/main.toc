@@ -17,18 +17,20 @@
 \contentsline {subsection}{\numberline {3.2}Model based Architectures}{3}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Application based Architecture}{3}{subsection.3.3}
 \contentsline {section}{\numberline {4}Realization}{3}{section.4}
-\contentsline {subsection}{\numberline {4.1}dataset}{3}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}hardware environment}{3}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}software environment}{3}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}installation of software}{3}{subsection.4.4}
-\contentsline {subsubsection}{\numberline {4.4.1}Tensorflow based on Python}{3}{subsubsection.4.4.1}
-\contentsline {subsubsection}{\numberline {4.4.2}Tensorflow based on Bazel}{3}{subsubsection.4.4.2}
-\contentsline {subsubsection}{\numberline {4.4.3}Installing Android Studio and its Delevopment Kit}{3}{subsubsection.4.4.3}
-\contentsline {subsection}{\numberline {4.5}building the models}{4}{subsection.4.5}
-\contentsline {subsection}{\numberline {4.6}Output Tests and Validation}{4}{subsection.4.6}
-\contentsline {subsection}{\numberline {4.7}Implementation of an native Android App}{4}{subsection.4.7}
-\contentsline {subsection}{\numberline {4.8}Deployment and Validation}{4}{subsection.4.8}
-\contentsline {section}{\numberline {5}Evaluation}{4}{section.5}
-\contentsline {section}{\numberline {6}Conclusion}{4}{section.6}
-\contentsline {section}{Bibliography}{I}{lstnumber.1.25}
+\contentsline {subsection}{\numberline {4.1}dataset}{4}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}hardware environment}{4}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}installation of software}{4}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Prerequisites}{4}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Tensorflow based on Python}{4}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3}Tensorflow based on Bazel}{4}{subsubsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.4}Installing Android Studio and its Delevopment Kit}{5}{subsubsection.4.3.4}
+\contentsline {subsection}{\numberline {4.4}building the models}{5}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Output Tests and Validation}{5}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Implementation of an native Android App}{5}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.7}Deployment and Validation}{5}{subsection.4.7}
+\contentsline {section}{\numberline {5}Evaluation}{5}{section.5}
+\contentsline {section}{\numberline {6}Conclusion}{5}{section.6}
+\contentsline {section}{Bibliography}{I}{lstnumber.2.25}
 \contentsline {section}{List of figures}{I}{section*.3}
+\contentsline {section}{\numberline {A}Anhang}{II}{appendix.A}
+\contentsline {subsection}{\numberline {A.1}Anhang vom Anhang}{II}{subsection.A.1}
