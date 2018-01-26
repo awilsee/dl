@@ -28,10 +28,12 @@ First, the Anaconda installer was downloaded from \url{https://www.anaconda.com/
 As an app development environment the free IDE Android Studio in its version 3.0.1 was installed by downloading from \url{https://developer.android.com/studio/index.html}, extracting and following the instruction steps. Required dependencies are installed by Android Studio itself. So, the SDK in the version 26.1.1 was used. \\
 
 In the development of native Android Apps Java is used as the programming language. Within the installation of Anaconda, the JDK in the version 8 was installed.
+- test anaconda, tensorflow environment look where it belongs
 
- 	- Android system, CUDA, CUDNN
+ 	- CUDA, CUDNN
  	
 			\mysubsubsection{Tensorflow based on Python}
+
 			\mysubsubsection{Tensorflow based on Bazel}
 				- e.g. Workspace changes for Android SDK, msse4.2
 			\mysubsubsection{Installing Android Studio and its Delevopment Kit}
@@ -52,6 +54,40 @@ In the development of native Android Apps Java is used as the programming langua
 	 	- validation script?! --> in Evaluierung
 
 	\mysubsection{Implementation of an native Android App} Alice
-		- list all necessary things to do (e.g. tensorflow version, Interpreter -> load Model)
+This subchapter describes the processing of the camera input stream and classifying the particular images. Because of the vast extent of the application, the focus lies on the explanation of how the app works and on its important implementation parts. \\
 
+When click on the icon of the app, a camera view showing results in the bottom part is loaded. In the background, the ClassifierActivity is set as the launcher activity in the AndroidManifest.xml which is a file containing all configuration settings for the app. When an activity is loaded for the first time, the onCreate method is invoked. Because the ClassifierActivity extends the CameraActivity the onCreate method of the CameraActivity is executed and loads the layout activity_camera.xml consisting of a container and a result field. Next, the setFragment method of the class CameraActivity is invoked if permission for the camera is given. This causes the replacement of the container with the adapted fragment according to the actual size and orientation of the screen. When the size is set, the method onPreviewSizeChosen is invoked where a TensorFlowImageClassifier is instantiated with following input parameters: MODEL_FILE, LABEL_FILE, INPUT_SIZE, IMAGE_MEAN, IMAGE_STD, INPUT_NAME, OUTPUT_NAME. Details about the Classification follow later in the section.\\
+
+When the fragment was replaced by the CameraActivity, an instance of the class CameraFragment was created. Next, the method onViewCreated of the class CameraFragment is called and a texture view is created. The latter class is part of the Android API and used for frame capturing from an image stream as OPENGL ES texture. Thereby, the most recent image is stored within a texture object. This object is observed by a listener which invokes the method onSurfaceTextureAvailable when the texture object is available. Within this method the camera is opened by the method openCamera(width, height) given the width and height of the camera preview \citep{AndroidDevelopers}. First, the method openCamera sets the camera parameters within setUpCameraOutputs e.g. sensorOrientation, previewSize, cameraId etc. In order to classifiy a given OPENGL ES texture, the coordinate column vectors of the texture must be transformed into the proper sampling location in the streamed texture. So, the matrix has to be prepared with the correct configuration which happens in the method configureTransform. The next important step is done by the camera manager which opens the camera by invoking the method openCamer(cameraId, stateCallback, backgroundHandler). The id represents the specific camera device whereas the stateCallback is necessary to manage the life circle of the camera device and to handle different states of the camera device. The backgroundHandler ensures that the classification is done in background mode. When the camera is opened, the camera preview is started by the method createCameraPreviewSession. Within this method the preview reader is initialized and set to read images from the ImageListener which observes whether an image is available. Therefore, an Imagelistener which was instantiated by the CameraActivity is transfered to the CameraFragment. \\
+
+When an image is available the method onImageAvailable of the class ClassifierActivity is invoked. The image is read by the preview reader and stored in an object. First, the image is preprocessed meaning transfered into planes, stored as bytes, cropped and stored as a Bitmap which is an Android graphic. Google provides an Tensorlflow Mobile API to run tensors on a performance critical device such as mobile devices. To use this API, the depedency has to be added to the build.gradle file \listref{tensorflow_api}. 
+
+\begin{lstlisting}[caption=Tensorflow API in build.gradle, label=list:tensorflow_api, language=java]
+
+	dependencies {
+                compile 'org.tensorflow:tensorflow-android:+'
+    }
+\end{lstlisting}
+
+When including the API, Tensorflow's class Classifier can be used to classify images. Therefore, the TensorFlowImageClassifier which was initialized before invokes the method recognizeImage(croppedBitmap) on the preprocessed image. Within this method, the image data is transfered from int to float. Then, the previous initialized object of the TensorflowInferenceInterface calls the method feed to pass the float values to the input layer of the model. Afterwards, the inferenceInterface invokes the method run with the specified output layer in order to process the classification. Subsequently, the output data is fetched by calling fetch on the output layer \listref{classify_android}.
+
+\begin{lstlisting}[caption=Classifying images by the inferenceInterface, label=list:classify_android, language=java]
+
+    // Copy the input data into TensorFlow.
+    Trace.beginSection("feed");
+    inferenceInterface.feed(inputName, floatValues, 1, inputSize, inputSize, 3);
+    Trace.endSection();
+
+    // Run the inference call.
+    Trace.beginSection("run");
+    inferenceInterface.run(outputNames, logStats);
+    Trace.endSection();
+
+    // Copy the output Tensor back into the output array.
+    Trace.beginSection("fetch");
+    inferenceInterface.fetch(outputName, outputs);
+    Trace.endSection();
+\end{lstlisting}
+
+Afterwards, the results are reordered according to the highest probability and returned to the results field for displaying the output.
 	\mysubsection{Deployment and Validation} Alice
