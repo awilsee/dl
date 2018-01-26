@@ -194,7 +194,7 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
             return;
         }
 
-        // Image as Bitmap
+
         rgbFrameBitmap.setPixels(rgbBytes, 0, previewWidth, 0, 0, previewWidth, previewHeight);
         final Canvas canvas = new Canvas(croppedBitmap);
         canvas.drawBitmap(rgbFrameBitmap, frameToCropTransform, null);
