@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DogBreedAnalyzerM</string>    <string name="description_info">Info</string>
+    <string name="request_permission">Permission required.</string>
+    <string name="camera_error">Device does not support Camera API.</string>
+    <string name="activity_name_classification">DogBreedAnalyzerM</string>
+
+</resources>

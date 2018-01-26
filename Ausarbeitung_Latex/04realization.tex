@@ -1,12 +1,36 @@
 \mysection{Realization}
-	\mysubsection{dataset}
-	\mysubsection{hardware environment}
+In general, this chapter describes the methodical procedure of solving the above mentioned problem \subsecref{Terms of Referencee}. After describing the used dataset all required software and hardware components are explained in detail. Furthermore, the chapter leads through the installation steps of Tensorflow and the setup of Android Studio. Followed by the installation process the retraining of a pre-trained model is depicted. Afterwards, the re-trained model is tested and validated. The chapter ends with the description of the realization of the Android app.
+
+	\mysubsection{dataset} Andi
+	\mysubsection{hardware environment} Andi
 		used CPU, GPU -> NVIDIA, handys
-	\mysubsection{software environment}
-	- Bazel, Java, Android Studio, Python, Operating System \\
- 	- Android system
-	\mysubsection{installation of software}
- 		- software environment
+
+	\mysubsection{installation of software} Andi
+This chapter includes all necessary steps for installing the software environment including Tensorflow.
+
+ 			\mysubsubsection{Prerequisites}
+The software environment was set up on the Linux distribution Ubuntu 16.04 LTS. To install the software environment for Tensorflow Python is required. Therefore, the current version of Python 3.6 was installed by default. Tensorflow also supports Bazel which was installed by following command.
+
+\begin{lstlisting}[caption=Bazel Installation, label=list:bazel, language=bash]
+	sudo apt-get install openjdk-8-jdk
+	
+	echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/				sources.list.d/bazel.list
+	curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
+	
+	sudo apt-get update && sudo apt-get install bazel
+	
+	sudo apt-get upgrade bazel
+\end{lstlisting}	
+
+Futhermore, the package and environment management tool Anaconda was installed by the following steps:
+First, the Anaconda installer was downloaded from \url{https://www.anaconda.com/download/#linux}. During the installation process the prompts were answered by the default suggestions except the following prompt: "Do you wish the installer to prepend the Anaconda3 install location to PATH in your /home/aw/.bashrc ? [yes|no]". "yes" was typed in and conda was tested using the "conda list" command. \\
+
+As an app development environment the free IDE Android Studio in its version 3.0.1 was installed by downloading from \url{https://developer.android.com/studio/index.html}, extracting and following the instruction steps. Required dependencies are installed by Android Studio itself. So, the SDK in the version 26.1.1 was used. \\
+
+In the development of native Android Apps Java is used as the programming language. Within the installation of Anaconda, the JDK in the version 8 was installed.
+
+ 	- Android system, CUDA, CUDNN
+ 	
 			\mysubsubsection{Tensorflow based on Python}
 			\mysubsubsection{Tensorflow based on Bazel}
 				- e.g. Workspace changes for Android SDK, msse4.2
@@ -15,7 +39,7 @@
 				- SDK, NDK \\
 				- IMPORTANT: tf versions updaten (same as trained)
 
-	\mysubsection{building the models}
+	\mysubsection{building the models} Alice bis Steps, Andi ab Optimierung, time GPU/CPU
 	-> evtl extra subsubsection: \\
 		- execution methods -> Bazel and Python (incompatible versions) \\
 		- Mobilnet -> steps, optimierung \\
@@ -23,11 +47,11 @@
 		- time related differences of execution  \\
 		  -> time CPUs/GPU
 
-	\mysubsection{Output Tests and Validation}
+	\mysubsection{Output Tests and Validation} Andi
 	 	- test pictures and if it works -> label image \\
-	 	- validation script?!
+	 	- validation script?! --> in Evaluierung
 
-	\mysubsection{Implementation of an native Android App}
+	\mysubsection{Implementation of an native Android App} Alice
 		- list all necessary things to do (e.g. tensorflow version, Interpreter -> load Model)
 
-	\mysubsection{Deployment and Validation}
+	\mysubsection{Deployment and Validation} Alice

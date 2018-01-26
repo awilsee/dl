@@ -1,0 +1,93 @@
+/*
+ * Copyright 2016 The TensorFlow Authors. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *       http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ *
+ *  edited by Andreas Wilhelm and Alice Bollenmiller
+ *  for the purposes of the lecture Deep Learning
+ *
+ *
+ */
+
+package com.dl.app.dogbreedanalyzerm;
+
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.util.AttributeSet;
+import android.util.TypedValue;
+import android.view.View;
+
+import com.dl.app.dogbreedanalyzerm.Classifier.Recognition;
+
+import java.util.List;
+
+import static android.graphics.Color.rgb;
+
+/*
+    Class represents the scores shown in the upper part of the main screen
+*/
+
+public class RecognitionScoreView extends View implements ResultsView {
+
+    // constant Text size of results in Pixel
+    private static final float TEXT_SIZE_DIP = 24;
+
+    // Objects in a List which are recognized by the model
+    private List<Recognition> results;
+
+    // Text Size Pixel
+    private final float textSizePx;
+
+    // Current Text Size
+    private final Paint fgPaint;
+    private final Paint bgPaint;
+
+  @SuppressLint("ResourceAsColor")
+  public RecognitionScoreView(final Context context, final AttributeSet set) {
+    super(context, set);
+
+    // calculate Text Size from Pixel
+    textSizePx = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, TEXT_SIZE_DIP, getResources().getDisplayMetrics());
+    fgPaint = new Paint();
+    fgPaint.setTextSize(textSizePx);
+
+    bgPaint = new Paint();
+    bgPaint.setColor(rgb(0,154,74)); //0xcc4fff00 // 0xcc4ffff4// 0xcc4285f4 //0xcc9bbf74
+  }
+
+  // Set Results
+  @Override
+  public void setResults(final List<Recognition> results) {
+    this.results = results;
+    postInvalidate();
+  }
+
+  // Write Results to Canvas
+  @Override
+  public void onDraw(final Canvas canvas) {
+    final int x = 10;
+    int y = (int) (fgPaint.getTextSize() * 1.5f);
+
+    canvas.drawPaint(bgPaint);
+
+    if (results != null) {
+      for (final Recognition recog : results) {
+        canvas.drawText(recog.getTitle() + ": " + recog.getConfidence(), x, y, fgPaint);
+        y += fgPaint.getTextSize() * 1.5f;
+      }
+    }
+  }
+}

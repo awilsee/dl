@@ -1,6 +1,11 @@
 \mysection{Concept}
+First, this chapter describes the selection of the appropriate framework. Futhermore, the structure of the model which was used for classification is explained based on its architecture. The chapter closes with the class diagram of the mobile application.
+
 	\mysubsection{Frameworks}
-	- tensorflow -> why	
-	\mysubsection{Model based Architectures}
-	 - general architectures of models -> Mobilenet, Inception
-	\mysubsection{Application based Architecture}
+As a deep learning framework Tensorflow was used to retrain the model. This decision was mainly based on recommendations. Even companies like e.g. NVIDIA Corporation, Intel Corporation etc. use Tensorflow. It is one of the common frameworks for deep learning applications and also provides solutions for integration in mobile apps. Furthermore, Tensorflow provides a variety of tutorials for working with neural networks. Beside those advantages, there is a large community about Tensorflow talking about issues and solutions. \\
+
+To run the tensor within a mobile application, the first approach was to use Tensorflow Lite which is still in development state. But many attempts resulted in corrupt models which caused the app to terminate. Because of this experiences Tensorflow Mobile was used to optimize the model for app integration. 
+		
+	\mysubsection{Model based Architectures} Andi
+	 - general architectures of models -> n Mobilenet, Inception
+	\mysubsection{Application based Architecture} Alice
