@@ -1,9 +1,21 @@
 \mysection{Realization}
-In general, this chapter describes the methodical procedure of solving the above mentioned problem \subsecref{Terms of Referencee}. After describing the used dataset all required software and hardware components are explained in detail. Furthermore, the chapter leads through the installation steps of Tensorflow and the setup of Android Studio. Followed by the installation process the retraining of a pre-trained model is depicted. Afterwards, the re-trained model is tested and validated. The chapter ends with the description of the realization of the Android app.
+In general, this chapter describes the methodical procedure of solving the above mentioned problem in \subsecref{Terms of Referencee}. After describing the used dataset all required software and hardware components are explained in detail. Furthermore, the chapter leads through the installation steps of Tensorflow and the setup of Android Studio. Followed by the installation process the retraining of a pre-trained model is depicted. Afterwards, the re-trained model is tested and validated. The chapter ends with the description of the realization of the Android app.
 
-	\mysubsection{dataset} Andi
-	\mysubsection{hardware environment} Andi
-		used CPU, GPU -> NVIDIA, handys
+	\mysubsection{dataset}
+The most famous image dataset is ImageNet which is known from the ILSVRC2012. It contains overall about 14 million Images \citep{ImageNet2010}. This dataset is also used for nearly all pre-trained models. The dataset includes also a set of 120 different dog breeds with about 150 images each breed. This dog dataset can be downloaded from the following Stanford website \url{http://vision.stanford.edu/aditya86/ImageNetDogs/}. \\
+Another dataset with dogs is from udacity and can be downloaded from \url{https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip}. It contains 133 dog breeds with a mean of 63 images each breed. The images in this dataset are completely different from the ImageNet dataset. \\
+
+Because of the reason that the ImageNet dataset is already used to train the pretrained models, the last dataset is used for this project, which is also fully unknown for any model.
+
+	\mysubsection{hardware environment}
+Different hardware setups are used for this project to compare their performance effects.
+At first the lowest one is a notebook with a XXXXXXXXCPU @ XXXXX Mhz.
+The other one is a powerful desktop computer with an Intel(R) Core(TM) i7-6700K CPU @ 4.4 GHz and 16 GB memory.
+In this computer there is also a NVIDIA GeForce GTX 980 with CUDA capabilities version 5.2. It has 2048 CUDA cores running @ 1.291 GHz and 4 GB memory.
+
+For the mobile application also two different mobile phones are used. The first one is a Samsung Galaxy XXXXXX with a XXXXXX and XXXX GB memory. Android XXXXX (API XXX) is running.
+The other one is a Motorola Moto X (2nd Gen, 2014) with a Qualcomm Snapdragon 801 quad-core @2.5 GHz (32-bit, ARMv7-ISA) and 2 GB memory. The operating system is Android 6.0 (API 23).
+
 
 	\mysubsection{installation of software} Andi
 This chapter includes all necessary steps for installing the software environment including Tensorflow.
@@ -47,9 +59,53 @@ In the development of native Android Apps Java is used as the programming langua
 		- time related differences of execution  \\
 		  -> time CPUs/GPU
 
-	\mysubsection{Output Tests and Validation} Andi
-	 	- test pictures and if it works -> label image \\
-	 	- validation script?! --> in Evaluierung
+	\mysubsection{Output Tests and Validation}
+To test and validate the output of the model regardless of whether the pretrained, retrained or optimized one the python script \textit{label\_image} of the 'tensorflow-for-poets'-tutorial is used with following command. Three variables has to be defined differently which is shown at the beginning of \listref{label_image} depending on the used model and if it already has been retrained or not.
+\begin{lstlisting}[caption=Call of \textit{label\_image.py}, label=list:label_image, language=bash]
+	#for InceptionV3 models	use:
+	INPUT_SIZE=299			#size of input layer
+	INPUT_LAYER=Mul		#name of input layer
+	OUTPUT_LAYER=softmax	#name of output layer (only for pretrained model otherwise 'final_result' or as defined in retrain-script)
+	
+	#for MobileNet models use:
+	INPUT_SIZE=224			#size of input layer
+	INPUT_LAYER=input	 	#name of input layer
+	OUTPUT_LAYER=MobilenetV1/Predictions/Reshape_1	#name of output layer (only for pretrained model otherwise 'final_result' or as defined in retrain-script)
+
+	python -m scripts.label_image \
+	--graph=${HOME}/retrained_graph.pb \
+	--labels=${HOME}/retrained_labels.txt \
+	--output_layer=final_result \
+	--input_layer=${INPUT_LAYER} \
+	--image=${HOME}/dl/label_image_pics/Affenpinscher_00001.jpg \
+	--input_width=${INPUT_SIZE} \
+	--input_height=${INPUT_SIZE}
+\end{lstlisting}
+
+Alternatively with bazel the variables in \listref{label_image} need also to be defined. The call itself is fundamentally the same however the executable binary has to be built before, as shown in \listref{blabel_image}.
+
+\begin{lstlisting}[caption=Build and call of \textit{label\_image}, label=list:blabel_image, language=bash]
+	bazel build tensorflow/examples/image_retraining:label_image && \
+	bazel-bin/tensorflow/examples/image_retraining/label_image \
+		--graph=${HOME}/retrained_graph.pb \
+		--labels=${HOME}/retrained_labels.txt \
+		--output_layer=final_result \
+		--input_layer=${INPUT_LAYER} \
+		--image=${HOME}/dl/label_image_pics/Affenpinscher_00001.jpg \
+		--input_width=${INPUT_SIZE} \
+		--input_height=${INPUT_SIZE}
+\end{lstlisting}
+
+If retraining of the model works fine, \textit{label\_image} outputs five labels with the highest and corresponding accuracy which are returned by the model, as shown in following \listref{label_imageOutput}.
+\begin{lstlisting}[caption=Output of \textit{label\_image.py}, label=list:label_imageOutput, language=bash]
+	Evaluation time (1-image): 0.350s
+	
+	001 affenpinscher 0.9940035
+	038 brussels griffon 0.002003342
+	042 cairn terrier 0.0008437461
+	100 lowchen 0.00018292216
+	099 lhasa apso 0.00012668292
+\end{lstlisting}
 
 	\mysubsection{Implementation of an native Android App} Alice
 		- list all necessary things to do (e.g. tensorflow version, Interpreter -> load Model)

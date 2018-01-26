@@ -46,3 +46,5 @@ https://arxiv.org/pdf/1704.04861.pdf -> MobileNet
 
 https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet_v1.md ->MobileNet_v1 Bild Vergleich der Netze
 
+http://www.image-net.org/about-stats -> How many images in ImageNet (2010)
+
