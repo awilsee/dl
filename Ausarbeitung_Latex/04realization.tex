@@ -41,6 +41,11 @@ In the development of native Android Apps Java is used as the programming langua
  	- CUDA, CUDNN
  	
 			\mysubsubsection{Tensorflow based on Python}
+First, there are some necessary dependencies to install before the actual installation can begin \listref{python_dependencies}.
+\begin{lstlisting}[caption=Installing the dependecies for Tensorflow based on Python 3.n, label=list:python_dependencies, language=bash]
+	sudo apt-get install python3-numpy python3-dev python3-pip python3-wheel
+\end{lstlisting}
+
 In order to install Tensorflow with Anaconda, an Anaconda environment must be created using following command (refer to \listref{tensorflow_anaconda}).
 
 \begin{lstlisting}[caption=Creating an Anaconda environment, label=list:tensorflow_anaconda, language=bash]
@@ -74,9 +79,32 @@ In order to validate the installation, a following short python script was execu
 If the output is 'Hello, TensorFlow!', the installation was conducted sucessfully. Each time when working with tensorflow, the environment has to be activated using the command in \listref{activation_anaconda}. As a consequence, the environment has to be deactivated when the work is done using the command 'deactivate'.
 
 			\mysubsubsection{Tensorflow based on Bazel}
-				
-				- e.g. Workspace changes for Android SDK, msse4.2
-				
+Another way of working with Tensorflow is using Bazel. In order to install, refer to \listref{bazel}. 
+After the bazel installation is completed, the tensorflow repository can be cloned by following command (refer to \listref{clone_tensorflow}).
+
+\begin{lstlisting}[caption=Cloning the tensorflow repository, label=list:clone_tensorflow, language=bash]
+	git clone https://github.com/tensorflow/tensorflow		
+\end{lstlisting}
+
+Now, the installation can be configured. The configuration and its prompts are shown in \subsecref{Configure bazel for Tensorflow}. If GPU usage is desired, some configurations might differ from the shown configuration steps. The differences are explained in \subsubsecref{Prerequisites}.\\
+
+Furthermore, the android SDK and NDK must be added to the workspace of Bazel. This is done by removing the comments in the WORKSPACE file which is located in source directory of the tensorflow repository and adapting the PATH variable according to the location of the SDK and NDK. NDK 16 which was released on November 2017 is incompatible with Bazel. \\
+
+Then, the Tensorflow pip package can be built by Bazel using the command shown in \listref{pip_package} which also enables Streaming SIMD Extensions 2 introduced by Intel Corporation to process data with doubled accuracy. For GPU support the option '--copt=cuda' was added to the build command.
+
+\begin{lstlisting}[caption=Building the Tensorflow pip package, label=list:pip_package, language=bash]
+	bazel build -c opt --copt=-msse4.2 //tensorflow/tools/pip_package:build_pip_package
+	bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
+\end{lstlisting}
+
+Finally, the pip package is installed by executing the following command \listref{pip_install_package}.
+
+\begin{lstlisting}[caption=Building the Tensorflow pip package, label=list:pip_package, language=bash]
+	sudo pip install --upgrade /tmp/tensorflow_pkg/tensorflow-*.whl
+\end{lstlisting}
+
+Instead of using the placeholder '-*', the version can also be specified. Which Tensorflow version is used, can be determined by executing 'pip list \big \vert grep tensorflow' depending on the Python version. The version of Tensorflow used in this work is 1.4.1. The validation of the installation is done by executing the command shown in \listref{validation_installation}.
+
 			\mysubsubsection{Installing Android Studio and its Delevopment Kit}
 As an app development environment the free IDE Android Studio in its version 3.0.1 was installed by downloading from \url{https://developer.android.com/studio/index.html}. After the archive file was extracted, the script studio.sh was executed. Required dependencies are installed by Android Studio itself. Futhermore, Android Studio automatically installs the necessary SDK and NDK. So, the SDK in the version 26.1.1 and the NDK in its version 16.1 were used. If Android Studio doesn't install the necessary Development Kits, the appropriate SDK and NDK version can be installed by selecting the SDK and NDK in the section File - Settings - Appearance and Behaviour - System Settings - Android SDK. Thereby, in order to avoid any collapses when running the app, it's important to check the used tensorflow version in the dependency which has to correspond to the tensorflow version which was used to retrain the model.\\
 
