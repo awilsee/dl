@@ -1,11 +1,11 @@
 \mysection{Methodological fundamentals}
-This chapter describes the most frequently used frameworks in deep learning for developing applications. Furthermore, common models for deep learning are introduced followed by suitable models for mobile integration. The chapter closes listing key requirements for an appropriate dataset which increase the quality of the training results.
+This chapter describes the most frequently used frameworks in deep learning for developing applications. Furthermore, common models for deep learning are introduced. The chapter closes listing key requirements for an appropriate dataset which increases the quality of the training results.
 
 	\mysubsection{Common Frameworks for Deep Learning Applications}
-The demands on neural networks increases with the complexity of problems to solve. Concurrently, there's an expanding offer of deep learning frameworks with a varity of features and tools. The most common used ones are represented in the following section.
+The demands on neural networks increase with the complexity of problems to solve. Concurrently, there's an expanding offer of deep learning frameworks with a varity of features and tools. The most common used ones are represented in the following section.
 
 		\mysubsubsection{Tensorflow}
-In 2015, the Google Brain Team introduced the most popular deep learning API Tensorflow which is an open-source library for numerical computation. Its current version 1.4.1 was released on December 8th, 2017. Tensorflow is primarily used for machine learning and deep neural network research. Based on the programming language Python, Tensorflow is capable of running on multiple CPUs and GPUs. Furthermore, C++ and R are supported by Tensorflow. Another feature is the possibility to generate models and export them as .pb file which holds the graph definition (GraphDef). The export is done by protocol buffers (protobuf) which includes tools for serializing and processing structured data. When loading a .pb file by protobuf, an graph object is created which holds a network of nodes. Each of those nodes represent an operation and the output is used as input for another operation. This concept enables an user to create self-built tensors. To simplify the usability, Tensorflow developed a high-level wrapper of the native API which is calles Tensorflow Slim. Futhermore, in order to run Tensorflow on performance critical devices like e.g. mobile devices there are two lightweight solutions of Tensorflow are available: Tensorflow Mobile and Tensorflow Lite. The latter one is an evolution of Tensorflow Mobile and still in developer mode. But both are predestinated for integration in mobile applications.
+In 2015, the Google Brain Team introduced the most popular deep learning API Tensorflow which is an open-source library for numerical computation. Its current version 1.4.1 was released on December 8th, 2017. Tensorflow is primarily used for machine learning and deep neural network research. Based on the programming language Python, Tensorflow is capable of running on multiple CPUs and GPUs. Furthermore, C++ and R are supported by Tensorflow. Another feature is the possibility to generate models and export them as .pb file which holds the graph definition (GraphDef). The export is done by protocol buffers (protobuf) which includes tools for serializing and processing structured data. When loading a .pb file by protobuf, an graph object is created which holds a network of nodes. Each of these nodes represent an operation and the output is used as input for another operation. This concept enables an user to create self-built tensors. To simplify the usability, Tensorflow developed a high-level wrapper of the native API which is called Tensorflow Slim. Futhermore, in order to run Tensorflow on performance critical devices like e.g. mobile devices, two lightweight solutions of Tensorflow are available: Tensorflow Mobile and Tensorflow Lite. The latter one is an evolution of Tensorflow Mobile and still in developer mode. But both are predestinated for integration in mobile applications.
 
 		\mysubsubsection{Keras}
 In order to simplify the utilization of Tensorflow the Python based interface Keras can be configured to work on top of Tensorflow. It allows building neural networks in a simple way and is part of Tensorflow.
@@ -17,8 +17,9 @@ Another deep learning library is Caffe which was developed by Berkeley AI Resear
 Besides Tensorflow and Caffe, Torch is another common deep learning framework. It was developed by Facebook, Twitter and Google. Based on C/C++, Torch supports CUDA for GPU processing. Like above mentioned frameworks, Torch facilitates the building of neural networks. The Python based version of Torch is available through PyTorch.
 		
 	\mysubsection{Common Models in Deep Learning Applications}
-	State of the art models for image recognition in deep learning applications are in a CNNs architecture. The most important ones are explained in this section. \\
-	The first one was LeNet-5 of \citet{LeCun1998}. As exactly shown in \figref{FH-Logo0} it comprises seven layers. Thereof two times a convolutional layer with a 5x5 filter each followed by a sub-sampling pooling layer. Two fully connected layers complete the architecture of the multilayer perceptron with its softmax function applied.
+State of the art models for image recognition in deep learning applications are based on the CNNs architecture. The most important ones are explained in this section. \\
+
+The first model was LeNet-5 described in \citet{LeCun1998}. As shown in \figref{FH-Logo0}, it contains seven layers in summary. These are two convolutional layers with a 5x5 filter each followed by a sub-sampling pooling layer. Two fully connected layers complete the architecture of the multilayer perceptron with its softmax function applied.\\
 	
 \begin{figure}[htbp]
 \includegraphics[width=0.8\textwidth]{includes/MUASlogo}
@@ -26,13 +27,15 @@ Besides Tensorflow and Caffe, Torch is another common deep learning framework. I
 \label{fig:FH-Logo0}
 \end{figure} 
 
-In 2012 a CNN based network called AlexNet of \citet{Krizhevsky2012} wons the ImageNet Large Scale Visual Recognition Challenge (ILSVRC) for the first time (\figref{FH-Logo1}). From that time CNN became ubiquitous.
+In 2012, a CNN based network called AlexNet pictured in \citet{Krizhevsky2012} wons the ImageNet Large Scale Visual Recognition Challenge (ILSVRC) for the first time (\figref{FH-Logo1}). From this time, CNN became ubiquitous.\\
+
 \begin{figure}[htbp]
 \includegraphics[width=0.8\textwidth]{includes/MUASlogo}
 \caption[ImageNet Classification top-5 error]{ImageNet Classification top-5 error (\%) \citep{He2016}}
 \label{fig:FH-Logo1}
 \end{figure}
-Through its immensely improved accuracy the network enabled a lot new possibilities. This CNN now consists of eight layers shown in \figref{FH-Logo2}. The first convolutional layer has a large 11x11 filter. Furthermore one with 5x5 and another three with a 3x3 filter, so in total 5 convolutional layers. Three pooling layers and also three fully connected layers completes the architecture. For the first time a rectified linear unit (ReLU) was used and it could be spread across two GPUs.
+
+Through its immensely improved accuracy the network created new possibilities. This CNN consists of eight layers shown in \figref{FH-Logo2}. The first convolutional layer has a large 11x11 filter. Furthermore, there is one layer with a 5x5 filter and another three with a 3x3 filter, so in total 5 convolutional layers. Three pooling layers and three fully connected layers complete the architecture. For the first time, a so called Rectified Linear Unit (ReLU) was used which is capable of being spread across two GPUs. \\
 
 \begin{figure}[htbp]
 \includegraphics[width=0.8\textwidth]{includes/MUASlogo}
@@ -40,9 +43,9 @@ Through its immensely improved accuracy the network enabled a lot new possibilit
 \label{fig:FH-Logo2}
 \end{figure}
 
-As seen in \figref{FH-Logo1} the next groundbreaking improvements were two architecures in 2014 which were also considered as very deep networks. VGG of \citet{Simonyan2015} and GoogLeNet of \citet{Szegedy2014} which is today better known under  'Inception'. 
+As shown in \figref{FH-Logo1}, the next improvements were two architectures called VGG as described in \citet{Simonyan2015} and GoogLeNet which is presented in \citet{Szegedy2014}. Introduced in 2014, they were considered as very deep neural networks. GoogleNet is today better known as 'Inception'. \\
 
-The first one comprises 16 or 19 layers in total (\figref{FH-Logo3}. This network is characterized by its simplicity because it uses convolutional layers with a 3x3 filter which only stacked one above the other. Reducing the size is handled by pooling layers. At the end there are also three fully connected layers with the softmax function following.
+VGG comprises 16 or 19 layers in total (\figref{FH-Logo3}. This network is characterized by its simplicity because it uses convolutional layers with a 3x3 filter which are stacked on top of each other. Size reduction is handled by pooling layers. At the end, there are three fully connected layers with the softmax function followed.
 
 \begin{figure}[htbp]
 \includegraphics[width=0.8\textwidth]{includes/MUASlogo}
@@ -50,20 +53,21 @@ The first one comprises 16 or 19 layers in total (\figref{FH-Logo3}. This networ
 \label{fig:FH-Logo3}
 \end{figure}
 
-The other one has 22 layers (\figref{FH-Logo4}) and was the final winner in 2014. GoogLeNet starts with two convolutional layers followed by stacked inception modules. Such a module consists of several parallel convolutional layers with different filter size and and also one pooling layer as shown in \figref{FH-Logo5}. On the right side of this figure a convolutional layer with a 1x1 filter is used to reduce feature depth. On the lefts side all output of these modules are concatenate and forwarded as new input for the next layer. The network ends with only one fully connected layer.
+Whereas, GoogLeNet has 22 layers (\figref{FH-Logo4}) and was the final winner in 2014. At the beginning, it has two convolutional layers followed by stacked Inception modules. Such modules consists of several parallel convolutional layers with different filter size and in addition one pooling layer as shown in \figref{FH-Logo5}. On the right side of this figure a convolutional layer with a 1x1 filter is pictured which is used to reduce feature depth. At the end,the output of these modules are concatenated and taken as new input for the next layer. The network ends with one fully connected layer.\\
 
 \begin{figure}[htbp]
 \includegraphics[width=0.8\textwidth]{includes/MUASlogo}
 \caption[Model architecture of Inception]{Model architecture of Inception \citep{Szegedy2014}}
 \label{fig:FH-Logo4}
 \end{figure}
+
 \begin{figure}[htbp]
 \includegraphics[width=0.8\textwidth]{includes/MUASlogo}
 \caption[Inception modules]{Inception modules \citep{Szegedy2014}}
 \label{fig:FH-Logo5}
 \end{figure}
 
-Since 2015 it gets very deep with a new architecture named ResNet of \citet{HE2015}. On ILSVRC this network swept all competitiors in classification and detection. The networks itself is designed as a 152 layer model. The ResNet consists of many residual network blocks (\figref{FH-Logo6}). Each of them has two convolutional layers with a 3x3 filter. Furthermore there is a shortcut connection which will be used if the input and output dimension of this block are the same.
+Since 2015 it gets very deep with a new architecture named ResNet of \citet{HE2015}. On ILSVRC this network swept all competitiors in classification and detection. The network itself is designed as a 152 layer model. The ResNet consists of many residual network blocks (\figref{FH-Logo6}). Each of them has two convolutional layers with a 3x3 filter. Furthermore, there is a shortcut connection which will be used if the input and output dimension of this block are the same.
 
 \begin{figure}[htbp]
 \includegraphics[width=0.8\textwidth]{includes/MUASlogo}
@@ -71,8 +75,8 @@ Since 2015 it gets very deep with a new architecture named ResNet of \citet{HE20
 \label{fig:FH-Logo6}
 \end{figure}
 
-Especially for performance critical applications like mobile devices MobileNet was developed by Google respectively \citet{Howard2017}.
-The network structure consists of depthwise seperable convolutional parts but also one standard convolutional one at the beginning. The depthwise part is separated in a depthwise convolutional layer and a pointwise one which applies a 1x1 convolution. Each of this layers are followed by batchnormalisation and ReLu as shwon in \figref{FH-Logo7}. In the depthwise convolution the splitting of the two convolutional layers in one for filtering and the other one for combining has the effect to reduce massively computation and model size which results in better performance on low performance devices.
+Especially for performance critical devices MobileNet was developed by Google as described in \citet{Howard2017}.
+The network structure consists of depthwise seperable convolutional parts but also one standard convolutional layer at the beginning. The depthwise part is separated in a depthwise convolutional layer and a pointwise one which applies a 1x1 convolution. Each of this layers are followed by batchnormalisation and ReLu as shown in \figref{FH-Logo7}. In the depthwise convolutional section two convolutional layers are splitted in the one for filtering and in the one for combining. As an effect, the computation power and model size are massively reduced which results in better performance on low performance devices.
 
 \begin{figure}[htbp]
 \includegraphics[width=0.8\textwidth]{includes/MUASlogo}
@@ -81,4 +85,4 @@ The network structure consists of depthwise seperable convolutional parts but al
 \end{figure}
  		
 	\mysubsection{Key requirements for an appropriate dataset}
-Supervised learning tasks such as image recognition are based on operations where an output is taken as an input for the next node. Every raw pixel input is taken to compute an intermediate representation - a vector containing all learned information about the dataset. As a consequence, the training results are only as good as the dataset itself. For better accuracy its important to train a model on a variety of images for each object which should later be classified by the model. It's recommended to take images of an object which were taken at different times, with different devices and at different places. Otherwise, the model will concentrate on other things like for example the background instead of details about the object itself. Therefore, a huge dataset is required especially for non pre-trained models. Training a model from scratch will require a huge dataset, a lot computing power and time. Whereas pre-trained models only require a small dataset of about hundreds of images. For that reason, a pre-trained model will be used in this work.
+Supervised learning tasks such as image recognition are based on operations where an output is taken as an input for the next node. Every raw pixel input is taken to compute an intermediate representation - a vector containing all learned information about the dataset. As a consequence, the training results are only as good as the dataset itself. For better accuracy its important to train a model on a variety of images for each object which should later be classified by the model. It's recommended to take images of an object which were taken at different times, with different devices and at different places. Otherwise, the model will concentrate on other things like for example the background instead of details about the object itself. Therefore, a huge dataset is required especially for non pre-trained models. Training a model from scratch will require a huge dataset, a lot of computing power and time. Whereas pre-trained models only require a small dataset of about hundreds of images. For that reason, a pre-trained model will be used in this work.
