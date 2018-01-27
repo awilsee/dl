@@ -1,12 +1,13 @@
 \mysection{Realization}
 In general, this chapter describes the methodical procedure of solving the above mentioned problem \subsecref{Terms of Referencee}. After describing the used dataset all required software and hardware components are explained in detail. Furthermore, the chapter leads through the installation steps of Tensorflow and the setup of Android Studio. Followed by the installation process the retraining of a pre-trained model is depicted. Afterwards, the re-trained model is tested and validated. The chapter ends with the description of the realization of the Android app.
 
-	\mysubsection{dataset} Andi
-	\mysubsection{hardware environment} Andi
+	\mysubsection{Dataset} Andi
+	
+	\mysubsection{Hardware environment} Andi
 		used CPU, GPU -> NVIDIA, handys
 
-	\mysubsection{installation of software} Andi
-This chapter includes all necessary steps for installing the software environment including Tensorflow.
+	\mysubsection{Installation of software} 
+This chapter describes all necessary steps for installing the software environment including Tensorflow.
 
  			\mysubsubsection{Prerequisites}
 The software environment was set up on the Linux distribution Ubuntu 16.04 LTS. To install the software environment for Tensorflow Python is required. Therefore, the current version of Python 3.6 was installed by default. Tensorflow also supports Bazel which was installed by following command.
@@ -25,21 +26,48 @@ The software environment was set up on the Linux distribution Ubuntu 16.04 LTS. 
 Futhermore, the package and environment management tool Anaconda was installed by the following steps:
 First, the Anaconda installer was downloaded from \url{https://www.anaconda.com/download/#linux}. During the installation process the prompts were answered by the default suggestions except the following prompt: "Do you wish the installer to prepend the Anaconda3 install location to PATH in your /home/aw/.bashrc ? [yes|no]". "yes" was typed in and conda was tested using the "conda list" command. \\
 
-As an app development environment the free IDE Android Studio in its version 3.0.1 was installed by downloading from \url{https://developer.android.com/studio/index.html}, extracting and following the instruction steps. Required dependencies are installed by Android Studio itself. So, the SDK in the version 26.1.1 was used. \\
-
 In the development of native Android Apps Java is used as the programming language. Within the installation of Anaconda, the JDK in the version 8 was installed.
-- test anaconda, tensorflow environment look where it belongs
 
  	- CUDA, CUDNN
  	
 			\mysubsubsection{Tensorflow based on Python}
+In order to install Tensorflow with Anaconda, an Anaconda environment must be created using following command (refer to \listref{tensorflow_anaconda}).
+
+\begin{lstlisting}[caption=Creating an Anaconda environment, label=list:tensorflow_anaconda, language=bash]
+	conda create -n tensorflow python=3.6
+\end{lstlisting}
+
+This command depends on the version of Python installed on the computer. Next, the created environment is activated through following line (\listref{activation_anaconda}).
+
+\begin{lstlisting}[caption=Activating the Anaconda environment, label=list:activation_anaconda, language=bash]
+	source activate tensorflow
+\end{lstlisting}
+
+Futhermore, Tensorflow was installed through the Anaconda environment for CPU only by the following command (refer to \listref{installing_tensorflow_anaconda}).
+
+\begin{lstlisting}[caption=Installing Tensorflow through Anaconda, label=list:installing_tensorflow_anaconda, language=bash]
+	pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/	tensorflow-1.4.1-cp36-cp36m-linux_x86_64.whl
+\end{lstlisting}
+
+For GPU the tfBinaryURL was changed to \url{https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.4.1-cp36-cp36m-linux_x86_64.whl}. \\
+
+In order to validate the installation, a following short python script was executed in the anaconda environment (refer to \listref{validation_installation}).
+
+\begin{lstlisting}[caption=Installing Tensorflow through Anaconda, label=list:validation_installation, language=python]
+	# Python
+	import tensorflow as tf
+	hello = tf.constant('Hello, TensorFlow!')
+	sess = tf.Session()
+	print(sess.run(hello))
+\end{lstlisting}
+
+If the output is 'Hello, TensorFlow!', the installation was conducted sucessfully. Each time when working with tensorflow, the environment has to be activated using the command in \listref{activation_anaconda}. As a consequence, the environment has to be deactivated when the work is done using the command 'deactivate'.
 
 			\mysubsubsection{Tensorflow based on Bazel}
 				- e.g. Workspace changes for Android SDK, msse4.2
+				
 			\mysubsubsection{Installing Android Studio and its Delevopment Kit}
-				- also possible with bazel but easier Android studio (needs correct versions of sdk, ndk) \\
-				- SDK, NDK \\
-				- IMPORTANT: tf versions updaten (same as trained)
+As an app development environment the free IDE Android Studio in its version 3.0.1 was installed by downloading from \url{https://developer.android.com/studio/index.html}. After the archive file was extracted, the script studio.sh was executed. Required dependencies are installed by Android Studio itself. Futhermore, Android Studio automatically installs the necessary SDK and NDK. So, the SDK in the version 26.1.1 and the NDK in its version 16.1 were used. If Android Studio doesn't install the necessary Development Kits, the appropriate SDK and NDK version can be installed by selecting the SDK and NDK in the section File - Settings - Appearance and Behaviour - System Settings - Android SDK. Thereby, in order to avoid any collapses when running the app, it's important to check the used tensorflow version in the dependency which has to correspond to the tensorflow version which was used to retrain the model.\\
 
 	\mysubsection{building the models} Alice bis Steps, Andi ab Optimierung, time GPU/CPU
 	-> evtl extra subsubsection: \\
@@ -53,7 +81,7 @@ In the development of native Android Apps Java is used as the programming langua
 	 	- test pictures and if it works -> label image \\
 	 	- validation script?! --> in Evaluierung
 
-	\mysubsection{Implementation of an native Android App} Alice
+	\mysubsection{Implementation of an native Android App} 
 This subchapter describes the processing of the camera input stream and classifying the particular images. Because of the vast extent of the application, the focus lies on the explanation of how the app works and on its important implementation parts. \\
 
 When click on the icon of the app, a camera view showing results in the bottom part is loaded. In the background, the ClassifierActivity is set as the launcher activity in the AndroidManifest.xml which is a file containing all configuration settings for the app. When an activity is loaded for the first time, the onCreate method is invoked. Because the ClassifierActivity extends the CameraActivity the onCreate method of the CameraActivity is executed and loads the layout activity_camera.xml consisting of a container and a result field. Next, the setFragment method of the class CameraActivity is invoked if permission for the camera is given. This causes the replacement of the container with the adapted fragment according to the actual size and orientation of the screen. When the size is set, the method onPreviewSizeChosen is invoked where a TensorFlowImageClassifier is instantiated with following input parameters: MODEL_FILE, LABEL_FILE, INPUT_SIZE, IMAGE_MEAN, IMAGE_STD, INPUT_NAME, OUTPUT_NAME. Details about the Classification follow later in the section.\\
@@ -63,10 +91,15 @@ When the fragment was replaced by the CameraActivity, an instance of the class C
 When an image is available the method onImageAvailable of the class ClassifierActivity is invoked. The image is read by the preview reader and stored in an object. First, the image is preprocessed meaning transfered into planes, stored as bytes, cropped and stored as a Bitmap which is an Android graphic. Google provides an Tensorlflow Mobile API to run tensors on a performance critical device such as mobile devices. To use this API, the depedency has to be added to the build.gradle file \listref{tensorflow_api}. 
 
 \begin{lstlisting}[caption=Tensorflow API in build.gradle, label=list:tensorflow_api, language=java]
+	allprojects {
+  		repositories {
+        	jcenter()
+    	}
+	}
 
 	dependencies {
-                compile 'org.tensorflow:tensorflow-android:+'
-    }
+    	compile 'org.tensorflow:tensorflow-android:+'
+	}
 \end{lstlisting}
 
 When including the API, Tensorflow's class Classifier can be used to classify images. Therefore, the TensorFlowImageClassifier which was initialized before invokes the method recognizeImage(croppedBitmap) on the preprocessed image. Within this method, the image data is transfered from int to float. Then, the previous initialized object of the TensorflowInferenceInterface calls the method feed to pass the float values to the input layer of the model. Afterwards, the inferenceInterface invokes the method run with the specified output layer in order to process the classification. Subsequently, the output data is fetched by calling fetch on the output layer \listref{classify_android}.
@@ -89,5 +122,53 @@ When including the API, Tensorflow's class Classifier can be used to classify im
     Trace.endSection();
 \end{lstlisting}
 
-Afterwards, the results are reordered according to the highest probability and returned to the results field for displaying the output.
-	\mysubsection{Deployment and Validation} Alice
+Afterwards, the results are reordered according to the highest probability and returned to the result field for displaying the output.
+
+	\mysubsection{Deployment and Validation} 
+In order to get the model to run in the application, a few things must be adapted. First, the model in the format of a .pb file and its retrained labels as a text file must be imported. Therefore, a assets folder was created where the model and labels were placed. Next, the path of the model and the labels file must be specified like pictured in \listref{include_model}.
+
+\begin{lstlisting}[caption=Including the model in the mobile application, label=list:include_model, language=java]
+    // Input shapes
+    private static final int INPUT_SIZE = 224;
+    private static final int IMAGE_MEAN = 128;
+    private static final float IMAGE_STD = 128.0f;
+
+    // Input Layer
+    private static final String INPUT_NAME = "input";
+
+    // Output Layer
+    private static final String OUTPUT_NAME = "final_result";
+
+    // Model Name from Assets
+    private static final String MODEL_FILE = "file:///android_asset/				opt4_retrained_dog_graph_mobilenet_0.50_224_700_0.007.pb";
+
+
+    // Label Name from Assets
+    private static final String LABEL_FILE = "file:///android_asset/retrained_dog_labels_mobilenet_0.50_224_700_0.007.txt";
+
+\end{lstlisting}
+
+For MobileNet models the default settings are shown in the mentioned listing. Otherwise, if an InceptionV3 is used, the settings must be adapted like shown in \listref{include_inception}.
+
+\begin{lstlisting}[caption=Setup for InceptionV3, label=list:include_inception, language=java]
+    private static final int INPUT_SIZE = 299;
+    private static final int IMAGE_MEAN = 128;
+    private static final float IMAGE_STD = 128.0f;
+    private static final String INPUT_NAME = "Mul:0";
+    private static final String OUTPUT_NAME = "final_result";
+\end{lstlisting}
+
+The input size defines the size of the input layer of InceptionV3 which is 'Mul'. Whereas the input layer for MobileNet is specified as 'input'. The IMAGE_MEAN and IMAGE_STD values are needed for converting the image data as integer in float values. The conversion is shown in \listref{int_conversion}.
+
+\begin{lstlisting}[caption=Conversion of image data integer to float, label=list:int_conversion, language=java]
+	for (int i = 0; i < intValues.length; ++i) {
+      final int val = intValues[i];
+      floatValues[i * 3 + 0] = (((val >> 16) & 0xFF) - imageMean) / imageStd;
+      floatValues[i * 3 + 1] = (((val >> 8) & 0xFF) - imageMean) / imageStd;
+      floatValues[i * 3 + 2] = ((val & 0xFF) - imageMean) / imageStd;
+    }
+\end{lstlisting}
+
+Futhermore, the output layer has to be specified. For MobileNet and InceptionV3, this was set to 'final_result'. \\
+
+After setting up the application with appropriate values, the application can be built and run. If the application is running successfully and doesn't terminate, the settings are correct. If the result view contains results, everthing's working. If the results are below 0.1, the threshold in the class TensorflowImageClassifier has to be adapted. It's default setting is 0.01f which means only relevant results higher than 0.01 are shown in the result field. As a consequence, bad results given by the network aren't shown generally. In this case, we optimized the model again instead of lower the threshold. Just for the validation of a correct working app, the threshold was set to 0.001f.
