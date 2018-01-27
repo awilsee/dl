@@ -4,12 +4,23 @@ First, this chapter describes the selection of the appropriate framework. Futher
 	\mysubsection{Frameworks}
 As a deep learning framework Tensorflow was used to retrain the model. This decision was mainly based on recommendations. Even companies like e.g. NVIDIA Corporation, Intel Corporation etc. use Tensorflow. It is one of the common frameworks for deep learning applications and also provides solutions for integration in mobile apps. Furthermore, Tensorflow provides a variety of tutorials for working with neural networks. Beside those advantages, there is a large community about Tensorflow talking about issues and solutions. \\
 
-To run the tensor within a mobile application, the first approach was to use Tensorflow Lite which is still in development state. But many attempts resulted in corrupt models which caused the app to terminate. Because of this experiences Tensorflow Mobile was used to run the model within the mobile application. 
+To run the tensor within a mobile application, the first approach was to use Tensorflow Lite which is still in development state. But many attempts resulted in corrupt models which caused the app to terminate. Because of this experiences Tensorflow Mobile was used to optimize the model for app integration. 
 		
-	\mysubsection{Model based Architectures} Andi
-	 - general architectures of models -> n Mobilenet, Inception
-	 
-	\mysubsection{Application based Architecture} 
+	\mysubsection{Qualified models for mobile app integration}
+In Tensorflow Lite only InceptionV3 and MobileNet models are supported. With Tensorflow Mobile it's the same. There are different versions of MobileNet. They differ in the input image size and in the number of parameters which is also proportional to the size and needed computation power of the network.
+
+While the Inception model was well known and established, the MobileNet is relatively new. InceptionV3 models gets an higher accuracy than MobileNets but MobileNets are more optimized on small size, low latency and low-power consumption which are important characteristics for mobile usage. \citep{TensorFlowMobileNet} \\
+
+
+In \figref{FH-Logo8} the MobileNet and Inception is compared with each other and also with other popular models already mentioned before in \subsecref{Common Models in Deep Learning Applications}. It shows the Top-1 accuracy and the Multiply-Accumulates (MACs) which measures the number of fused Multiplication and Addition operations. The latter numbers reflect the latency and power consumption of the network and so in result the efficiency. For well comparison reasons between MobileNet and Inception, a MobileNet model with similiar accuracy to the Inception one was picked, to be more precisely the MobileNet\_1.0\_224. To check out the possibilities of MobileNet, another model, the MobileNet\_0.50\_244, was selected, too.
+
+\begin{figure}[htbp]
+\includegraphics[width=0.8\textwidth]{includes/MUASlogo}
+\caption[Comparison of popular models]{Comparison of popular models \citep{TensorFlowMobileNet}}
+\label{fig:FH-Logo8}
+\end{figure} 
+
+	\mysubsection{Application based Architecture} Alice
 This chapter describes the functions to a basic understanding of how the application works based on the application's architecture. It focuses on the important classes and methods of the mobile application. \\
 Tensorflow provides a mobile application for demo purposes. Because of the complexity the application was adapted to our needs. The approach was to understand how the application was implemented regarding the functionality of the camera, image input for the network and background classification besides live camera stream. \\
 
