@@ -1,6 +1,26 @@
 \newpage
 \mysection{Appendix}
 
+\mysubsection{GoogLeNet - InceptionV1 architecture}
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=18.5cm]{includes/GoogLeNet}
+\caption[Model architecture of GoogLeNet]{Model architecture of GoogLeNet \citep[p. 7]{Szegedy2014}}
+\label{fig:GoogLeNet}
+\end{figure}
+\newpage
+
+
+\mysubsection{ResNet architecture}
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=18.5cm]{includes/ResNet}
+\caption[ResNet block]{ResNet block \citep[p. 4]{HE2015}}
+\label{fig:FH-Logo6}
+\end{figure}
+\newpage
+
+
 \mysubsection{Configure Bazel for Tensorflow}
 
 \begin{lstlisting}[caption=Configure bazel for Tensorflow, label=list:configure_bazel, language=bash]
@@ -56,7 +76,57 @@
 \newpage
 
 
+\mysubsection{MobileNet retrained graph - detailed}
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=18.5cm]{includes/graphMobilenet050-700Layer}
+\caption{MobileNet retrained graph - detailed}
+\label{fig:MobileNet retrained graph - detailed}
+\end{figure}
+\newpage
 
+\mysubsection{MobileNet retrained graph - depthwise}
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=10cm]{includes/graphMobilenet050-700DepthLayer}
+\caption{MobileNet retrained graph - depthwise}
+\label{fig:MobileNet retrained graph - depthwise}
+\end{figure}
+
+\newpage
+
+
+\mysubsection{InceptionV3 retrained graph}
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=18.5cm]{includes/graphInception4000}
+\caption{InceptionV3 retrained graph}
+\label{fig:InceptionV3 retrained graph}
+\end{figure}
+
+\begin{sidewaysfigure}
+\mysubsection{InceptionV3 retrained graph - mixed_layer}
+\includegraphics[width=0.95\textwidth]{includes/graphInception4000MixedLayer}
+\end{sidewaysfigure}
+\newpage
+
+\mysubsection{InceptionV3 retrained graph - conv layer}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.35\textwidth]{includes/graphInception4000ConvOps1}
+\caption{InceptionV3 retrained graph - conv layer}
+\label{fig:InceptionV3 retrained graph - conv layer}
+\end{figure}
+\newpage
+
+\mysubsection{InceptionV3 retrained graph - optimized}
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=18.5cm]{includes/graphInception4000Opt4}
+\caption{InceptionV3 retrained graph - optimized}
+\label{fig:InceptionV3 retrained graph - optimized}
+\end{figure}
+\newpage
 
 \mysubsection{TensorBoard - optimal achieved accuracy of the different models}
 \begin{figure}[htbp]
@@ -89,10 +159,9 @@
 
 \newpage
 
-
-
 \mysubsection{Evaluation of optimization attempts}
 
+\newpage
 \begin{table}[]
 \centering
 \begin{tabular}{|l|r|r|r|l}

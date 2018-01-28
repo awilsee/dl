@@ -11,14 +11,15 @@ In Tensorflow Lite only InceptionV3 and MobileNet models are supported. With Ten
 
 While the Inception model was well known and established, the MobileNet is relatively new. InceptionV3 models gets an higher accuracy than MobileNets but MobileNets are more optimized on small size, low latency and low-power consumption which are important characteristics for mobile usage. \citep{TensorFlowMobileNet} \\
 
-
-In \figref{FH-Logo8}, the MobileNet and Inception is compared with each other and also with other popular models already mentioned before in \subsecref{Common Models in Deep Learning Applications}. It shows the Top-1 accuracy and the Multiply-Accumulates (MACs) which measures the number of fused multiplication and addition operations. The latter numbers reflect the latency and power consumption of the network and so in result the efficiency. For well comparison reasons between MobileNet and Inception, a MobileNet model with similiar accuracy to the Inception one was picked, in order to be more precisely than with the MobileNet\_1.0\_224. To check out the possibilities of MobileNet, another model, the MobileNet\_0.50\_244, was selected, too.
-
 \begin{figure}[htbp]
-\includegraphics[width=0.8\textwidth]{includes/MUASlogo}
+\centering
+\includegraphics[width=0.7\textwidth]{includes/mobilenetv1}
 \caption[Comparison of popular models]{Comparison of popular models \citep{TensorFlowMobileNet}}
-\label{fig:FH-Logo8}
+\label{fig:mobilenetv1}
 \end{figure} 
+
+In \figref{mobilenetv1}, the MobileNet and Inception is compared with each other and also with other popular models already mentioned before in \subsecref{Common Models in Deep Learning Applications}. It shows the Top-1 accuracy and the Multiply-Accumulates (MACs) which measures the number of fused multiplication and addition operations. The latter numbers reflect the latency and power consumption of the network and so in result the efficiency. For well comparison reasons between MobileNet and InceptionV1, a MobileNet model with similiar accuracy to the Inception one was picked, in order to be more precisely than with the MobileNet\_1.0\_224. To check out the possibilities of MobileNet, another model, the MobileNet\_0.50\_244, was selected, too.
+
 
 	\mysubsection{Application based Architecture} 
 This chapter describes the functions to a basic understanding of how the application works based on the application's architecture. It focuses on the important classes and methods of the mobile application. \\

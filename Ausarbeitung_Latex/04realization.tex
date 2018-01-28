@@ -9,7 +9,7 @@ Because of the reason that the ImageNet dataset is already used to train the pre
 
 	\mysubsection{Hardware environment}
 Different hardware setups are used for this project to compare the performance of the mobile application.
-At first the lowest one is a notebook with an Intel(R) Core(TM) i7-4720HQ CPU @ 2.60GHz and 16GB memory.
+At first the lowest one is a notebook with an Intel(R) Core(TM) i7-4720HQ CPU @ 2.60GHz and 16 GB memory.
 The other one is a powerful desktop computer with an Intel(R) Core(TM) i7-6700K CPU @ 4.4 GHz and 16 GB memory.
 In this computer there is also a NVIDIA GeForce GTX 980 with CUDA capabilities version 5.2. It has 2048 CUDA cores running @ 1.291 GHz and 4 GB memory.
 
@@ -22,6 +22,7 @@ This chapter describes all necessary steps for installing the software environme
  			\mysubsubsection{Prerequisites}
 The software environment was set up on the Linux distribution Ubuntu 16.04 LTS. To install the software environment for Tensorflow, Python is required. Therefore, the current version of Python 3.6 was installed by default. Tensorflow also supports Bazel which was installed by following command \citep{Bazel}.
 
+\begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Bazel Installation, label=list:bazel, language=bash]
 	sudo apt-get install openjdk-8-jdk
 	
@@ -32,6 +33,7 @@ The software environment was set up on the Linux distribution Ubuntu 16.04 LTS. 
 	
 	sudo apt-get upgrade bazel
 \end{lstlisting}	
+\end{minipage}
 
 Futhermore, the package and environment management tool Anaconda was installed by the following steps:
 First, the Anaconda installer was downloaded from \url{https://www.anaconda.com/download/#linux}. During the installation process the prompts were answered by the default suggestions except the following prompt: "Do you wish the installer to prepend the Anaconda3 install location to PATH in your /home/aw/.bashrc ? [yes|no]". "yes" was typed in and conda was tested using the "conda list" command \citep{Anaconda}. \\
@@ -144,32 +146,42 @@ Lastly install the libcupti-dev library  and export it's path with \listref{libc
 
 			\mysubsubsection{Tensorflow based on Python}
 First, there are some necessary dependencies to install before the actual installation can begin (refer to \listref{python_dependencies}).
+
+\begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Installing the dependecies for Tensorflow based on Python 3.n, label=list:python_dependencies, language=bash]
 	sudo apt-get install python3-numpy python3-dev python3-pip python3-wheel
 \end{lstlisting}
+\end{minipage}
 
 In order to install Tensorflow with Anaconda, an Anaconda environment must be created using following command (refer to \listref{tensorflow_anaconda}).
 
+\begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Creating an Anaconda environment, label=list:tensorflow_anaconda, language=bash]
 	conda create -n tensorflow python=3.6
 \end{lstlisting}
+\end{minipage}
 
 This command depends on the version of Python installed on the computer. Next, the created environment is activated through following line (\listref{activation_anaconda}).
 
+\begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Activating the Anaconda environment, label=list:activation_anaconda, language=bash]
 	source activate tensorflow
 \end{lstlisting}
+\end{minipage}
 
 Futhermore, Tensorflow was installed through the Anaconda environment for CPU only by the following command (refer to \listref{installing_tensorflow_anaconda}).
 
+\begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Installing Tensorflow through Anaconda, label=list:installing_tensorflow_anaconda, language=bash]
 	pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/	tensorflow-1.4.1-cp36-cp36m-linux_x86_64.whl
 \end{lstlisting}
+\end{minipage}
 
 For GPU the tfBinaryURL was changed to \url{https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.4.1-cp36-cp36m-linux_x86_64.whl}. \\
 
 In order to validate the installation, a following short Python script was executed in the Anaconda environment (refer to \listref{validation_installation}).
 
+\begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Installing Tensorflow through Anaconda, label=list:validation_installation, language=python]
 	# Python
 	import tensorflow as tf
@@ -177,6 +189,7 @@ In order to validate the installation, a following short Python script was execu
 	sess = tf.Session()
 	print(sess.run(hello))
 \end{lstlisting}
+\end{minipage}
 
 If the output is 'Hello, TensorFlow!', the installation was conducted sucessfully. Each time when working with Tensorflow, the environment has to be activated using the command in \listref{activation_anaconda}. As a consequence, the environment has to be deactivated when the work is done using the command 'deactivate' \citep{InstallTensorflow}.
 
@@ -184,9 +197,11 @@ If the output is 'Hello, TensorFlow!', the installation was conducted sucessfull
 Another way of working with Tensorflow is using Bazel. In order to install, refer to \listref{bazel}. 
 After the Bazel installation is completed, the Tensorflow repository can be cloned by following command (refer to \listref{clone_tensorflow}).
 
+\begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Cloning the tensorflow repository, label=list:clone_tensorflow, language=bash]
 	git clone https://github.com/tensorflow/tensorflow		
 \end{lstlisting}
+\end{minipage}
 
 Now, the installation can be configured. The configuration and its prompts are shown in \subsecref{Configure Bazel for Tensorflow}. If GPU usage is desired, some configurations might differ from the shown configuration steps. The differences are explained in \subsubsecref{Prerequisites}.\\
 
@@ -194,16 +209,20 @@ Furthermore, the Android SDK and NDK must be added to the workspace of Bazel. Th
 
 Then, the Tensorflow pip package can be built by Bazel using the command shown in \listref{pip_package} which also enables Streaming SIMD Extensions 2 introduced by Intel Corporation to process data with doubled accuracy. For GPU support the option '--config=cuda' was added to the build command \citep{GithubBazel}.
 
+\begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Building the Tensorflow pip package, label=list:pip_package, language=bash]
 	bazel build -c opt --copt=-msse4.2 //tensorflow/tools/pip_package:build_pip_package
 	bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
 \end{lstlisting}
+\end{minipage}
 
 Finally, the pip package is installed by executing the following command \listref{pip_install}.
 
+\begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Installing the pip package, label=list:pip_install, language=bash]
 	sudo pip install --upgrade /tmp/tensorflow_pkg/tensorflow-*.whl
 \end{lstlisting}
+\end{minipage}
 
 Instead of using the placeholder '-*', the version can also be specified. Which Tensorflow version is used, can be determined by executing 'pip list \big \vert grep tensorflow' depending on the Python version. The version of Tensorflow used in this work is 1.4.1. The validation of the installation is done by executing the command shown in \listref{validation_installation} \citep{TensorflowBazel}.
 
@@ -250,7 +269,7 @@ All these variables are used in the entire project for every execution of a pyth
 \end{lstlisting}
 \end{minipage}
 
-To retrain a model the python script \textit{code/scripts/retrain.py} in the github repository of this project is used and executed as shown in \listref{retrain}. This script is taken from the 'tensorflow-for-poets'-tutorial and is extended with some time measuring stuff. All relevant parameters are explained later in this section. However, for all possible options just execute \textit{python -m scripts.retrain -h}. 
+To retrain a model the python script \textit{code/scripts/retrain.py} in the github repository of this project is used and executed as shown in \listref{retrain}. This script is taken from \citep{TensorflowDemo} and is extended with some time measuring stuff. All relevant parameters are explained later in this section. However, for all possible options just execute \textit{python -m scripts.retrain -h}. 
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Call of \textit{retrain.py}, label=list:retrain, language=bash]
@@ -374,15 +393,17 @@ If using both, python and bazel execution methods the same version of TensorFlow
 
 During the retrain process the outputted accuracies, cross entropy and some more data are written to the summaries directory and can be visualized with TensorBoard which is automatically installed with TensorFlow. To start it, execute command in \listref{tensorboard}.
 
+\begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Build and call of \textit{retrain}, label=list:tensorboard, language=bash]
 	tensorboard --logdir ${RETRAIN_PATH}/training_summaries/${ARCHITECTURE}_${TRAINING_STEPS}/ &
 \end{lstlisting}
+\end{minipage}
 
 To validate the retrained model, see \subsecref{Output Tests and Validation}. \\
 
 The graph of the model can also be visualized in TensorBoard.
-The retrained graph of the MobileNet model is depicted in \figref{graphMobilenet050-700} including the training nodes. In the appendix under \subsecref{} is a more detailed one with all convolutional layer and under \subsecref{} the view on the depthwise convolution containing its depthwise and pointwise convolutional layers as described in \subsecref{Common Models in Deep Learning Applications}. \\
-The whole retrained graph of the MobileNet model is depicted in the appendix under \subsecref{}. Furthermore, under \subsecref{} a detailed view on a mixed_layer and under \subsecref{} it's specific operations within a convolutional layer is shown. \\
+The retrained graph of the MobileNet model is depicted in \figref{graphMobilenet050-700} including the training nodes. In the appendix under \subsecref{MobileNet retrained graph - detailed} is a more detailed one with all convolutional layer and under \subsecref{MobileNet retrained graph - depthwise} the view on the depthwise convolution containing its depthwise and pointwise convolutional layers as described in \subsecref{Common Models in Deep Learning Applications}. \\
+The whole retrained graph of the InceptionV3 model is depicted in the appendix under \subsecref{InceptionV3 retrained graph}. Furthermore, under \subsecref{InceptionV3 retrained graph - mixed_layer} a detailed view on a mixed_layer and under \subsecref{InceptionV3 retrained graph - conv layer} it's specific operations within a convolutional layer is shown. \\
 
 \begin{figure}[htbp]
 \centering
@@ -427,7 +448,7 @@ This script removes all nodes that aren't needed anymore like all training opera
 \end{lstlisting}
 \end{minipage}
 
-The next attempt is to use the already optimized graph of \textit{opt1} and additionally quantizes it by rounding the weights. The \textit{quantize_graph.py}-script of tensorflow-for-poets-2-tutorial can be called as shown in \listref{quantize_graph}. This will make the model compressible, which will reduce the model size significantly. Thus every mobile app compresses the package before distribution.
+The next attempt is to use the already optimized graph of \textit{opt1} and additionally quantizes it by rounding the weights. The \textit{quantize_graph.py}-script of \citep{TensorflowDemo} can be called as shown in \listref{quantize_graph}. This will make the model compressible, which will reduce the model size significantly. Thus every mobile app compresses the package before distribution.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Call of \textit{quantize_graph.py}, label=list:quantize_graph, language=bash]
@@ -462,7 +483,7 @@ The detailed result of both graphs is shown in \listref{gzip_res}. So the \texti
 \end{minipage}
 
 
-These first two ways of optimization are described in the tensorflow-for-poets-2-tutorial. \\
+These first two ways of optimization are described in the tensorflow-for-poets-2-tutorial. \citep{TensorflowDemo} \\
 
 The next two attempts are using \textit{transform_graph} of the official tensorflow github repository. Unfortunately there exists none python version of that tool, so it has to be built with bazel first. 
 
@@ -509,7 +530,7 @@ The results experimenting with optimization are described in \secref{Evaluation}
 
 There are several helper tools, two of them are definitely worth to introduce here right now.
 
-The first one, is the \textit{graph_pb2tb.py}-script, again from the tensorflow-for-poets-tutorial. It generates a summary file which contains only the data of the graph for visualization with TensorBoard. So after optimizing the graph and calling the command of \listref{graph_pb2tb} the graph of the MobileNet model should look like depicted in \figref{MobileNetGraphOpt4} which is completely stripped of unused nodes as the training stuff and thus optimized for inference. The InceptionV3 model is in the appendix under \subsecref{Optimized InceptionV3 model}. \\
+The first one, is the \textit{graph_pb2tb.py}-script, again from \citep{TensorflowDemo}. It generates a summary file which contains only the data of the graph for visualization with TensorBoard. So after optimizing the graph and calling the command of \listref{graph_pb2tb} the graph of the MobileNet model should look like depicted in \figref{MobileNetGraphOpt4} which is completely stripped of unused nodes as the training stuff and thus optimized for inference. The InceptionV3 model is in the appendix under \subsecref{InceptionV3 retrained graph - optimized}. \\
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Call of \textit{graph_pb2tb.py}, label=list:graph_pb2tb, language=bash]
@@ -549,7 +570,7 @@ The other tool is \textit{summarize_graph} of the official tensorflow github rep
 
 
 	\mysubsection{Output Tests and Validation}
-In order to test and validate the output of the model regardless of whether the pretrained, retrained or optimized one is used the python script named \textit{label\_image}.py of the 'tensorflow-for-poets'-tutorial was applied. The variables defined in \subsecref{Building the models} in \listref{variables} has to be used depending on the model.
+In order to test and validate the output of the model regardless of whether the pretrained, retrained or optimized one is used the python script named \textit{label\_image}.py of \citep{TensorflowDemo} was applied. The variables defined in \subsecref{Building the models} in \listref{variables} has to be used depending on the model.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Call of \textit{label\_image.py}, label=list:label_image, language=bash]
@@ -606,6 +627,7 @@ When the fragment was replaced by the CameraActivity, an instance of the class C
 
 When an image is available the method onImageAvailable of the class ClassifierActivity is invoked. The image is read by the preview reader and stored in an object. First, the image is preprocessed meaning transfered into planes, stored as bytes, cropped and stored as a Bitmap which is an Android graphic. Google provides an Tensorlflow Mobile API to run tensors on a performance critical device such as mobile devices. To use this API, the dependency has to be added to the build.gradle file as shown in\listref{tensorflow_api}. 
 
+\begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Tensorflow API in build.gradle, label=list:tensorflow_api, language=java]
 	allprojects {
   		repositories {
@@ -617,9 +639,11 @@ When an image is available the method onImageAvailable of the class ClassifierAc
     	compile 'org.tensorflow:tensorflow-android:+'
 	}
 \end{lstlisting}
+\end{minipage}
 
 When including the API, Tensorflow's class Classifier can be used to classify images. Therefore, the TensorFlowImageClassifier which was initialized before invokes the method recognizeImage(croppedBitmap) on the preprocessed image. Within this method, the image data is transfered from int to float (refer to \listref{int_conversion}). Then, the previous initialized object of the TensorflowInferenceInterface calls the method feed to pass the float values to the input layer of the model. Afterwards, the inferenceInterface invokes the method run with the specified output layer in order to process the classification. Subsequently, the output data is fetched by calling fetch on the output layer which is depicted in \listref{classify_android}.
 
+\begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Classifying images by the inferenceInterface \citep{TensorflowDemo}, label=list:classify_android, language=java]
 
     // Copy the input data into TensorFlow.
@@ -637,12 +661,14 @@ When including the API, Tensorflow's class Classifier can be used to classify im
     inferenceInterface.fetch(outputName, outputs);
     Trace.endSection();
 \end{lstlisting}
+\end{minipage}
 
 Afterwards, the results are reordered according to the highest probability and returned to the result field for displaying the output.
 
 	\mysubsection{Deployment and Validation} 
 In order to get the model running in the application, a few things must be adapted. First, the model in the format of a .pb file and its retrained labels as a text file must be imported. Therefore, a assets folder was created where the model and labels were placed. Next, the path of the model and the labels file must be specified like pictured in \listref{include_model}.
 
+\begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Including the model in the mobile application, label=list:include_model, language=java]
     // Input shapes
     private static final int INPUT_SIZE = 224;
@@ -661,11 +687,12 @@ In order to get the model running in the application, a few things must be adapt
 
     // Label Name from Assets
     private static final String LABEL_FILE = "file:///android_asset/retrained_dog_labels_mobilenet_0.50_224_700_0.007.txt";
-
 \end{lstlisting}
+\end{minipage}
 
 For MobileNet models the default settings are shown in the mentioned listing. Otherwise, if an InceptionV3 is used, the settings must be adapted like shown in \listref{include_inception}.
 
+\begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Setup for InceptionV3, label=list:include_inception, language=java]
     private static final int INPUT_SIZE = 299;
     private static final int IMAGE_MEAN = 128;
@@ -673,9 +700,11 @@ For MobileNet models the default settings are shown in the mentioned listing. Ot
     private static final String INPUT_NAME = "Mul:0";
     private static final String OUTPUT_NAME = "final_result";
 \end{lstlisting}
+\end{minipage}
 
 The input size defines the size of the input layer of InceptionV3 which is 'Mul'. Whereas the input layer for MobileNet is specified as 'input'. The IMAGE_MEAN and IMAGE_STD values are needed for converting the image data from integer into float values. The conversion is shown in \listref{int_conversion}.
 
+\begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Conversion of image data integer to float, label=list:int_conversion, language=java]
 	for (int i = 0; i < intValues.length; ++i) {
       final int val = intValues[i];
@@ -684,7 +713,8 @@ The input size defines the size of the input layer of InceptionV3 which is 'Mul'
       floatValues[i * 3 + 2] = ((val & 0xFF) - imageMean) / imageStd;
     }
 \end{lstlisting}
+\end{minipage}
 
 Futhermore, the output layer has to be specified. For MobileNet and InceptionV3, this was set to 'final_result'. \\
 
-After setting up the application with appropriate values, the application can be built and run. If the application is running successfully and doesn't terminate, the settings are correct. If the result view contains results, everthing's working. If the results are below 0.1, the threshold in the class TensorflowImageClassifier has to be adapted. It's default setting is 0.01f which means only relevant results higher than 0.01 are shown in the result field. As a consequence, bad results given by the network aren't shown in general. In this case, we optimized the model again instead of lower the threshold. Just for the validation of a correct working app, the threshold was set to 0.001f.
+After setting up the application with appropriate values, the application can be built and run. If the application is running successfully and doesn't terminate, the settings are correct. If the result view contains results, everthing's working. If the results are below 0.1, the threshold in the class TensorflowImageClassifier has to be adapted. It's default setting is 0.1f which means only relevant results higher than 0.1 are shown in the result field. As a consequence, bad results given by the network aren't shown in general. So the threshold was set to 0.01f.
