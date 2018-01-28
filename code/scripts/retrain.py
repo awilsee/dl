@@ -11,6 +11,10 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
+# edited by Andreas Wilhelm and Alice Bollenmiller
+# for the purposes of the lecture Deep Learning
+#
 # ==============================================================================
 r"""Simple transfer learning with Inception v3 or Mobilenet models.
 
