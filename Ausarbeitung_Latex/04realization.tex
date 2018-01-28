@@ -20,7 +20,7 @@ The other one is a Motorola Moto X (2nd Gen, 2014) with a Qualcomm Snapdragon 80
 This chapter describes all necessary steps for installing the software environment including Tensorflow.
 
  			\mysubsubsection{Prerequisites}
-The software environment was set up on the Linux distribution Ubuntu 16.04 LTS. To install the software environment for Tensorflow, Python is required. Therefore, the current version of Python 3.6 was installed by default. Tensorflow also supports Bazel which was installed by following command.
+The software environment was set up on the Linux distribution Ubuntu 16.04 LTS. To install the software environment for Tensorflow, Python is required. Therefore, the current version of Python 3.6 was installed by default. Tensorflow also supports Bazel which was installed by following command \citep{Bazel}.
 
 \begin{lstlisting}[caption=Bazel Installation, label=list:bazel, language=bash]
 	sudo apt-get install openjdk-8-jdk
@@ -34,7 +34,7 @@ The software environment was set up on the Linux distribution Ubuntu 16.04 LTS. 
 \end{lstlisting}	
 
 Futhermore, the package and environment management tool Anaconda was installed by the following steps:
-First, the Anaconda installer was downloaded from \url{https://www.anaconda.com/download/#linux}. During the installation process the prompts were answered by the default suggestions except the following prompt: "Do you wish the installer to prepend the Anaconda3 install location to PATH in your /home/aw/.bashrc ? [yes|no]". "yes" was typed in and conda was tested using the "conda list" command. \\
+First, the Anaconda installer was downloaded from \url{https://www.anaconda.com/download/#linux}. During the installation process the prompts were answered by the default suggestions except the following prompt: "Do you wish the installer to prepend the Anaconda3 install location to PATH in your /home/aw/.bashrc ? [yes|no]". "yes" was typed in and conda was tested using the "conda list" command \citep{Anaconda}. \\
 
 In the development of native Android Apps, Java is used as the programming language. Within the installation of Anaconda, the JDK in the version 8 was installed.
 
@@ -76,7 +76,7 @@ In order to validate the installation, a following short Python script was execu
 	print(sess.run(hello))
 \end{lstlisting}
 
-If the output is 'Hello, TensorFlow!', the installation was conducted sucessfully. Each time when working with Tensorflow, the environment has to be activated using the command in \listref{activation_anaconda}. As a consequence, the environment has to be deactivated when the work is done using the command 'deactivate'.
+If the output is 'Hello, TensorFlow!', the installation was conducted sucessfully. Each time when working with Tensorflow, the environment has to be activated using the command in \listref{activation_anaconda}. As a consequence, the environment has to be deactivated when the work is done using the command 'deactivate' \citep{InstallTensorflow}.
 
 			\mysubsubsection{Tensorflow based on Bazel}
 Another way of working with Tensorflow is using Bazel. In order to install, refer to \listref{bazel}. 
@@ -90,7 +90,7 @@ Now, the installation can be configured. The configuration and its prompts are s
 
 Furthermore, the Android SDK and NDK must be added to the workspace of Bazel. This is done by removing the comments in the WORKSPACE file which is located in the source directory of the Tensorflow repository and adapting the PATH variable according to the location of the SDK and NDK. NDK 16 which was released on November 2017 is incompatible with Bazel. \\
 
-Then, the Tensorflow pip package can be built by Bazel using the command shown in \listref{pip_package} which also enables Streaming SIMD Extensions 2 introduced by Intel Corporation to process data with doubled accuracy. For GPU support the option '--config=cuda' was added to the build command.
+Then, the Tensorflow pip package can be built by Bazel using the command shown in \listref{pip_package} which also enables Streaming SIMD Extensions 2 introduced by Intel Corporation to process data with doubled accuracy. For GPU support the option '--config=cuda' was added to the build command \citep{GithubBazel}.
 
 \begin{lstlisting}[caption=Building the Tensorflow pip package, label=list:pip_package, language=bash]
 	bazel build -c opt --copt=-msse4.2 //tensorflow/tools/pip_package:build_pip_package
@@ -103,7 +103,7 @@ Finally, the pip package is installed by executing the following command \listre
 	sudo pip install --upgrade /tmp/tensorflow_pkg/tensorflow-*.whl
 \end{lstlisting}
 
-Instead of using the placeholder '-*', the version can also be specified. Which Tensorflow version is used, can be determined by executing 'pip list \big \vert grep tensorflow' depending on the Python version. The version of Tensorflow used in this work is 1.4.1. The validation of the installation is done by executing the command shown in \listref{validation_installation}.
+Instead of using the placeholder '-*', the version can also be specified. Which Tensorflow version is used, can be determined by executing 'pip list \big \vert grep tensorflow' depending on the Python version. The version of Tensorflow used in this work is 1.4.1. The validation of the installation is done by executing the command shown in \listref{validation_installation} \citep{TensorflowBazel}.
 
 			\mysubsubsection{Installing Android Studio and its Delevopment Kit}
 As an app development environment the free IDE Android Studio in its version 3.0.1 was installed by downloading from \url{https://developer.android.com/studio/index.html}. After the archive file was extracted, the script studio.sh was executed. Required dependencies are installed by Android Studio itself. Futhermore, Android Studio automatically installs the necessary SDK and NDK. So, the SDK in the version 26.1.1 and the NDK in its version 16.1 were used. If Android Studio doesn't install the necessary Development Kits, the appropriate SDK and NDK version can be installed by selecting the SDK and NDK in the section File - Settings - Appearance and Behaviour - System Settings - Android SDK. Thereby, in order to avoid any collapses when running the app, it's important to check the used Tensorflow version in the dependency which has to correspond to the Tensorflow version which was used to retrain the model.\\
@@ -561,7 +561,7 @@ When an image is available the method onImageAvailable of the class ClassifierAc
 
 When including the API, Tensorflow's class Classifier can be used to classify images. Therefore, the TensorFlowImageClassifier which was initialized before invokes the method recognizeImage(croppedBitmap) on the preprocessed image. Within this method, the image data is transfered from int to float (refer to \listref{int_conversion}). Then, the previous initialized object of the TensorflowInferenceInterface calls the method feed to pass the float values to the input layer of the model. Afterwards, the inferenceInterface invokes the method run with the specified output layer in order to process the classification. Subsequently, the output data is fetched by calling fetch on the output layer which is depicted in \listref{classify_android}.
 
-\begin{lstlisting}[caption=Classifying images by the inferenceInterface, label=list:classify_android, language=java]
+\begin{lstlisting}[caption=Classifying images by the inferenceInterface \citep{TensorflowDemo}, label=list:classify_android, language=java]
 
     // Copy the input data into TensorFlow.
     Trace.beginSection("feed");
