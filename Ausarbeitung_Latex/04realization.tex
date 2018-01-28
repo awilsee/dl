@@ -38,8 +38,109 @@ First, the Anaconda installer was downloaded from \url{https://www.anaconda.com/
 
 In the development of native Android Apps, Java is used as the programming language. Within the installation of Anaconda, the JDK in the version 8 was installed.
 
- 	- CUDA, CUDNN
- 	
+For using a GPU, further NVIDIA software must be installed which is in detail Compute Unified Device Architecture (CUDA) and the CUDA Deep Neural Network library (cuDNN). The requirements will be decribed in the following otherwise check out \url{https://www.tensorflow.org/install/install_linux#nvidia_requirements_to_run_tensorflow_with_gpu_support}. 
+
+Precaution, to use TensorFlow wit GPU support the odler CUDA Toolkit in version 8.0 and cuDNN in version 6.0 has to be installed!
+
+Firstly validate that the GPU card support at least CUDA Compute Capability 3.0 which can be seen on \url{https://developer.nvidia.com/cuda-gpus}.
+
+Secondly download CUDA Toolkit 8.0 GA2 on \url{https://developer.nvidia.com/cuda-downloads}. Pick the correct target settings and download the deb-file. An installation guide can also be downloaded, however all relevant steps are described here.
+
+The kernel headers and development packages for the currently running kernel has to be installed using following command in \listref{linuxheaders}.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[caption=Installation of linux-headers, label=list:linuxheaders, language=bash]
+	sudo apt-get install linux-headers-$(uname -r)
+\end{lstlisting}
+\end{minipage}
+
+Like in \listref{cuda} shown, install CUDA.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[caption=Installation of CUDA, label=list:cuda, language=bash]
+	sudo dpkg -i cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64.deb
+	sudo apt-get update
+	sudo apt-get install cuda-8-0
+\end{lstlisting}
+\end{minipage}
+
+If a newer version of CUDA is already installed, remove it with prompts of \listref{cudaUninstall}
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[caption=Remove CUDA, label=list:cudaUninstall, language=bash]
+	sudo apt-get remove cuda
+	sudo apt-get autoremove
+	sudo apt-key remove /var/cuda-repo-.../....pub	#fill in correct path/file
+\end{lstlisting}
+\end{minipage}
+
+To verify the installation, firstly setup the verification environment with following commands (refer to \listref{cudaVerifyEnv}). 
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[caption=Setup CUDA verification environment, label=list:cudaVerifyEnv, language=bash]
+	export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}
+	
+	#To change the environment variables for 32-bit operating systems:
+	export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+	#To change the environment variables for 64-bit operating systems:
+	export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+	
+	cuda-install-samples-8.0.sh <dir>	#fill in directory for downloaded samples
+\end{lstlisting}
+\end{minipage}
+
+Then compile the downloaded samples by changing to \textit{NVIDIA_CUDA-8.0_Samples} and typing \textit{make}. 
+Thereafter execute \textit{deviceQuery} which is placed somewhere under \textit{NVIDIA_CUDA-8.0_Samples/bin/}. The output should look similar to that shown in \figref{GPUdeviceQuery}. Important outcomes are that a device was found and that the final test passed.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{includes/GPUdeviceQuery}
+\caption[CUDA Verification - valid results from deviceQuery]{CUDA Verification - valid results from deviceQuery}
+\label{fig:GPUdeviceQuery}
+\end{figure}
+
+In order to check if the system and the CUDA device are able to communicate correctly, execute \textit{bandwidthTest}. The Output should look like in \figref{GPUBandwidth}.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{includes/GPUBandwidth}
+\caption[CUDA Verification - valid results from bandwidthTest]{CUDA Verification - valid results from bandwidthTest}
+\label{fig:GPUBandwidth}
+\end{figure}
+
+For downloading cuDNN on \url{https://developer.nvidia.com/cudnn}, a registration for the NVIDIA Developer Program is needed. Download the three deb-files of cuDNN 6.0 for CUDA 8.0 for your corresponding platform environment. Afterwards install it with the prompts of \listref{cuDNN}.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[caption=Installation of cuDNN, label=list:cuDNN, language=bash]
+	sudo dpkg -i libcudnn6_6.0.21-1+cuda8.0_amd64.deb
+	sudo dpkg -i libcudnn6-dev_6.0.21-1+cuda8.0_amd64.deb
+	sudo dpkg -i libcudnn6-doc_6.0.21-1+cuda8.0_amd64.deb
+\end{lstlisting}
+\end{minipage}
+
+To verify that cuDNN is working correctly, compile and execute mnistCUDNN with following commands (\listref{cuDNNverify}).
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[caption=Verification of cuDNN, label=list:cuDNNverify, language=bash]
+	cp -r /usr/src/cudnn_samples_v6/ $HOME
+	cd $HOME/cudnn_samples_v6/mnistCUDNN
+	make clean && make
+	./mnistCUDNN
+\end{lstlisting}
+\end{minipage}
+
+At the end of the outcome \textit{Test passed!} should occur.
+
+Lastly install the libcupti-dev library  and export it's path with \listref{libcupti}.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[caption=Verification of cuDNN, label=list:libcupti, language=bash]
+	sudo apt-get install cuda-command-line-tools
+	export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64
+\end{lstlisting}
+\end{minipage}
+
+
 			\mysubsubsection{Tensorflow based on Python}
 First, there are some necessary dependencies to install before the actual installation can begin (refer to \listref{python_dependencies}).
 \begin{lstlisting}[caption=Installing the dependecies for Tensorflow based on Python 3.n, label=list:python_dependencies, language=bash]
@@ -274,7 +375,7 @@ During the retrain process the outputted accuracies, cross entropy and some more
 
 To validate the retrained model, see \subsecref{Output Tests and Validation}. \\
 
-Now, also the graph of the model can be visualized in TensorBoard.
+Now, the graph of the model can also be visualized in TensorBoard.
 The retrained graph of the MobileNet model is depicted in \figref{graphMobilenet050-700} including the training nodes. In the appendix under \subsecref{} is a more detailed one with all convolutional layer and under \subsecref{} the view on the depthwise convolution containing its depthwise and pointwise convolutional layers as described in \subsecref{Common Models in Deep Learning Applications}. \\
 The whole retrained graph of the MobileNet model is depicted in the appendix under \subsecref{}. Furthermore, under \subsecref{} a detailed view on a mixed_layer and under \subsecref{} it's specific operations within a convolutional layer. \\
 
@@ -291,7 +392,7 @@ Playing around with the parameters \textit{how_many_training_steps} and \textit{
 
 "If the train accuracy is high but the validation accuracy remains low, that means the network is overfitting and memorizing particular features in the training images that aren't helpful more generally." \citep{TensorFlowRetrain2017} \\
 
-In \figref{inception5000LR} the differences of retraining the InceptionV3 model with 5000 training steps and different learning rates is shown. For MobileNets it looks basically similar. 
+In \figref{inception5000LR} the differences of retraining the InceptionV3 model with 5000 training steps and different learning rates is shown. For MobileNets it looks basically similar. The final results of trying out different training steps and learning rates are described in \secref{Evaluation}.
 
 \begin{figure}[htbp]
 \centering
@@ -299,43 +400,6 @@ In \figref{inception5000LR} the differences of retraining the InceptionV3 model 
 \caption[InceptionV3 with 5000 training steps and different learning rates]{InceptionV3 with 5000 training steps and different learning rates}
 \label{fig:inception5000LR}
 \end{figure}
-
-The best values for the MobileNet0.5 model are 700 training steps and a learning rate of 0.007 (see result in \figref{MobileNet05-700res}).
-
-For the MobileNet1.0 model it was hard to find really well values. So the best here are 500 training steps and a learning rate of 0.01 (see result in \figref{MobileNet10-500res}).
-
-The final Inception model was retrained with 4000 training steps and a learning rate of 0.03 (see result in \figref{inception4000res}).
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.95\textwidth]{includes/MobileNet05-700res}
-\caption[MobileNet0.5 with 700 training steps and a learning rate of 0.007]{MobileNet0.5 with 700 training steps and a learning rate of 0.007}
-\label{fig:MobileNet05-700res}
-\end{figure}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.95\textwidth]{includes/MobileNet10-500res}
-\caption[MobileNet1.0 with 500 training steps and a learning rate of 0.01]{MobileNet1.0 with 500 training steps and a learning rate of 0.01}
-\label{fig:MobileNet10-500res}
-\end{figure}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.95\textwidth]{includes/inception4000res}
-\caption[InceptionV3 with 4000 training steps and a learning rates of 0.03]{InceptionV3 with 4000 training steps and a learning rates of 0.03}
-\label{fig:inception4000res}
-\end{figure}
-
-ODER ALLES IN EINEM GRAPH \figref{AllRes} ODER ALLES IN ANHANG?!??! BZW das sollte in Evaluierung oder?!?
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.95\textwidth]{includes/AllRes}
-\caption[Diagram with best parameters for each model]{Diagram with best parameters for each model}
-\label{fig:AllRes}
-\end{figure}
-
 
 
 As result of the retraining process the model is saved in the predefined file. So theoretically the models are now ready to use for inference. \\

@@ -90,8 +90,8 @@
 \newcommand*{\subsecref}[1]{section~\ref{subsec:#1}}
 \newcommand*{\subsubsecref}[1]{section~\ref{subsubsec:#1}}
 \newcommand*{\listref}[1]{listing~\ref{list:#1}}
-\newcommand*{\figref}[1]{\figurename~\ref{fig:#1}}
-\newcommand*{\tabref}[1]{\tablename~\ref{tab:#1}}
+\newcommand*{\figref}[1]{figure~\ref{fig:#1}}
+\newcommand*{\tabref}[1]{table~\ref{tab:#1}}
 \usepackage[format=plain,
       justification=raggedright,
       singlelinecheck=false]
@@ -193,9 +193,10 @@
 \bibliographystyle{apalike} % autor, jahr
 \bibliography{references}
 \addcontentsline{toc}{section}{Bibliography}
-%\clearpage
+\clearpage
 \listoffigures
 \addcontentsline{toc}{section}{List of figures}
+\clearpage
 \appendix
 \input{anhang.tex}
 %%HIER ENDET DIE ARBEIT! DER REST IST KOMMENTAR MIT EIN PAAR PRAKTISCHEN FORMATIERUNGEN!!
