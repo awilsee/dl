@@ -40,13 +40,13 @@ First, the Anaconda installer was downloaded from \url{https://www.anaconda.com/
 
 In the development of native Android Apps, Java is used as the programming language. Within the installation of Anaconda, the JDK in the version 8 was installed. \\
 
-For using Tensorflow with GPU support, further NVIDIA software must be installed which is in detail Compute Unified Device Architecture (CUDA) and the CUDA Deep Neural Network library (cuDNN). The requirements will be decribed in the following, otherwise check out \url{https://www.tensorflow.org/install/install_linux#nvidia_requirements_to_run_tensorflow_with_gpu_support}. \\
+For using Tensorflow with GPU support, further NVIDIA software must be installed which is the so called Compute Unified Device Architecture (CUDA) and the CUDA Deep Neural Network library (cuDNN). The requirements will be decribed in the following, otherwise check out \url{https://www.tensorflow.org/install/install_linux#nvidia_requirements_to_run_tensorflow_with_gpu_support}. \\
 
-Precaution, to use TensorFlow with GPU support the older CUDA Toolkit in version 8.0 and cuDNN in version 6.0 has to be installed! \\
+To use TensorFlow with GPU support, the older CUDA Toolkit in version 8.0 and cuDNN in version 6.0 must be installed. \\
 
-Firstly, validate that the GPU card support at least CUDA Compute Capability 3.0 which can be seen on \url{https://developer.nvidia.com/cuda-gpus}. \\
+The first step is to validate that the GPU card support at least CUDA Compute Capability 3.0 which can be seen on \url{https://developer.nvidia.com/cuda-gpus}. \\
 
-Secondly download CUDA Toolkit 8.0 GA2 on \url{https://developer.nvidia.com/cuda-downloads}. Select correct target settings and download the debian-file. An installation guide can also be downloaded, however all relevant steps are described here. \\
+Next, CUDA Toolkit 8.0 GA2 must be downloaded from \url{https://developer.nvidia.com/cuda-downloads}. Correct target settings must be set and the debian-file must be downloaded. An installation guide can also be downloaded, however all relevant steps are described here. \\
 
 The kernel headers and development packages for the currently running kernel has to be installed using following command (\listref{linuxheaders}).
 
@@ -56,7 +56,7 @@ The kernel headers and development packages for the currently running kernel has
 \end{lstlisting}
 \end{minipage}
 
-Like in \listref{cuda} shown, install CUDA.
+The installation of CUDA is shown in \listref{cuda}.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Installation of CUDA, label=list:cuda, language=bash]
@@ -66,7 +66,7 @@ Like in \listref{cuda} shown, install CUDA.
 \end{lstlisting}
 \end{minipage}
 
-If a newer version of CUDA is already installed, remove it with prompts of \listref{cudaUninstall}
+If a newer version of CUDA is already installed, it can be removed by the prompts depicted in \listref{cudaUninstall}
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Removing newer CUDA version, label=list:cudaUninstall, language=bash]
@@ -76,7 +76,7 @@ If a newer version of CUDA is already installed, remove it with prompts of \list
 \end{lstlisting}
 \end{minipage}
 
-To verify the installation, firstly setup the verification environment with following commands (refer to \listref{cudaVerifyEnv}). 
+To verify the installation, the verification environment must be set up by following commands (refer to \listref{cudaVerifyEnv}). 
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Setup CUDA verification environment, label=list:cudaVerifyEnv, language=bash]
@@ -91,9 +91,9 @@ To verify the installation, firstly setup the verification environment with foll
 \end{lstlisting}
 \end{minipage}
 
-Then compile the downloaded samples by changing to \textit{NVIDIA_CUDA-8.0_Samples} and typing \textit{make}. 
+The downloaded samples were renamed to \textit{NVIDIA_CUDA-8.0_Samples} and compiled by \textit{make}. \\
 
-Thereafter execute \textit{deviceQuery} which is placed somewhere under \textit{NVIDIA_CUDA-8.0_Samples/bin/}. The output should look similar to that shown in \figref{GPUdeviceQuery}. Important outcomes are that a device was found and that the final test passed. \\
+Thereafter, \textit{deviceQuery} was executed which is placed in the directory\textit{NVIDIA_CUDA-8.0_Samples/bin/}. The output is shown in \figref{GPUdeviceQuery}. The important outcomes are that a device was found and that the final test passed. \\
 
 \begin{figure}[htbp]
 \centering
@@ -102,7 +102,7 @@ Thereafter execute \textit{deviceQuery} which is placed somewhere under \textit{
 \label{fig:GPUdeviceQuery}
 \end{figure}
 
-In order to check if the system and the CUDA device are able to communicate correctly, execute \textit{bandwidthTest}. The Output should look like shown in \figref{GPUBandwidth}. \\
+In order to check if the system and the CUDA device are able to communicate with each other correctly, \textit{bandwidthTest} was executed. The output is shown in \figref{GPUBandwidth}. \\
 
 \begin{figure}[htbp]
 \centering
@@ -111,7 +111,7 @@ In order to check if the system and the CUDA device are able to communicate corr
 \label{fig:GPUBandwidth}
 \end{figure}
 
-For downloading cuDNN on \url{https://developer.nvidia.com/cudnn}, a registration for the NVIDIA Developer Program is needed. Download the three debian-files of \textit{cuDNN 6.0 for CUDA 8.0} for your corresponding platform environment. Afterwards install it with the prompts of \listref{cuDNN}.
+For downloading cuDNN from \url{https://developer.nvidia.com/cudnn}, a registration for the NVIDIA Developer Program is needed. The three debian-files were downloaded from \textit{cuDNN 6.0 for CUDA 8.0} according to the corresponding platform environment. Afterwards the installation was done by the following prompts shown in \listref{cuDNN}.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Installation of cuDNN, label=list:cuDNN, language=bash]
@@ -121,7 +121,7 @@ For downloading cuDNN on \url{https://developer.nvidia.com/cudnn}, a registratio
 \end{lstlisting}
 \end{minipage}
 
-To verify that cuDNN is working correctly, compile and execute mnistCUDNN with following commands (\listref{cuDNNverify}).
+To verify that cuDNN is working correctly, mnistCUDNN was compiled and executed  with the following commands (\listref{cuDNNverify}).
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Verification of cuDNN, label=list:cuDNNverify, language=bash]
@@ -132,9 +132,9 @@ To verify that cuDNN is working correctly, compile and execute mnistCUDNN with f
 \end{lstlisting}
 \end{minipage}
 
-At the end of the outcome \textit{Test passed!} should occur. \\
+At the end, the outcome \textit{Test passed!} occured. \\
 
-Lastly install the libcupti-dev library  and export it's path with \listref{libcupti}.
+As a last step, the libcupti-dev library was installed and exported by the following commands \listref{libcupti}.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Verification of cuDNN, label=list:libcupti, language=bash]
@@ -229,20 +229,16 @@ Instead of using the placeholder '-*', the version can also be specified. Which 
 			\mysubsubsection{Installing Android Studio and its Delevopment Kit}
 As an app development environment the free IDE Android Studio in its version 3.0.1 was installed by downloading from \url{https://developer.android.com/studio/index.html}. After the archive file was extracted, the script studio.sh was executed. Required dependencies are installed by Android Studio itself. Futhermore, Android Studio automatically installs the necessary SDK and NDK. So, the SDK in the version 26.1.1 and the NDK in its version 16.1 were used. If Android Studio doesn't install the necessary Development Kits, the appropriate SDK and NDK version can be installed by selecting the SDK and NDK in the section File - Settings - Appearance and Behaviour - System Settings - Android SDK. Thereby, in order to avoid any collapses when running the app, it's important to check the used Tensorflow version in the dependency which has to correspond to the Tensorflow version which was used to retrain the model.\\
 
-
-
-
-
 		\mysubsection{Building the models}
-In this section the whole build and train respectively retrain process are described. Additionally several comparison of execution time on the different hardware setups, specified in \subsecref{Hardware environment}, is done. \\
+In this section the whole build and re-/training process is described. Additionally, several comparisons of the execution time on different hardware setups are done. \\
 
-After setting up the entire software environment whether with python or bazel or with GPU support or without, the models can be trained. For several reasons as already explained in \subsecref{Key requirements for an appropriate dataset} and \subsecref{Dataset} pretrained models are used for this project. Fortunately with the script used for retraining the desired pretrained model will be already downloaded automatically. \\
+After setting up the entire software environment independent of a Python/ Bazel/ GPU/ CPU based setup, the models can be retrained. For several reasons as already explained in \subsecref{Key requirements for an appropriate dataset} and \subsecref{Dataset} pretrained models are used for this project. The script used for retraining will automatically download the desired pretrained model. \\
 
-Generally on retraining, all existing weights of the pretrained model will be leaved untouched except for the final layer which is retrained from scratch. Thus, the pretrained model with its primal tasks or labels is adapted to new labels respectively restricted to certain labels or even adapted to new tasks. This technique is also called transfer learning. \citep{TensorFlowRetrain2017} \\
+In general, all existing weights of the pretrained model will be left untouched except for the final layer which is retrained from scratch. Thus, the pretrained model trained on its original task and labels can be adapted to a new task and new labels, even if the task and the labels are completely different. This technique is called transfer learning. \citep{TensorFlowRetrain2017} \\
 
 For easier use some variables has been defined which are shown in \listref{variables}. Some of them has to be changed depending on the used model, others are optionally. 
 
-All these variables are used in the entire project for every execution of a python script or an executable built by bazel!
+All of these variables are used in the entire project for every execution of a python script or an executable built by bazel.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Defining terminal variables, label=list:variables, language=bash]
@@ -269,7 +265,7 @@ All these variables are used in the entire project for every execution of a pyth
 \end{lstlisting}
 \end{minipage}
 
-To retrain a model the python script \textit{code/scripts/retrain.py} in the github repository of this project is used and executed as shown in \listref{retrain}. This script is taken from \citep{TensorflowDemo} and is extended with some time measuring stuff. All relevant parameters are explained later in this section. However, for all possible options just execute \textit{python -m scripts.retrain -h}. 
+To retrain a model the python script \textit{code/scripts/retrain.py} from the github repository of this project is used and executed as shown in \listref{retrain}. This script is taken from \citep{TensorflowDemo} and is extended with some time measuring markers. All relevant parameters are explained later in this section. However, for retraining the following command was used \textit{python -m scripts.retrain -h}. 
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Call of \textit{retrain.py}, label=list:retrain, language=bash]
@@ -304,20 +300,18 @@ For the alternative execution method with the binary built by bazel, see \listre
 \end{lstlisting}
 \end{minipage}
 
-Initially the explanations of the parameters.
-
-The first one, \textit{bottleneck_dir}, is the path to cache bottleneck values in files. The \textit{how_many_training_steps} defines the quantity of training steps. \textit{model_dir} is the directory, where to download and extract the pretrained model. \textit{summaries_dir} is the path, where additionally visualization data will be stored. In \textit{output_graph} and \textit{output_labels} the path and name of the new graph respectively new labels are defined. \textit{architecture} represents the desired architecture. \textit{image_dir} is the location of the image to retrain on. \textit{learning_rate} specifies the learning rate during training. \\
+The first paramter called \textit{bottleneck_dir}, describes the path for caching bottleneck values in files. The option \textit{how_many_training_steps} defines the quantity of training steps. \textit{model_dir} is the directory, where the pretrained model should be downloaded and extracted. \textit{summaries_dir} is the path, where additionally visualization data will be stored. In \textit{output_graph} and \textit{output_labels} the path and name of the new graph respectively new labels are defined. \textit{architecture} represents the desired architecture. \textit{image_dir} is the location of the image to retrain on. \textit{learning_rate} specifies the learning rate during training. \\
 
 
-At first this script downloads the pretrained model from tensorflow if it doesn't already exist. Then it loads the model info of the pretrained graph and internally sets up the graph.
+First, this script downloads the pretrained model from TensorFlow if it doesn't already exist. Then it loads the model info of the pretrained graph and internally sets up the graph.
 
-Afterwards the function \textit{create_image_lists} is called, which separates all images from the image directory for training, validation and testing sets. The separation is dependent on the label name, because the script calculates a hash of it and according to that it gets its corresponding set label. The benefit is, that all existing images keeps in the same set, even if later more files are added. \\
+Afterwards the function \textit{create_image_lists} is called, which separates all images from the image directory for training, validation and testing sets. The separation depends on the label name, because the script calculates a hash of it and according to the calculated hash it gets its corresponding label. The benefit is, that all existing images are kept in the same set, even if later files are added. \\
 
-After this preparatives, bottleneck values for all images are calculated and cached on disk. Bottleneck is mostly used for the layer just before the final result layer. Because of reusing every image multiple times during training it spares a lot of time using the cached values, thus the first part, until the bottleneck, is constant.  \citep{TensorFlowRetrain2017} \\
+After this preparatives, bottleneck values for all images are calculated and cached on disk. Bottlenecks are mostly used for the layer just before the final result layer. Because of reusing every image multiple times during training, it saves a lot of time using the cached values, thus the first part, until the bottleneck, is constant.  \citep{TensorFlowRetrain2017} \\
 
 This process takes some time depending on the hardware setup and on the chosen model, which is indicated in \figref{bottlenecks}. Of course the setup with GPU is the fastest, with about 50 seconds for MobileNets and 300 seconds for InceptionV3. At this point a GPU is a great benefit. 
 
-On average the powerful destop-CPU takes 4 times longer and the notebook even takes 6 times longer as with the GPU setup. The notebook takes on average 1.4 times longer than the desktop-CPU although the desktop-CPU theoretically is 1.6 times faster. \\
+On average the powerful destop-CPU takes four times longer and the notebook even takes six times longer as with the GPU setup. On an average, the notebook takes 1.4 times longer than the desktop-CPU although the desktop-CPU theoretically is 1.6 times faster. \\
 
 \begin{figure}[htbp]
 \centering
@@ -326,7 +320,7 @@ On average the powerful destop-CPU takes 4 times longer and the notebook even ta
 \label{fig:bottlenecks}
 \end{figure}
 
-Listing \ref{list:bottleneck_gpu} shows the workload of the GPU during calculation which can be showed by executing \textit{nvidia-smi -l 1}. It's working at 38\% capacity and uses about 3160 MiB memory. Whereas the CPU is only utilized at 110\% of the maximum 800\% because of four cores with hyper threading which can be seen in the upper part of \figref{bottlenecksCPUUsage}. The lower part of this figure shows about 470\% workload if calculating everything with the desktop-CPU only. \\
+Listing \ref{list:bottleneck_gpu} shows the workload of the GPU during calculation which can be produced by executing \textit{nvidia-smi -l 1}. It works at 38\% capacity and uses about 3160 MiB memory. Whereas the CPU is only utilized at 110\% of the maximum 800\% because of four cores with hyper threading which can be seen in the upper part of \figref{bottlenecksCPUUsage}. The lower part of this figure shows about 470\% workload if calculating everything with the desktop-CPU only. \\
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Build and call of \textit{retrain}, label=list:bottleneck_gpu, language=bash]
@@ -354,7 +348,7 @@ Listing \ref{list:bottleneck_gpu} shows the workload of the GPU during calculati
 \label{fig:bottlenecksCPUUsage}
 \end{figure}
 
-Once finished with creating the bottleneck values, training of the final layer begins. In each step, random images of the training set will be fed into the final layer to get predictions. Those predictions are now used to update the final layer weights through the back-propagation process. The script outputs the \textit{train accuracy}, \textit{cross entropy} and the \textit{validation accuracy} each 10th step. This can be seen on \listref{training_hist}, which is a shortened output. At the end a final test evaluation with the testing image set is run which results in the \textit{final test accuracy}. Furthermore some time measurings are printed out. \citep{TensorFlowRetrain2017} 
+Once finished with creating the bottleneck values, training of the final layer begins. In each step, random images of the training set will be fed into the final layer to get predictions. Those predictions are now used to update the final layer weights through the back-propagation process. The script outputs the \textit{train accuracy}, \textit{cross entropy} and the \textit{validation accuracy} each 10th step. This can be seen on \listref{training_hist}, which is a shortened output. At the end a final test evaluation with the testing image set is run which results in the \textit{final test accuracy}. Furthermore, some time measurings are printed out. \citep{TensorFlowRetrain2017} 
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Output of \textit{retrain.py}, label=list:training_hist, language=bash]
@@ -388,10 +382,9 @@ For explanation, \textit{train accuracy} shows the percentage of correctly label
 
 If during training, the error "Label xxx has no images in the category validation" occur, renaming this label names, solves this issue because another hash will be calculated and the separation of the sets changes. \\
 
-If using both, python and bazel execution methods the same version of TensorFlow has to be chosen, otherwise compatibility issues can occur! Especially the bazel one which is by default the newest version because of the master branch of github. \\
+If using Python and Bazel, the same version of TensorFlow has to be chosen, otherwise compatibility issues can occur. \\
 
-
-During the retrain process the outputted accuracies, cross entropy and some more data are written to the summaries directory and can be visualized with TensorBoard which is automatically installed with TensorFlow. To start it, execute command in \listref{tensorboard}.
+During the retraining process the accuracy, cross entropy and some more data are written to the summaries directory and can be visualized with TensorBoard which is automatically installed with TensorFlow. In order to start the board, following command is executed \listref{tensorboard}.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Build and call of \textit{retrain}, label=list:tensorboard, language=bash]
@@ -401,9 +394,9 @@ During the retrain process the outputted accuracies, cross entropy and some more
 
 To validate the retrained model, see \subsecref{Output Tests and Validation}. \\
 
-The graph of the model can also be visualized in TensorBoard.
+The graph of the model can also be visualized in TensorBoard. The retrained graph of the MobileNet model including the training nodes is depicted in \figref{graphMobilenet050-700}. In the appendix \subsecref{}, there is a more detailed overview with all convolutional layer. In \subsecref{}, the depthwise convolution containing its depthwise and pointwise convolutional layers can be found as described in \subsecref{Common Models in Deep Learning Applications}. \\
 The retrained graph of the MobileNet model is depicted in \figref{graphMobilenet050-700} including the training nodes. In the appendix under \subsecref{MobileNet retrained graph - detailed} is a more detailed one with all convolutional layer and under \subsecref{MobileNet retrained graph - depthwise} the view on the depthwise convolution containing its depthwise and pointwise convolutional layers as described in \subsecref{Common Models in Deep Learning Applications}. \\
-The whole retrained graph of the InceptionV3 model is depicted in the appendix under \subsecref{InceptionV3 retrained graph}. Furthermore, under \subsecref{InceptionV3 retrained graph - mixed_layer} a detailed view on a mixed_layer and under \subsecref{InceptionV3 retrained graph - conv layer} it's specific operations within a convolutional layer is shown. \\
+The whole retrained graph of the InceptionV3 model is depicted in the appendix under \subsecref{InceptionV3 retrained graph}. Furthermore, under \subsecref{InceptionV3 retrained graph - mixed_layer} a detailed view on a mixed_layer and under \subsecref{InceptionV3 retrained graph - conv layer} it's specific operations within a convolutional layer are shown. \\
 
 \begin{figure}[htbp]
 \centering
@@ -412,12 +405,10 @@ The whole retrained graph of the InceptionV3 model is depicted in the appendix u
 \label{fig:graphMobilenet050-700}
 \end{figure}
 
+Varying the parameters \textit{how_many_training_steps} and \textit{learning_rate} can improve accuracy. To measure the performance of the network, the validation accuracy is a good indicator, because these images aren't used for training. Even better for proving the performance of the classification task is the evaluation test at the end of the retraining process, as those images are entirely unknown to the model.
+Overfitting the network occurs, when the train accuracy is high, but the validation accuracy remains low, so particular features in the training images are memorized which in general is not helpful. \citep{TensorFlowRetrain2017} \\
 
-
-Playing around with the parameters \textit{how_many_training_steps} and \textit{learning_rate} can improve accuracy. To measure the performance of the network, the validation accuracy is a good indicator because these images aren't used for training. Even better to check the performance of the classification task is the evaluation test at the end of the retraining process, as those images are entirely unknown to the model.
-Overfitting the network occurs when the train accuracy is high but the validation accuracy remains low so particular features in the training images are memorized which in general aren't helpful. \citep{TensorFlowRetrain2017} \\
-
-In \figref{inception5000LR} the differences of retraining the InceptionV3 model with 5000 training steps and different learning rates is shown. For MobileNets it looks basically similar. The final results experimenting with different training steps and learning rates are described in \secref{Evaluation}. \\
+In \figref{inception5000LR} the differences of retraining the InceptionV3 model with 5000 training steps and different learning rates is shown. For MobileNets it behaves similar. The final results experimenting with different training steps and learning rates are described in \secref{Evaluation}. \\
 
 \begin{figure}[htbp]
 \centering
@@ -426,17 +417,14 @@ In \figref{inception5000LR} the differences of retraining the InceptionV3 model 
 \label{fig:inception5000LR}
 \end{figure}
 
-
 As result of the retraining process the model is saved in the predefined file. So theoretically the models are now ready to use for inference. \\
-
-
 
 However, to use the model in the mobile app, the DecodeJpeg Operation has to be stripped from the retrained model, because the Inference Interface of TensorFlow Mobile currently doesn't support it. This could be done by the \textit{strip_unused.py}-script of the official tensorflow github repository. \\
 
 Nevertheless it is recommend to optimize the pretrained graph for mobile inference to achieve the best tradeoff between accuracy, latency, size and performance. There are several ways and different options to do the optimization. \\
 
-The first one, which will be called in following as \textit{opt1}, is only to run the \textit{optimize_for_inference}-script of the official tensorflow github repository. The corresponing call is shown in \listref{optimize_graph}.
-This script removes all nodes that aren't needed anymore like all training operations, strips unused parts, removes debug informations, folding batch normalization ops into the pre-calculated weights and fusing common operations into unified versions.\\
+The first option, which will be called in following as \textit{opt1}, is only for runing the \textit{optimize_for_inference}-script of the official tensorflow github repository. The corresponding call is shown in \listref{optimize_graph}.
+This script removes all nodes that aren't needed anymore like all training operations- Futhermore, it strips unused parts, removes debug informations, folds batch normalization ops into the pre-calculated weights and fuses common operations into unified versions.\\
  
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Call of \textit{optimize_for_inference.py}, label=list:optimize_graph, language=bash]
@@ -460,7 +448,7 @@ The next attempt is to use the already optimized graph of \textit{opt1} and addi
 \end{lstlisting}
 \end{minipage}
 
-To compare the improvement, use the gzip command in \listref{gzip} on the model of \textit{opt1} and also on this new one. 
+To compare the improvement, use the gzip command in \listref{gzip} on the model of \textit{opt1} and also on the new one. 
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Call of gzip, label=list:gzip, language=bash]
@@ -470,7 +458,7 @@ To compare the improvement, use the gzip command in \listref{gzip} on the model 
 \end{lstlisting}
 \end{minipage}
 
-The detailed result of both graphs is shown in \listref{gzip_res}. So the \textit{opt2} model is 65,4\% lower in size. This is also independent of the model used. In the example with the InceptionV3 model the size is dropped from about 88 MB to only 24 MB which is a great improvement. 
+The detailed result of both graphs is shown in \listref{gzip_res}. So, the \textit{opt2} model is 65,4\% lower in size. This is also independent of the model. In the example of an InceptionV3 model the size is dropped from about 88 MB to only 24 MB which is a great improvement. 
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Output of gzip, label=list:gzip_res, language=bash]
@@ -485,11 +473,11 @@ The detailed result of both graphs is shown in \listref{gzip_res}. So the \texti
 
 These first two ways of optimization are described in the tensorflow-for-poets-2-tutorial. \citep{TensorflowDemo} \\
 
-The next two attempts are using \textit{transform_graph} of the official tensorflow github repository. Unfortunately there exists none python version of that tool, so it has to be built with bazel first. 
+The next two attempts are using \textit{transform_graph} of the official tensorflow github repository. Unfortunately, there exists none Python version of that tool, so it has to be built with Bazel first. 
 
-The tool \textit{transform_graph} has an parameter, called \textit{tranforms}, which defines all operations to be executed. 
+The tool \textit{transform_graph} has a parameter called \textit{tranforms} which defines all operations to be executed. 
 
-Calling the commands in \listref{transform_graph_opt3} strips all unused nodes and folding batch normalization ops, so very similar to \textit{opt1}. In the following content this will be \textit{opt3}.
+Calling the commands in \listref{transform_graph_opt3} strips all unused nodes and folds batch normalization ops, so very similar to \textit{opt1}. In the following content this will be \textit{opt3}.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Build and call of \textit{transform_graph}, label=list:transform_graph_opt3, language=bash]
@@ -506,7 +494,7 @@ Calling the commands in \listref{transform_graph_opt3} strips all unused nodes a
 \end{lstlisting}
 \end{minipage}
 
-With \textit{opt4} the command in \listref{transform_graph_opt4} has been extended by \textit{fold_old_batch_norms}, \textit{round_weights} and \textit{sort_by_execution_order}. Thus it rounds the weights, it is also compressible, which is similar to the \textit{opt2} one. \\
+With \textit{opt4} the command in \listref{transform_graph_opt4} has been extended by \textit{fold_old_batch_norms}, \textit{round_weights} and \textit{sort_by_execution_order}. Thus, it rounds the weights. It is also compressible, which is similar to the \textit{opt2} one. \\
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Build and call of \textit{transform_graph}, label=list:transform_graph_opt4, language=bash]
@@ -528,9 +516,9 @@ With \textit{opt4} the command in \listref{transform_graph_opt4} has been extend
 
 The results experimenting with optimization are described in \secref{Evaluation}. \\
 
-There are several helper tools, two of them are definitely worth to introduce here right now.
+There are several helper tools, two of them are introduced here.
 
-The first one, is the \textit{graph_pb2tb.py}-script, again from \citep{TensorflowDemo}. It generates a summary file which contains only the data of the graph for visualization with TensorBoard. So after optimizing the graph and calling the command of \listref{graph_pb2tb} the graph of the MobileNet model should look like depicted in \figref{MobileNetGraphOpt4} which is completely stripped of unused nodes as the training stuff and thus optimized for inference. The InceptionV3 model is in the appendix under \subsecref{InceptionV3 retrained graph - optimized}. \\
+The first one, is the \textit{graph_pb2tb.py}-script, again from \citep{TensorflowDemo}. It generates a summary file which contains only the data of the graph for visualization with TensorBoard. So after optimizing the graph and calling the command of \listref{graph_pb2tb} the graph of the MobileNet model should look like depicted in \figref{MobileNetGraphOpt4} which is completely stripped of unused nodes as the training stuff and thus optimized for inference. The InceptionV3 model is shown in the appendix under \subsecref{InceptionV3 retrained graph - optimized}. \\
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Call of \textit{graph_pb2tb.py}, label=list:graph_pb2tb, language=bash]
@@ -547,7 +535,7 @@ The first one, is the \textit{graph_pb2tb.py}-script, again from \citep{Tensorfl
 \end{figure}
 
 
-The other tool is \textit{summarize_graph} of the official tensorflow github repository, which has to be built by bazel. After building and calling command of \listref{summarize_graph} a short summary of the model is printed out which includes useful information like the shape, the name of input and output layers or quantity of constants. An example with the optimized retrained InceptionV3 model is shown in \listref{summarize_graph_out}.
+Another tool is \textit{summarize_graph} of the official tensorflow github repository, which has to be built by bazel. After building and calling command of \listref{summarize_graph} a short summary of the model is printed out which includes useful information like the shape, the name of input and output layers or quantity of constants. An example with the optimized retrained InceptionV3 model is shown in \listref{summarize_graph_out}.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption=Build and call of \textit{summarize_graph}, label=list:summarize_graph, language=bash]
