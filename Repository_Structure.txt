@@ -1,0 +1,30 @@
+Important folders:
+
+- code 
+	--> Android_apps 
+		- DogBreedAnalyzerI with Inception
+		- DogBreedAnalyzerM with Mobilnet0.50
+	--> scripts: 
+		- eval_label-image.sh (script for Evaluating the models)
+		- retrain.py (adapted retrain script with time markers and other changes)
+
+- Installation
+	--> Installation scripts for installing Tensorflow and Anaconda with CPU or with GPU support
+
+- label_image_pics
+	--> pics which were taken to test the models during the optimization
+
+- works
+	--> all trained models (folder is named like model_version_trainingSteps)
+	In the models folders: 
+	Aufschrieben = protocol with executed commands, label_image_learningRate, 			training_history_learningRate
+
+	--> pics from CPU_GPU_usages for comparison
+
+	--> Evaluation: all evaluation documents including measurements
+	
+	--> final_networks: models and labels which were included in the app
+
+	--> models_trainedOn_imageNet: models which were retrained on ImageNet pics just for research 		purpose
+
+	--> other models: caffe, googlenet etc.

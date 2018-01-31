@@ -1,7 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Name=Verknüpfung mit nightly-android #362 [Jenkins]
-Type=Link
-URL=https://ci.tensorflow.org/view/Nightly/job/nightly-android/lastStableBuild/
-Icon=text-html
-Name[de_DE]=tensorflow_demo - nightly-android #362 [Jenkins]
